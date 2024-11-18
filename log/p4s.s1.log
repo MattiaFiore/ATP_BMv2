@@ -1,0 +1,134 @@
+Warning: you requested the nanomsg event logger, but bmv2 was compiled without -DBMELOG, and the event logger cannot be activated
+Calling target program-options parser
+[16:52:27.111] [bmv2] [D] [thread 33045] Set default default entry for table 'tbl_ATP_switch26': ATP_switch26 - 
+Adding interface s1-eth1 as port 1
+[16:52:27.112] [bmv2] [D] [thread 33045] Adding interface s1-eth1 as port 1
+Adding interface s1-eth2 as port 2
+[16:52:27.154] [bmv2] [D] [thread 33045] Adding interface s1-eth2 as port 2
+Adding interface s1-eth3 as port 3
+[16:52:27.197] [bmv2] [D] [thread 33045] Adding interface s1-eth3 as port 3
+Server listening on 0.0.0.0:9559
+[16:52:27.244] [bmv2] [I] [thread 33045] Starting Thrift server on port 9090
+[16:52:27.245] [bmv2] [I] [thread 33045] Thrift server was started
+[16:52:27.246] [bmv2] [D] [thread 33145] [0.0] [cxt 0] Processing packet received on port 1
+[16:52:27.246] [bmv2] [D] [thread 33145] [0.0] [cxt 0] Parser 'parser': start
+[16:52:27.246] [bmv2] [D] [thread 33145] [0.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:52:27.246] [bmv2] [D] [thread 33145] [0.0] [cxt 0] Extracting header 'eth'
+[16:52:27.246] [bmv2] [D] [thread 33145] [0.0] [cxt 0] Parser state 'start': key is 86dd
+[16:52:27.246] [bmv2] [T] [thread 33145] [0.0] [cxt 0] Bytes parsed: 14
+[16:52:27.246] [bmv2] [D] [thread 33145] [0.0] [cxt 0] Parser 'parser': end
+[16:52:27.246] [bmv2] [D] [thread 33145] [0.0] [cxt 0] Pipeline 'ingress': start
+[16:52:27.246] [bmv2] [T] [thread 33145] [0.0] [cxt 0] Applying table 'tbl_ATP_switch26'
+[16:52:27.246] [bmv2] [D] [thread 33145] [0.0] [cxt 0] Looking up key:
+
+[16:52:27.246] [bmv2] [D] [thread 33145] [0.0] [cxt 0] Table 'tbl_ATP_switch26': miss
+[16:52:27.246] [bmv2] [D] [thread 33145] [0.0] [cxt 0] Action entry is ATP_switch26 - 
+[16:52:27.246] [bmv2] [T] [thread 33145] [0.0] [cxt 0] Action ATP_switch26
+[16:52:27.246] [bmv2] [T] [thread 33145] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(26) Primitive standard_metadata.egress_spec = 1
+[16:52:27.246] [bmv2] [D] [thread 33145] [0.0] [cxt 0] Pipeline 'ingress': end
+[16:52:27.246] [bmv2] [D] [thread 33145] [0.0] [cxt 0] Egress port is 1
+[16:52:27.246] [bmv2] [D] [thread 33147] [0.0] [cxt 0] Pipeline 'egress': start
+[16:52:27.246] [bmv2] [D] [thread 33147] [0.0] [cxt 0] Pipeline 'egress': end
+[16:52:27.246] [bmv2] [D] [thread 33147] [0.0] [cxt 0] Deparser 'deparser': start
+[16:52:27.246] [bmv2] [D] [thread 33147] [0.0] [cxt 0] Deparsing header 'eth'
+[16:52:27.246] [bmv2] [D] [thread 33147] [0.0] [cxt 0] Deparser 'deparser': end
+[16:52:27.246] [bmv2] [D] [thread 33151] [0.0] [cxt 0] Transmitting packet of size 86 out of port 1
+[16:53:12.439] [bmv2] [D] [thread 33145] [1.0] [cxt 0] Processing packet received on port 3
+[16:53:12.440] [bmv2] [D] [thread 33145] [1.0] [cxt 0] Parser 'parser': start
+[16:53:12.440] [bmv2] [D] [thread 33145] [1.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:53:12.440] [bmv2] [D] [thread 33145] [1.0] [cxt 0] Extracting header 'eth'
+[16:53:12.440] [bmv2] [D] [thread 33145] [1.0] [cxt 0] Parser state 'start': key is 0800
+[16:53:12.440] [bmv2] [T] [thread 33145] [1.0] [cxt 0] Bytes parsed: 14
+[16:53:12.440] [bmv2] [D] [thread 33145] [1.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[16:53:12.440] [bmv2] [D] [thread 33145] [1.0] [cxt 0] Extracting header 'ipv4'
+[16:53:12.440] [bmv2] [D] [thread 33145] [1.0] [cxt 0] Parser state 'parse_ipv4': key is 99
+[16:53:12.440] [bmv2] [T] [thread 33145] [1.0] [cxt 0] Bytes parsed: 34
+[16:53:12.440] [bmv2] [D] [thread 33145] [1.0] [cxt 0] Parser 'parser' entering state 'parse_atp'
+[16:53:12.440] [bmv2] [D] [thread 33145] [1.0] [cxt 0] Extracting header 'atp'
+[16:53:12.440] [bmv2] [D] [thread 33145] [1.0] [cxt 0] Parser state 'parse_atp' has no switch, going to default next state
+[16:53:12.440] [bmv2] [T] [thread 33145] [1.0] [cxt 0] Bytes parsed: 50
+[16:53:12.441] [bmv2] [D] [thread 33145] [1.0] [cxt 0] Parser 'parser': end
+[16:53:12.441] [bmv2] [D] [thread 33145] [1.0] [cxt 0] Pipeline 'ingress': start
+[16:53:12.441] [bmv2] [T] [thread 33145] [1.0] [cxt 0] Applying table 'tbl_ATP_switch26'
+[16:53:12.441] [bmv2] [D] [thread 33145] [1.0] [cxt 0] Looking up key:
+
+[16:53:12.441] [bmv2] [D] [thread 33145] [1.0] [cxt 0] Table 'tbl_ATP_switch26': miss
+[16:53:12.441] [bmv2] [D] [thread 33145] [1.0] [cxt 0] Action entry is ATP_switch26 - 
+[16:53:12.441] [bmv2] [T] [thread 33145] [1.0] [cxt 0] Action ATP_switch26
+[16:53:12.441] [bmv2] [T] [thread 33145] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(26) Primitive standard_metadata.egress_spec = 1
+[16:53:12.441] [bmv2] [D] [thread 33145] [1.0] [cxt 0] Pipeline 'ingress': end
+[16:53:12.441] [bmv2] [D] [thread 33145] [1.0] [cxt 0] Egress port is 1
+[16:53:12.441] [bmv2] [D] [thread 33147] [1.0] [cxt 0] Pipeline 'egress': start
+[16:53:12.441] [bmv2] [D] [thread 33147] [1.0] [cxt 0] Pipeline 'egress': end
+[16:53:12.441] [bmv2] [D] [thread 33147] [1.0] [cxt 0] Deparser 'deparser': start
+[16:53:12.441] [bmv2] [D] [thread 33147] [1.0] [cxt 0] Deparsing header 'eth'
+[16:53:12.441] [bmv2] [D] [thread 33147] [1.0] [cxt 0] Deparsing header 'ipv4'
+[16:53:12.441] [bmv2] [D] [thread 33147] [1.0] [cxt 0] Deparsing header 'atp'
+[16:53:12.441] [bmv2] [D] [thread 33147] [1.0] [cxt 0] Deparser 'deparser': end
+[16:53:12.441] [bmv2] [D] [thread 33151] [1.0] [cxt 0] Transmitting packet of size 370 out of port 1
+[16:53:31.366] [bmv2] [D] [thread 33145] [2.0] [cxt 0] Processing packet received on port 3
+[16:53:31.366] [bmv2] [D] [thread 33145] [2.0] [cxt 0] Parser 'parser': start
+[16:53:31.366] [bmv2] [D] [thread 33145] [2.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:53:31.366] [bmv2] [D] [thread 33145] [2.0] [cxt 0] Extracting header 'eth'
+[16:53:31.366] [bmv2] [D] [thread 33145] [2.0] [cxt 0] Parser state 'start': key is 0800
+[16:53:31.366] [bmv2] [T] [thread 33145] [2.0] [cxt 0] Bytes parsed: 14
+[16:53:31.366] [bmv2] [D] [thread 33145] [2.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[16:53:31.366] [bmv2] [D] [thread 33145] [2.0] [cxt 0] Extracting header 'ipv4'
+[16:53:31.366] [bmv2] [D] [thread 33145] [2.0] [cxt 0] Parser state 'parse_ipv4': key is 99
+[16:53:31.366] [bmv2] [T] [thread 33145] [2.0] [cxt 0] Bytes parsed: 34
+[16:53:31.366] [bmv2] [D] [thread 33145] [2.0] [cxt 0] Parser 'parser' entering state 'parse_atp'
+[16:53:31.366] [bmv2] [D] [thread 33145] [2.0] [cxt 0] Extracting header 'atp'
+[16:53:31.366] [bmv2] [D] [thread 33145] [2.0] [cxt 0] Parser state 'parse_atp' has no switch, going to default next state
+[16:53:31.367] [bmv2] [T] [thread 33145] [2.0] [cxt 0] Bytes parsed: 50
+[16:53:31.367] [bmv2] [D] [thread 33145] [2.0] [cxt 0] Parser 'parser': end
+[16:53:31.367] [bmv2] [D] [thread 33145] [2.0] [cxt 0] Pipeline 'ingress': start
+[16:53:31.367] [bmv2] [T] [thread 33145] [2.0] [cxt 0] Applying table 'tbl_ATP_switch26'
+[16:53:31.367] [bmv2] [D] [thread 33145] [2.0] [cxt 0] Looking up key:
+
+[16:53:31.367] [bmv2] [D] [thread 33145] [2.0] [cxt 0] Table 'tbl_ATP_switch26': miss
+[16:53:31.367] [bmv2] [D] [thread 33145] [2.0] [cxt 0] Action entry is ATP_switch26 - 
+[16:53:31.367] [bmv2] [T] [thread 33145] [2.0] [cxt 0] Action ATP_switch26
+[16:53:31.367] [bmv2] [T] [thread 33145] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(26) Primitive standard_metadata.egress_spec = 1
+[16:53:31.367] [bmv2] [D] [thread 33145] [2.0] [cxt 0] Pipeline 'ingress': end
+[16:53:31.367] [bmv2] [D] [thread 33145] [2.0] [cxt 0] Egress port is 1
+[16:53:31.367] [bmv2] [D] [thread 33147] [2.0] [cxt 0] Pipeline 'egress': start
+[16:53:31.367] [bmv2] [D] [thread 33147] [2.0] [cxt 0] Pipeline 'egress': end
+[16:53:31.367] [bmv2] [D] [thread 33147] [2.0] [cxt 0] Deparser 'deparser': start
+[16:53:31.367] [bmv2] [D] [thread 33147] [2.0] [cxt 0] Deparsing header 'eth'
+[16:53:31.367] [bmv2] [D] [thread 33147] [2.0] [cxt 0] Deparsing header 'ipv4'
+[16:53:31.367] [bmv2] [D] [thread 33147] [2.0] [cxt 0] Deparsing header 'atp'
+[16:53:31.367] [bmv2] [D] [thread 33147] [2.0] [cxt 0] Deparser 'deparser': end
+[16:53:31.367] [bmv2] [D] [thread 33151] [2.0] [cxt 0] Transmitting packet of size 370 out of port 1
+[16:53:33.306] [bmv2] [D] [thread 33145] [3.0] [cxt 0] Processing packet received on port 3
+[16:53:33.307] [bmv2] [D] [thread 33145] [3.0] [cxt 0] Parser 'parser': start
+[16:53:33.307] [bmv2] [D] [thread 33145] [3.0] [cxt 0] Parser 'parser' entering state 'start'
+[16:53:33.307] [bmv2] [D] [thread 33145] [3.0] [cxt 0] Extracting header 'eth'
+[16:53:33.307] [bmv2] [D] [thread 33145] [3.0] [cxt 0] Parser state 'start': key is 0800
+[16:53:33.307] [bmv2] [T] [thread 33145] [3.0] [cxt 0] Bytes parsed: 14
+[16:53:33.307] [bmv2] [D] [thread 33145] [3.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[16:53:33.307] [bmv2] [D] [thread 33145] [3.0] [cxt 0] Extracting header 'ipv4'
+[16:53:33.307] [bmv2] [D] [thread 33145] [3.0] [cxt 0] Parser state 'parse_ipv4': key is 99
+[16:53:33.307] [bmv2] [T] [thread 33145] [3.0] [cxt 0] Bytes parsed: 34
+[16:53:33.307] [bmv2] [D] [thread 33145] [3.0] [cxt 0] Parser 'parser' entering state 'parse_atp'
+[16:53:33.307] [bmv2] [D] [thread 33145] [3.0] [cxt 0] Extracting header 'atp'
+[16:53:33.307] [bmv2] [D] [thread 33145] [3.0] [cxt 0] Parser state 'parse_atp' has no switch, going to default next state
+[16:53:33.307] [bmv2] [T] [thread 33145] [3.0] [cxt 0] Bytes parsed: 50
+[16:53:33.307] [bmv2] [D] [thread 33145] [3.0] [cxt 0] Parser 'parser': end
+[16:53:33.307] [bmv2] [D] [thread 33145] [3.0] [cxt 0] Pipeline 'ingress': start
+[16:53:33.307] [bmv2] [T] [thread 33145] [3.0] [cxt 0] Applying table 'tbl_ATP_switch26'
+[16:53:33.307] [bmv2] [D] [thread 33145] [3.0] [cxt 0] Looking up key:
+
+[16:53:33.307] [bmv2] [D] [thread 33145] [3.0] [cxt 0] Table 'tbl_ATP_switch26': miss
+[16:53:33.307] [bmv2] [D] [thread 33145] [3.0] [cxt 0] Action entry is ATP_switch26 - 
+[16:53:33.307] [bmv2] [T] [thread 33145] [3.0] [cxt 0] Action ATP_switch26
+[16:53:33.307] [bmv2] [T] [thread 33145] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(26) Primitive standard_metadata.egress_spec = 1
+[16:53:33.307] [bmv2] [D] [thread 33145] [3.0] [cxt 0] Pipeline 'ingress': end
+[16:53:33.307] [bmv2] [D] [thread 33145] [3.0] [cxt 0] Egress port is 1
+[16:53:33.307] [bmv2] [D] [thread 33147] [3.0] [cxt 0] Pipeline 'egress': start
+[16:53:33.307] [bmv2] [D] [thread 33147] [3.0] [cxt 0] Pipeline 'egress': end
+[16:53:33.307] [bmv2] [D] [thread 33147] [3.0] [cxt 0] Deparser 'deparser': start
+[16:53:33.307] [bmv2] [D] [thread 33147] [3.0] [cxt 0] Deparsing header 'eth'
+[16:53:33.307] [bmv2] [D] [thread 33147] [3.0] [cxt 0] Deparsing header 'ipv4'
+[16:53:33.307] [bmv2] [D] [thread 33147] [3.0] [cxt 0] Deparsing header 'atp'
+[16:53:33.307] [bmv2] [D] [thread 33147] [3.0] [cxt 0] Deparser 'deparser': end
+[16:53:33.307] [bmv2] [D] [thread 33151] [3.0] [cxt 0] Transmitting packet of size 370 out of port 1
