@@ -2,7 +2,7 @@ import sys
 import socket   
 import argparse
 from random import randint
-from typing import Tuple
+from typing import Tuple, List
 from scapy.all import Ether, Packet, BitField, IP
 from scapy.all import sendp, get_if_list, get_if_hwaddr, load_layer
 
@@ -42,9 +42,10 @@ class ATP(Packet):
         BitField('JobIdAndSequenceNumber', default = 0, size = 32)
         ]
     
- 
-    def __init__(self,**kwargs):
-        Packet.__init__(self, **kwargs)
+class Data(Packet): 
+    name = 'Data'
+    #As the numbers of elements that will enter in a 
+    fields_desc = [BitField(f'd{i}', default=0, size = 32) for i in range(1,11)]
 
 def get_ip() -> str:
     hostname = socket.gethostname()
@@ -75,20 +76,22 @@ def build_row_3(row3: tuple) -> int:
     print(bit_string)
     return int(bit_string, 2)
 
-def convert_bitstring(fields: list) -> int: 
+def convert_bitstring(fields: List[Tuple[int, int]]) -> int: 
+
     bit_string = ''
     for elem in fields:
-        bit_string += bin(elem[0] % (elem[1] +1))[2:].zfill(elem[1])
+        bit_string += bin(elem[0] % (2**(elem[1] +1)))[2:].zfill(elem[1])
+
     
-    print('#'*30)   
-    print(int(bit_string,2))
-    print(bit_string)
-    print('#'*30)
+    #print('#'*30)   
+    #print(int(bit_string,2))
+    #print(bit_string)
+    #print('#'*30)
 
     return int(bit_string, 2)
 
 
-def parse()-> Tuple[int, int] :
+def parse()-> Tuple[int, int]:
     '''
     The program will ask for ID, Sequence number and will compute the hash function 
     '''
@@ -106,9 +109,10 @@ def parse()-> Tuple[int, int] :
     aggregator_index = hash(job_id_sequence_number) % args.aggregator_number
     return job_id_sequence_number, aggregator_index
 
-def build_payload(length: int) -> list:
+def build_payload(length: int) -> Data:
     width = 32
-    return  ''.join([bin(randint(0,255))[2:].zfill(width) for i in range(length)])
+    #return  ''.join([bin(randint(0,255))[2:].zfill(width) for i in range(length)])
+    return  Data(d1=1, d2=1, d3=1, d4=1, d5=1, d6=1, d7=1, d8=1, d9=1, d10=1)
     
 
 if __name__ == '__main__': 

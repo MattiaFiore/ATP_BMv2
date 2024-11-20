@@ -1,3 +1,67 @@
 pkg_info {
   arch: "v1model"
 }
+tables {
+  preamble {
+    id: 42534131
+    name: "MyIngress.pool_access"
+    alias: "pool_access"
+  }
+  match_fields {
+    id: 1
+    name: "hdr.atp.aggregatorIndex"
+    bitwidth: 16
+    match_type: EXACT
+  }
+  action_refs {
+    id: 30516437
+  }
+  action_refs {
+    id: 21257015
+  }
+  size: 5
+}
+actions {
+  preamble {
+    id: 21257015
+    name: "NoAction"
+    alias: "NoAction"
+    annotations: "@noWarn(\"unused\")"
+  }
+}
+actions {
+  preamble {
+    id: 30625591
+    name: "MyIngress.sum"
+    alias: "sum"
+  }
+}
+actions {
+  preamble {
+    id: 30516437
+    name: "MyIngress.aggregate"
+    alias: "aggregate"
+  }
+  params {
+    id: 1
+    name: "slice_index"
+    bitwidth: 16
+  }
+}
+registers {
+  preamble {
+    id: 370387918
+    name: "big_pool"
+    alias: "big_pool"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 32
+      }
+    }
+  }
+  size: 50
+}
+type_info {
+}

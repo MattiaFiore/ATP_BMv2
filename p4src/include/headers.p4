@@ -51,12 +51,26 @@ header atp_t{
     bit<32> JobIdAndSequenceNumber;
 }
 
+header data_h{
+    value_t n01;
+    value_t n02;
+    value_t n03; 
+    value_t n04;
+    value_t n05;
+    value_t n06;
+    value_t n07;
+    value_t n08;
+    value_t n09;
+    value_t n10;
+}
+
 struct metadata{
-    
+    bit<16> slice_index; 
 }
 
 struct headers {
     ethernet_t eth; 
     ipv4_t ipv4; 
     atp_t atp; 
+    data_h data; 
 }

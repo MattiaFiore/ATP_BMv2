@@ -28,6 +28,10 @@ parser MyParser(packet_in packet,
 
     state parse_atp {
         packet.extract(hdr.atp); 
+        transition parse_data;
+           }
+    state parse_data {
+        packet.extract(hdr.data);
         transition accept; 
-    }
+    }        
 }

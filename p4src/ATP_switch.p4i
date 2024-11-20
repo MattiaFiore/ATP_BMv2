@@ -888,10 +888,12 @@ package V1Switch<H, M>(Parser<H, M> p,
 
 const bit<16> TYPE_IPV4 = 0x0800;
 const bit<8> PROTOCOL_ATP = 0x99; //FREE https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml
+const bit<16> NUMBER_POOLS = 5;
 
 typedef bit<48> ethAddr_t;
 typedef bit<32> ipAddr_t;
 typedef bit<16> udpPort_t;
+typedef bit<32> value_t;
 # 5 "/home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4" 2
 # 1 "/home/vboxuser/Desktop/ATP_BMv2/p4src/include/headers.p4" 1
 /*
@@ -947,14 +949,28 @@ header atp_t{
     bit<32> JobIdAndSequenceNumber;
 }
 
-struct metadata{
+header data_h{
+    value_t n01;
+    value_t n02;
+    value_t n03;
+    value_t n04;
+    value_t n05;
+    value_t n06;
+    value_t n07;
+    value_t n08;
+    value_t n09;
+    value_t n10;
+}
 
+struct metadata{
+    bit<16> slice_index;
 }
 
 struct headers {
     ethernet_t eth;
     ipv4_t ipv4;
     atp_t atp;
+    data_h data;
 }
 # 6 "/home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4" 2
 # 1 "/home/vboxuser/Desktop/ATP_BMv2/p4src/include/parser.p4" 1
@@ -988,10 +1004,20 @@ parser MyParser(packet_in packet,
 
     state parse_atp {
         packet.extract(hdr.atp);
+        transition parse_data;
+           }
+    state parse_data {
+        packet.extract(hdr.data);
         transition accept;
     }
 }
 # 7 "/home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4" 2
+# 1 "/home/vboxuser/Desktop/ATP_BMv2/p4src/include/register.p4" 1
+
+// Trying to implement the register access usign 
+// a register as big as (register_size X n_pools) 
+register<value_t>(50) big_pool;
+# 8 "/home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4" 2
 
 
 /*************************************************************************
@@ -1010,8 +1036,56 @@ control MyIngress(inout headers hdr,
                   inout metadata meta,
                   inout standard_metadata_t standard_metadata) {
 
+    /*Defining table to enter access the pool*/
+    action sum(inout value_t n0,
+               in bit<16> aggregatorIndex,
+               in bit<16> index){
+
+        bit<32> value;
+        bit<32> register_index = (bit<32>)(aggregatorIndex + index);
+        big_pool.read(value, register_index);
+        n0 = value + n0;
+        big_pool.write(register_index, n0);
+
+    }
+
+    action aggregate(bit<16> slice_index) {
+
+        meta.slice_index = slice_index;
+
+    }
+
+    table pool_access{
+        key = {hdr.atp.aggregatorIndex: exact;}
+        actions = {
+            aggregate;
+            NoAction;
+        }
+        size = 5; // Same dimension as the number of pools, right now is 5
+        default_action = NoAction;
+
+    }
+
     apply {
-        standard_metadata.egress_spec = 1;
+        // In order to see the packet somewhere
+        standard_metadata.egress_spec = 3;
+
+        // In aggregation index there is the index of the pool on which to aggregate
+        bit<16> index = hdr.atp.aggregatorIndex;
+        // Define which pool you should access 
+        // and aggregate
+        pool_access.apply();
+        sum(hdr.data.n01, meta.slice_index, 0);
+        sum(hdr.data.n02, meta.slice_index, 1);
+        sum(hdr.data.n03, meta.slice_index, 2);
+        sum(hdr.data.n04, meta.slice_index, 3);
+        sum(hdr.data.n05, meta.slice_index, 4);
+        sum(hdr.data.n06, meta.slice_index, 5);
+        sum(hdr.data.n07, meta.slice_index, 6);
+        sum(hdr.data.n08, meta.slice_index, 7);
+        sum(hdr.data.n09, meta.slice_index, 8);
+        sum(hdr.data.n10, meta.slice_index, 9);
+
     }
 }
 
@@ -1048,6 +1122,7 @@ control MyDeparser(packet_out packet, in headers hdr) {
 
         //Only emited if valid
         packet.emit(hdr.atp);
+        packet.emit(hdr.data);
     }
 }
 
