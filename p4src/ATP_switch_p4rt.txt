@@ -63,5 +63,20 @@ registers {
   }
   size: 50
 }
+registers {
+  preamble {
+    id: 376104481
+    name: "owner_pool"
+    alias: "owner_pool"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 32
+      }
+    }
+  }
+  size: 5
+}
 type_info {
 }

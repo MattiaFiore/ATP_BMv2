@@ -66,6 +66,10 @@ def read_bits(field: int, total_bits: int,bits: List[int]) -> Tuple[int]:
     return values
 
 
+def check_collision(atp: ATP) -> bool:
+    #[FIX]: row_3 is not actually the entire row. It's half of the third row
+    # collition is the bit number 4. 
+    return (1<<3)&atp.row_3
         
 
 def handle_pkt(packet) -> None:
@@ -89,6 +93,10 @@ def handle_pkt(packet) -> None:
     #the job/sequence is an integer
     job_id, sequence_number = read_bits(atp.JobIdAndSequenceNumber, 32,[8, 24])
     print(f"INFORMATION ABOUT job_id: {job_id} sequence_number: {sequence_number}")
+
+    collision = check_collision(atp)
+    if collision: 
+        print("COLLISION happend")
 
     print(f'1: {payload.d1}')
     print(f'2: {payload.d2}')

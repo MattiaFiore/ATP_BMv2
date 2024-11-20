@@ -112,6 +112,8 @@ def parse()-> Tuple[int, int]:
 def build_payload(length: int) -> Data:
     width = 32
     #return  ''.join([bin(randint(0,255))[2:].zfill(width) for i in range(length)])
+    
+    #print()
     return  Data(d1=1, d2=1, d3=1, d4=1, d5=1, d6=1, d7=1, d8=1, d9=1, d10=1)
     
 
@@ -129,9 +131,18 @@ if __name__ == '__main__':
     ip_header = IP(src = get_ip(), proto=PROTOCOL_ATP)
     atp_header = ATP(aggregatorIndex = agg_index, JobIdAndSequenceNumber= job_id)
     pkt = eth_header / ip_header / atp_header
+
+    #[FIX]: payload is actually a header, change name of variable
     length_payload = 10
     payload = build_payload(length_payload)
     pkt = pkt / payload
-    pkt.show()
+
+    print(f"Chosen aggregator: {pkt[ATP].aggregatorIndex}")
+    print('[', end = ' ')
+    for i in pkt[Data].fields_desc:
+        field_name = i.name
+        print(f'{getattr(pkt, field_name)}', end = ' ')
+    print(']')
+
     sendp(pkt, iface=iface)
 

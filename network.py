@@ -9,7 +9,7 @@ net = NetworkAPI()
 # Network general options
 net.setLogLevel('info')
 net.setCompiler(p4rt=True)
-net.execScript('python controller.py', reboot=True)
+net.execScript('python3 controller.py', reboot=True)
 net.enableCli()
 
 # Network definition
@@ -20,11 +20,15 @@ n_pss = 1
 pss = [f'ps{i}' for i in range(n_pss)]
 #Creating concurrently the graph
 G = nx.Graph()
+colors = []
 
 for _ in switches: 
+    print(_)
     net.addP4RuntimeSwitch(_)
     net.setP4Source(_,'p4src/ATP_switch.p4')
+
     G.add_node(_, type='switch')
+    colors.append('green')
 
 # fa una topologia a STELLA
 for _ in hosts: 
@@ -32,17 +36,19 @@ for _ in hosts:
     net.addLink('s1', _)
     G.add_node(_, type='host')
     G.add_edge('s1', _)
+    colors.append('yellow')
 
 for _ in pss:
     net.addHost(_)
     net.addLink('s1', _)
     G.add_node(_, type='host')
     G.add_edge('s1', _)
+    colors.append('blue')
 
 
 #Saving the picture of the topology in a folder 
 pos = nx.spring_layout(G)
-nx.draw(G, pos, labels={node:node for node in G.nodes()})
+nx.draw(G, pos, labels={node:node for node in G.nodes()}, node_color = colors)
 plt.title('Network Topology')
 output_file = 'topology.png'
 

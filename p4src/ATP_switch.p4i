@@ -1017,6 +1017,9 @@ parser MyParser(packet_in packet,
 // Trying to implement the register access usign 
 // a register as big as (register_size X n_pools) 
 register<value_t>(50) big_pool;
+
+//register is reserved based on job id and sequence number
+register<bit<32>>(5) owner_pool;
 # 8 "/home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4" 2
 
 
@@ -1072,19 +1075,55 @@ control MyIngress(inout headers hdr,
 
         // In aggregation index there is the index of the pool on which to aggregate
         bit<16> index = hdr.atp.aggregatorIndex;
-        // Define which pool you should access 
-        // and aggregate
+
+        // Checking if the pool is free
+        bit<32> owner;
+        owner_pool.read(owner, (bit<32>)index);
         pool_access.apply();
-        sum(hdr.data.n01, meta.slice_index, 0);
-        sum(hdr.data.n02, meta.slice_index, 1);
-        sum(hdr.data.n03, meta.slice_index, 2);
-        sum(hdr.data.n04, meta.slice_index, 3);
-        sum(hdr.data.n05, meta.slice_index, 4);
-        sum(hdr.data.n06, meta.slice_index, 5);
-        sum(hdr.data.n07, meta.slice_index, 6);
-        sum(hdr.data.n08, meta.slice_index, 7);
-        sum(hdr.data.n09, meta.slice_index, 8);
-        sum(hdr.data.n10, meta.slice_index, 9);
+
+        if (owner == hdr.atp.JobIdAndSequenceNumber){
+
+            // The owner as alreay bin set 
+
+
+            sum(hdr.data.n01, meta.slice_index, 0);
+            sum(hdr.data.n02, meta.slice_index, 1);
+            sum(hdr.data.n03, meta.slice_index, 2);
+            sum(hdr.data.n04, meta.slice_index, 3);
+            sum(hdr.data.n05, meta.slice_index, 4);
+            sum(hdr.data.n06, meta.slice_index, 5);
+            sum(hdr.data.n07, meta.slice_index, 6);
+            sum(hdr.data.n08, meta.slice_index, 7);
+            sum(hdr.data.n09, meta.slice_index, 8);
+            sum(hdr.data.n10, meta.slice_index, 9);
+
+        } else {
+            if (owner == 0){
+                // The pool is free
+                // First you set the owner of the pool 
+
+                owner_pool.write((bit<32>) index, hdr.atp.JobIdAndSequenceNumber);
+
+                // [Fix]: change in order to not repeat the code
+                sum(hdr.data.n01, meta.slice_index, 0);
+                sum(hdr.data.n02, meta.slice_index, 1);
+                sum(hdr.data.n03, meta.slice_index, 2);
+                sum(hdr.data.n04, meta.slice_index, 3);
+                sum(hdr.data.n05, meta.slice_index, 4);
+                sum(hdr.data.n06, meta.slice_index, 5);
+                sum(hdr.data.n07, meta.slice_index, 6);
+                sum(hdr.data.n08, meta.slice_index, 7);
+                sum(hdr.data.n09, meta.slice_index, 8);
+                sum(hdr.data.n10, meta.slice_index, 9);
+
+            } else {
+                // The pool selected is NOT FREE
+                // So you just send the packet to the ps saying that
+                // collision is active 
+                hdr.atp.collision = (bit<1>) 1;
+            }
+        }
+
 
     }
 }
