@@ -32,3 +32,5 @@ Then you can inizialize the script that receive the packet from the switch
 ```
 sudo python3 ps.py
 ```
+## Visualizing the topology
+The script will also allow you to visualize the topology. In the folder /pictures there will be a simple sketch of the topology. 
