@@ -21,6 +21,32 @@ tables {
   }
   size: 5
 }
+tables {
+  preamble {
+    id: 43427486
+    name: "MyIngress.workers4job"
+    alias: "workers4job"
+  }
+  match_fields {
+    id: 1
+    name: "hdr.atp.JobIdAndSequenceNumber[31:24]"
+    bitwidth: 8
+    match_type: EXACT
+  }
+  match_fields {
+    id: 2
+    name: "meta.current_counter"
+    bitwidth: 32
+    match_type: EXACT
+  }
+  action_refs {
+    id: 21257015
+  }
+  action_refs {
+    id: 18951337
+  }
+  size: 100
+}
 actions {
   preamble {
     id: 21257015
@@ -48,6 +74,20 @@ actions {
     bitwidth: 16
   }
 }
+actions {
+  preamble {
+    id: 26346728
+    name: "MyIngress.increase_counter"
+    alias: "increase_counter"
+  }
+}
+actions {
+  preamble {
+    id: 18951337
+    name: "MyIngress.clear_memory"
+    alias: "clear_memory"
+  }
+}
 registers {
   preamble {
     id: 370387918
@@ -68,6 +108,21 @@ registers {
     id: 376104481
     name: "owner_pool"
     alias: "owner_pool"
+  }
+  type_spec {
+    bitstring {
+      bit {
+        bitwidth: 32
+      }
+    }
+  }
+  size: 5
+}
+registers {
+  preamble {
+    id: 371259046
+    name: "counts"
+    alias: "counts"
   }
   type_spec {
     bitstring {

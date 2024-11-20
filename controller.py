@@ -17,3 +17,9 @@ controller.table_add('pool_access', 'aggregate', ['1'], ['10'])
 controller.table_add('pool_access', 'aggregate', ['2'], ['20'])
 controller.table_add('pool_access', 'aggregate', ['3'], ['30'])
 controller.table_add('pool_access', 'aggregate', ['4'], ['40'])
+
+#Setting for job ID 1 the number of worker to be 4
+#So that when it will be full, the system will free the memory of the register
+controller.table_add('workers4job', 'clear_memory', ['1', '4'])
+controller.table_add('workers4job', 'clear_memory', ['2', '7'])
+controller.table_add('workers4job', 'clear_memory', ['5', '10'])

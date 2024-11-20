@@ -28,6 +28,7 @@ control MyIngress(inout headers hdr,
                in bit<16> aggregatorIndex,
                in bit<16> index){
         
+        
         bit<32> value; 
         bit<32> register_index = (bit<32>)(aggregatorIndex + index); 
         big_pool.read(value, register_index);
@@ -36,11 +37,20 @@ control MyIngress(inout headers hdr,
 
     }
 
+   
     action aggregate(bit<16> slice_index) {
 
         meta.slice_index = slice_index; 
             
     } 
+
+    action increase_counter(){
+        bit<32> value; 
+        counts.read(value, (bit<32>) hdr.atp.aggregatorIndex);
+        value = value + 1; 
+        counts.write((bit<32>) hdr.atp.aggregatorIndex, value);
+        meta.current_counter = value; 
+    }
     
     table pool_access{
         key = {hdr.atp.aggregatorIndex: exact;}
@@ -52,7 +62,38 @@ control MyIngress(inout headers hdr,
         default_action = NoAction; 
 
     }
-    
+
+    action clear_memory(){
+        //Clearing the register
+        big_pool.write((bit<32>) meta.slice_index + 0, 0);
+        big_pool.write((bit<32>) meta.slice_index + 1, 0);
+        big_pool.write((bit<32>) meta.slice_index + 2, 0);
+        big_pool.write((bit<32>) meta.slice_index + 3, 0);  
+        big_pool.write((bit<32>) meta.slice_index + 4, 0);
+        big_pool.write((bit<32>) meta.slice_index + 5, 0);
+        big_pool.write((bit<32>) meta.slice_index + 6, 0);
+        big_pool.write((bit<32>) meta.slice_index + 7, 0);
+        big_pool.write((bit<32>) meta.slice_index + 8, 0);
+        big_pool.write((bit<32>) meta.slice_index + 9, 0);
+        // Clearing the owner
+        owner_pool.write((bit<32>) hdr.atp.aggregatorIndex, 0);
+        // Clearing the counter
+        counts.write((bit<32>) hdr.atp.aggregatorIndex, 0); 
+    }
+
+    table workers4job {
+        key = {
+            hdr.atp.JobIdAndSequenceNumber[31:24]: exact; 
+            meta.current_counter: exact; // Should have the same number of
+        }
+        actions = {
+            NoAction;
+            clear_memory; 
+        }
+        size = 100; 
+        default_action = NoAction; 
+    }
+
     apply {
         // In order to see the packet somewhere
         standard_metadata.egress_spec = 3; 
@@ -64,7 +105,7 @@ control MyIngress(inout headers hdr,
         bit<32> owner; 
         owner_pool.read(owner, (bit<32>)index);
         pool_access.apply();
-        
+
         if (owner == hdr.atp.JobIdAndSequenceNumber){
             
             // The owner as alreay bin set 
@@ -80,6 +121,9 @@ control MyIngress(inout headers hdr,
             sum(hdr.data.n08, meta.slice_index, 7);
             sum(hdr.data.n09, meta.slice_index, 8);
             sum(hdr.data.n10, meta.slice_index, 9);
+
+            increase_counter(); 
+            workers4job.apply();
 
         } else {
             if (owner == 0){
@@ -99,6 +143,9 @@ control MyIngress(inout headers hdr,
                 sum(hdr.data.n08, meta.slice_index, 7);
                 sum(hdr.data.n09, meta.slice_index, 8);
                 sum(hdr.data.n10, meta.slice_index, 9);
+
+                increase_counter(); 
+                
 
             } else {
                 // The pool selected is NOT FREE
