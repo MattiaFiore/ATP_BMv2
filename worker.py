@@ -2,7 +2,7 @@ import sys
 import socket   
 import argparse
 from random import randint
-from typing import Tuple, List
+from typing import Tuple, List, Any
 from scapy.all import Ether, Packet, BitField, IP
 from scapy.all import sendp, get_if_list, get_if_hwaddr, load_layer
 
@@ -38,14 +38,14 @@ class ATP(Packet):
         BitField('bitmap0', default = 0, size = 32),
         BitField('bitmap1', default = 0, size = 32),
         BitField('row_3', default = 0, size = 16),
-        BitField('aggregatorIndex', default = 0, size = 16),
         BitField('JobIdAndSequenceNumber', default = 0, size = 32)
         ]
     
 class Data(Packet): 
     name = 'Data'
     #As the numbers of elements that will enter in a 
-    fields_desc = [BitField(f'd{i}', default=0, size = 32) for i in range(1,11)]
+    #Moved the aggregatorIndex to the data 
+    fields_desc = [BitField('aggregatorIndex', default = 0, size = 16)] + [BitField(f'd{i}', default=0, size = 32) for i in range(1,11)]
 
 def get_ip() -> str:
     hostname = socket.gethostname()
@@ -91,7 +91,7 @@ def convert_bitstring(fields: List[Tuple[int, int]]) -> int:
     return int(bit_string, 2)
 
 
-def parse()-> Tuple[int, int]:
+def parse()-> Any:
     '''
     The program will ask for ID, Sequence number and will compute the hash function 
     '''
@@ -105,22 +105,30 @@ def parse()-> Tuple[int, int]:
     - 8 bit per i job id 
     - 24 bit per i sequence number 
     '''
-    job_id_sequence_number = convert_bitstring([(args.id_job, 8),(args.sequencenumber, 24)])
-    aggregator_index = hash(job_id_sequence_number) % args.aggregator_number
-    return job_id_sequence_number, aggregator_index
+    
+    
+    return args
 
-def build_payload(length: int) -> Data:
+def build_payload(length: int, job_id: Any) -> Data:
     width = 32
     #return  ''.join([bin(randint(0,255))[2:].zfill(width) for i in range(length)])
-    
+    index = get_agggregator_index(job_id)
     #print()
-    return  Data(d1=1, d2=1, d3=1, d4=1, d5=1, d6=1, d7=1, d8=1, d9=1, d10=1)
-    
+    return  Data(aggregatorIndex = index, d1=1, d2=1, d3=1, d4=1, d5=1, d6=1, d7=1, d8=1, d9=1, d10=1)
+
+
+def get_job_id_sequence_number(id_job, sequencenumber): 
+    job_id_sequence_number = convert_bitstring([(id_job, 8),(sequencenumber, 24)])
+    return job_id_sequence_number
+
+def get_agggregator_index(job_id_sequence_number): 
+    aggregator_index = hash(job_id_sequence_number) % args.aggregator_number
+    return aggregator_index
 
 if __name__ == '__main__': 
 
     #Parsing arguments 
-    job_id, agg_index = parse()
+    args = parse()
 
     # Verifica tutta la lista di interfacce
     iface = get_if()
@@ -129,20 +137,34 @@ if __name__ == '__main__':
     # destinazione broadcast, tanto per il momento lo deve elaborare lo switch
     eth_header = Ether(src= get_if_hwaddr(iface), dst = 'FF:FF:FF:FF:FF:FF', type = ETHERTYPE_IPV4)
     ip_header = IP(src = get_ip(), proto=PROTOCOL_ATP)
-    atp_header = ATP(aggregatorIndex = agg_index, JobIdAndSequenceNumber= job_id)
-    pkt = eth_header / ip_header / atp_header
+
+    #Sending jus the first job_id and sequence number, the others will be modified by the switch
+    job_id = get_job_id_sequence_number(args.id_job, args.sequencenumber)
+    atp_header = ATP(JobIdAndSequenceNumber= job_id)
+    packet = eth_header / ip_header / atp_header
+
+    #Building the data 
+    length_payload = 10
+
+    #Data in a row
+    n_stacked = 3
+    for i in range(n_stacked):
+        payload = build_payload(length_payload, job_id)
+        packet = packet / payload
+        args.sequencenumber += 1
+        job_id = get_job_id_sequence_number(args.id_job, args.sequencenumber)
+
 
     #[FIX]: payload is actually a header, change name of variable
-    length_payload = 10
-    payload = build_payload(length_payload)
-    pkt = pkt / payload
-
+    '''
     print(f"Chosen aggregator: {pkt[ATP].aggregatorIndex}")
     print('[', end = ' ')
     for i in pkt[Data].fields_desc:
         field_name = i.name
         print(f'{getattr(pkt, field_name)}', end = ' ')
     print(']')
+    '''
+    packet.show()
 
-    sendp(pkt, iface=iface)
+    sendp(packet, iface=iface)
 
