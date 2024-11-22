@@ -13,8 +13,8 @@ net.execScript('python3 controller.py', reboot=True)
 net.enableCli()
 
 # Network definition
-switches = ['s1']
-n_hosts = 2
+switches = ['s1', 's2']
+n_hosts = 1
 hosts = [f'h{i}' for i in range(n_hosts)]
 n_pss = 1
 pss = [f'ps{i}' for i in range(n_pss)]
@@ -30,7 +30,10 @@ for _ in switches:
     G.add_node(_, type='switch')
     colors.append('green')
 
-# fa una topologia a STELLA
+net.addLink('s1', 's2')
+G.add_edge('s1', 's2')
+
+# Connect all hosts to s1 switch 
 for _ in hosts: 
     net.addHost(_)
     net.addLink('s1', _)
@@ -40,9 +43,9 @@ for _ in hosts:
 
 for _ in pss:
     net.addHost(_)
-    net.addLink('s1', _)
+    net.addLink('s2', _)
     G.add_node(_, type='host')
-    G.add_edge('s1', _)
+    G.add_edge('s2', _)
     colors.append('blue')
 
 

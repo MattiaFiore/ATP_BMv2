@@ -1,0 +1,69 @@
+Warning: you requested the nanomsg event logger, but bmv2 was compiled without -DBMELOG, and the event logger cannot be activated
+Calling target program-options parser
+[11:00:04.049] [bmv2] [D] [thread 5335] Set default default entry for table 'tbl_ATP_switch99': ATP_switch99 - 
+[11:00:04.049] [bmv2] [D] [thread 5335] Set default default entry for table 'MyIngress.pool_access': NoAction - 
+[11:00:04.049] [bmv2] [D] [thread 5335] Set default default entry for table 'tbl_sum': MyIngress.sum - 
+[11:00:04.049] [bmv2] [D] [thread 5335] Set default default entry for table 'tbl_sum_0': MyIngress.sum - 
+[11:00:04.049] [bmv2] [D] [thread 5335] Set default default entry for table 'tbl_sum_1': MyIngress.sum - 
+[11:00:04.049] [bmv2] [D] [thread 5335] Set default default entry for table 'tbl_sum_2': MyIngress.sum - 
+[11:00:04.049] [bmv2] [D] [thread 5335] Set default default entry for table 'tbl_sum_3': MyIngress.sum - 
+[11:00:04.049] [bmv2] [D] [thread 5335] Set default default entry for table 'tbl_sum_4': MyIngress.sum - 
+[11:00:04.049] [bmv2] [D] [thread 5335] Set default default entry for table 'tbl_sum_5': MyIngress.sum - 
+[11:00:04.049] [bmv2] [D] [thread 5335] Set default default entry for table 'tbl_sum_6': MyIngress.sum - 
+[11:00:04.049] [bmv2] [D] [thread 5335] Set default default entry for table 'tbl_sum_7': MyIngress.sum - 
+[11:00:04.049] [bmv2] [D] [thread 5335] Set default default entry for table 'tbl_sum_8': MyIngress.sum - 
+[11:00:04.049] [bmv2] [D] [thread 5335] Set default default entry for table 'tbl_increase_counter': MyIngress.increase_counter - 
+[11:00:04.049] [bmv2] [D] [thread 5335] Set default default entry for table 'tbl_ATP_switch86': ATP_switch86 - 
+[11:00:04.049] [bmv2] [D] [thread 5335] Set default default entry for table 'MyIngress.workers4job': NoAction - 
+[11:00:04.049] [bmv2] [D] [thread 5335] Set default default entry for table 'tbl_ATP_switch133': ATP_switch133 - 
+[11:00:04.049] [bmv2] [D] [thread 5335] Set default default entry for table 'tbl_sum_9': MyIngress.sum - 
+[11:00:04.049] [bmv2] [D] [thread 5335] Set default default entry for table 'tbl_sum_10': MyIngress.sum - 
+[11:00:04.049] [bmv2] [D] [thread 5335] Set default default entry for table 'tbl_sum_11': MyIngress.sum - 
+[11:00:04.049] [bmv2] [D] [thread 5335] Set default default entry for table 'tbl_sum_12': MyIngress.sum - 
+[11:00:04.049] [bmv2] [D] [thread 5335] Set default default entry for table 'tbl_sum_13': MyIngress.sum - 
+[11:00:04.049] [bmv2] [D] [thread 5335] Set default default entry for table 'tbl_sum_14': MyIngress.sum - 
+[11:00:04.049] [bmv2] [D] [thread 5335] Set default default entry for table 'tbl_sum_15': MyIngress.sum - 
+[11:00:04.049] [bmv2] [D] [thread 5335] Set default default entry for table 'tbl_sum_16': MyIngress.sum - 
+[11:00:04.049] [bmv2] [D] [thread 5335] Set default default entry for table 'tbl_sum_17': MyIngress.sum - 
+[11:00:04.049] [bmv2] [D] [thread 5335] Set default default entry for table 'tbl_sum_18': MyIngress.sum - 
+[11:00:04.049] [bmv2] [D] [thread 5335] Set default default entry for table 'tbl_increase_counter_0': MyIngress.increase_counter - 
+[11:00:04.049] [bmv2] [D] [thread 5335] Set default default entry for table 'tbl_ATP_switch154': ATP_switch154 - 
+Adding interface s2-eth1 as port 1
+[11:00:04.058] [bmv2] [D] [thread 5335] Adding interface s2-eth1 as port 1
+Adding interface s2-eth2 as port 2
+[11:00:04.109] [bmv2] [D] [thread 5335] Adding interface s2-eth2 as port 2
+Server listening on 0.0.0.0:9560
+[11:00:04.160] [bmv2] [I] [thread 5335] Starting Thrift server on port 9091
+[11:00:04.161] [bmv2] [I] [thread 5335] Thrift server was started
+[11:00:04.491] [bmv2] [D] [thread 5407] Set default default entry for table 'tbl_ATP_switch99': ATP_switch99 - 
+[11:00:04.491] [bmv2] [D] [thread 5407] Set default default entry for table 'MyIngress.pool_access': NoAction - 
+[11:00:04.491] [bmv2] [D] [thread 5407] Set default default entry for table 'tbl_sum': MyIngress.sum - 
+[11:00:04.491] [bmv2] [D] [thread 5407] Set default default entry for table 'tbl_sum_0': MyIngress.sum - 
+[11:00:04.491] [bmv2] [D] [thread 5407] Set default default entry for table 'tbl_sum_1': MyIngress.sum - 
+[11:00:04.491] [bmv2] [D] [thread 5407] Set default default entry for table 'tbl_sum_2': MyIngress.sum - 
+[11:00:04.491] [bmv2] [D] [thread 5407] Set default default entry for table 'tbl_sum_3': MyIngress.sum - 
+[11:00:04.491] [bmv2] [D] [thread 5407] Set default default entry for table 'tbl_sum_4': MyIngress.sum - 
+[11:00:04.491] [bmv2] [D] [thread 5407] Set default default entry for table 'tbl_sum_5': MyIngress.sum - 
+[11:00:04.491] [bmv2] [D] [thread 5407] Set default default entry for table 'tbl_sum_6': MyIngress.sum - 
+[11:00:04.491] [bmv2] [D] [thread 5407] Set default default entry for table 'tbl_sum_7': MyIngress.sum - 
+[11:00:04.491] [bmv2] [D] [thread 5407] Set default default entry for table 'tbl_sum_8': MyIngress.sum - 
+[11:00:04.491] [bmv2] [D] [thread 5407] Set default default entry for table 'tbl_increase_counter': MyIngress.increase_counter - 
+[11:00:04.491] [bmv2] [D] [thread 5407] Set default default entry for table 'tbl_ATP_switch86': ATP_switch86 - 
+[11:00:04.491] [bmv2] [D] [thread 5407] Set default default entry for table 'MyIngress.workers4job': NoAction - 
+[11:00:04.491] [bmv2] [D] [thread 5407] Set default default entry for table 'tbl_ATP_switch133': ATP_switch133 - 
+[11:00:04.491] [bmv2] [D] [thread 5407] Set default default entry for table 'tbl_sum_9': MyIngress.sum - 
+[11:00:04.491] [bmv2] [D] [thread 5407] Set default default entry for table 'tbl_sum_10': MyIngress.sum - 
+[11:00:04.491] [bmv2] [D] [thread 5407] Set default default entry for table 'tbl_sum_11': MyIngress.sum - 
+[11:00:04.491] [bmv2] [D] [thread 5407] Set default default entry for table 'tbl_sum_12': MyIngress.sum - 
+[11:00:04.491] [bmv2] [D] [thread 5407] Set default default entry for table 'tbl_sum_13': MyIngress.sum - 
+[11:00:04.491] [bmv2] [D] [thread 5407] Set default default entry for table 'tbl_sum_14': MyIngress.sum - 
+[11:00:04.491] [bmv2] [D] [thread 5407] Set default default entry for table 'tbl_sum_15': MyIngress.sum - 
+[11:00:04.491] [bmv2] [D] [thread 5407] Set default default entry for table 'tbl_sum_16': MyIngress.sum - 
+[11:00:04.491] [bmv2] [D] [thread 5407] Set default default entry for table 'tbl_sum_17': MyIngress.sum - 
+[11:00:04.491] [bmv2] [D] [thread 5407] Set default default entry for table 'tbl_sum_18': MyIngress.sum - 
+[11:00:04.491] [bmv2] [D] [thread 5407] Set default default entry for table 'tbl_increase_counter_0': MyIngress.increase_counter - 
+[11:00:04.491] [bmv2] [D] [thread 5407] Set default default entry for table 'tbl_ATP_switch154': ATP_switch154 - 
+[11:00:04.496] [bmv2] [D] [thread 5407] simple_switch target has been notified of a config swap
+open: No such file or directory
+open: No such file or directory
+open: No such file or directory
