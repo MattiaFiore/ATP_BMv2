@@ -1,0 +1,44 @@
+Obtaining JSON from switch...
+Done
+Control utility for runtime P4 table manipulation
+RuntimeCmd: Adding entry to exact match table pool_access
+match key:           EXACT-00:00
+action:              aggregate
+runtime data:        00:00
+Entry has been added with handle 0
+RuntimeCmd: Adding entry to exact match table pool_access
+match key:           EXACT-00:01
+action:              aggregate
+runtime data:        00:0a
+Entry has been added with handle 1
+RuntimeCmd: Adding entry to exact match table pool_access
+match key:           EXACT-00:02
+action:              aggregate
+runtime data:        00:14
+Entry has been added with handle 2
+RuntimeCmd: Adding entry to exact match table pool_access
+match key:           EXACT-00:03
+action:              aggregate
+runtime data:        00:1e
+Entry has been added with handle 3
+RuntimeCmd: Adding entry to exact match table pool_access
+match key:           EXACT-00:04
+action:              aggregate
+runtime data:        00:28
+Entry has been added with handle 4
+RuntimeCmd: Adding entry to exact match table workers4job
+match key:           EXACT-01	EXACT-00:00:00:04
+action:              clear_memory
+runtime data:        
+Entry has been added with handle 0
+RuntimeCmd: Adding entry to exact match table workers4job
+match key:           EXACT-02	EXACT-00:00:00:07
+action:              clear_memory
+runtime data:        
+Entry has been added with handle 1
+RuntimeCmd: Adding entry to exact match table workers4job
+match key:           EXACT-05	EXACT-00:00:00:0a
+action:              clear_memory
+runtime data:        
+Entry has been added with handle 2
+RuntimeCmd: 

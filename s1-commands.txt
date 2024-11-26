@@ -1,0 +1,8 @@
+table_add pool_access aggregate 0 => 0
+table_add pool_access aggregate 1 => 10
+table_add pool_access aggregate 2 => 20
+table_add pool_access aggregate 3 => 30
+table_add pool_access aggregate 4 => 40
+table_add workers4job clear_memory 1 4 =>
+table_add workers4job clear_memory 2 7 =>
+table_add workers4job clear_memory 5 10 =>

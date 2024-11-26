@@ -8,8 +8,6 @@ net = NetworkAPI()
 
 # Network general options
 net.setLogLevel('info')
-net.setCompiler(p4rt=True)
-net.execScript('python3 controller.py', reboot=True)
 net.enableCli()
 
 # Network definition
@@ -24,12 +22,13 @@ colors = []
 
 for _ in switches: 
     print(_)
-    net.addP4RuntimeSwitch(_)
-    net.setP4Source(_,'p4src/ATP_switch.p4')
+    net.addP4Switch(_, cli_input='s1-commands.txt')
+    
 
     G.add_node(_, type='switch')
     colors.append('green')
 
+net.setP4SourceAll('p4src/ATP_switch.p4')
 # fa una topologia a STELLA
 for _ in hosts: 
     net.addHost(_)
