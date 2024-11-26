@@ -155,7 +155,6 @@
         ["ecn", 1, false],
         ["edgeSwitchIdentifier", 1, false],
         ["isAck", 1, false],
-        ["aggregatorIndex", 16, false],
         ["JobIdAndSequenceNumber", 32, false]
       ]
     },
@@ -163,6 +162,8 @@
       "name" : "data_h",
       "id" : 5,
       "fields" : [
+        ["aggregatorIndex", 15, false],
+        ["BOS", 1, false],
         ["n01", 32, false],
         ["n02", 32, false],
         ["n03", 32, false],
@@ -224,7 +225,13 @@
   "header_union_types" : [],
   "header_unions" : [],
   "header_union_stacks" : [],
-  "field_lists" : [],
+  "field_lists" : [
+    {
+      "id" : 1,
+      "name" : "empty",
+      "elements" : []
+    }
+  ],
   "errors" : [
     ["NoError", 0],
     ["PacketTooShort", 1],
@@ -354,11 +361,11 @@
       "id" : 0,
       "source_info" : {
         "filename" : "/home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4",
-        "line" : 186,
+        "line" : 188,
         "column" : 8,
         "source_fragment" : "MyDeparser"
       },
-      "order" : ["eth", "ipv4", "atp", "data"],
+      "order" : ["eth", "ipv4", "atp"],
       "primitives" : []
     }
   ],
@@ -5208,7 +5215,7 @@
                   "op" : "&",
                   "left" : {
                     "type" : "field",
-                    "value" : ["atp", "aggregatorIndex"]
+                    "value" : ["data", "aggregatorIndex"]
                   },
                   "right" : {
                     "type" : "hexstr",
@@ -5222,7 +5229,7 @@
             "filename" : "/home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4",
             "line" : 49,
             "column" : 27,
-            "source_fragment" : "(bit<32>) hdr.atp.aggregatorIndex"
+            "source_fragment" : "(bit<32>) hdr.data.aggregatorIndex"
           }
         },
         {
@@ -5245,7 +5252,7 @@
             "filename" : "/home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4",
             "line" : 49,
             "column" : 8,
-            "source_fragment" : "counts.read(value, (bit<32>) hdr.atp.aggregatorIndex)"
+            "source_fragment" : "counts.read(value, (bit<32>) hdr.data.aggregatorIndex)"
           }
         },
         {
@@ -5305,7 +5312,7 @@
                   "op" : "&",
                   "left" : {
                     "type" : "field",
-                    "value" : ["atp", "aggregatorIndex"]
+                    "value" : ["data", "aggregatorIndex"]
                   },
                   "right" : {
                     "type" : "hexstr",
@@ -5319,7 +5326,7 @@
             "filename" : "/home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4",
             "line" : 51,
             "column" : 21,
-            "source_fragment" : "(bit<32>) hdr.atp.aggregatorIndex"
+            "source_fragment" : "(bit<32>) hdr.data.aggregatorIndex"
           }
         },
         {
@@ -5342,7 +5349,7 @@
             "filename" : "/home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4",
             "line" : 51,
             "column" : 8,
-            "source_fragment" : "counts.write((bit<32>) hdr.atp.aggregatorIndex, value)"
+            "source_fragment" : "counts.write((bit<32>) hdr.data.aggregatorIndex, value)"
           }
         },
         {
@@ -5386,7 +5393,7 @@
                   "op" : "&",
                   "left" : {
                     "type" : "field",
-                    "value" : ["atp", "aggregatorIndex"]
+                    "value" : ["data", "aggregatorIndex"]
                   },
                   "right" : {
                     "type" : "hexstr",
@@ -5400,7 +5407,7 @@
             "filename" : "/home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4",
             "line" : 49,
             "column" : 27,
-            "source_fragment" : "(bit<32>) hdr.atp.aggregatorIndex"
+            "source_fragment" : "(bit<32>) hdr.data.aggregatorIndex"
           }
         },
         {
@@ -5423,7 +5430,7 @@
             "filename" : "/home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4",
             "line" : 49,
             "column" : 8,
-            "source_fragment" : "counts.read(value, (bit<32>) hdr.atp.aggregatorIndex)"
+            "source_fragment" : "counts.read(value, (bit<32>) hdr.data.aggregatorIndex)"
           }
         },
         {
@@ -5483,7 +5490,7 @@
                   "op" : "&",
                   "left" : {
                     "type" : "field",
-                    "value" : ["atp", "aggregatorIndex"]
+                    "value" : ["data", "aggregatorIndex"]
                   },
                   "right" : {
                     "type" : "hexstr",
@@ -5497,7 +5504,7 @@
             "filename" : "/home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4",
             "line" : 51,
             "column" : 21,
-            "source_fragment" : "(bit<32>) hdr.atp.aggregatorIndex"
+            "source_fragment" : "(bit<32>) hdr.data.aggregatorIndex"
           }
         },
         {
@@ -5520,7 +5527,7 @@
             "filename" : "/home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4",
             "line" : 51,
             "column" : 8,
-            "source_fragment" : "counts.write((bit<32>) hdr.atp.aggregatorIndex, value)"
+            "source_fragment" : "counts.write((bit<32>) hdr.data.aggregatorIndex, value)"
           }
         },
         {
@@ -6294,7 +6301,7 @@
                   "op" : "&",
                   "left" : {
                     "type" : "field",
-                    "value" : ["atp", "aggregatorIndex"]
+                    "value" : ["data", "aggregatorIndex"]
                   },
                   "right" : {
                     "type" : "hexstr",
@@ -6308,7 +6315,7 @@
             "filename" : "/home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4",
             "line" : 79,
             "column" : 25,
-            "source_fragment" : "(bit<32>) hdr.atp.aggregatorIndex"
+            "source_fragment" : "(bit<32>) hdr.data.aggregatorIndex"
           }
         },
         {
@@ -6331,7 +6338,7 @@
             "filename" : "/home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4",
             "line" : 79,
             "column" : 8,
-            "source_fragment" : "owner_pool.write((bit<32>) hdr.atp.aggregatorIndex, 0)"
+            "source_fragment" : "owner_pool.write((bit<32>) hdr.data.aggregatorIndex, 0)"
           }
         },
         {
@@ -6349,7 +6356,7 @@
                   "op" : "&",
                   "left" : {
                     "type" : "field",
-                    "value" : ["atp", "aggregatorIndex"]
+                    "value" : ["data", "aggregatorIndex"]
                   },
                   "right" : {
                     "type" : "hexstr",
@@ -6363,7 +6370,7 @@
             "filename" : "/home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4",
             "line" : 81,
             "column" : 21,
-            "source_fragment" : "(bit<32>) hdr.atp.aggregatorIndex"
+            "source_fragment" : "(bit<32>) hdr.data.aggregatorIndex"
           }
         },
         {
@@ -6386,7 +6393,7 @@
             "filename" : "/home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4",
             "line" : 81,
             "column" : 8,
-            "source_fragment" : "counts.write((bit<32>) hdr.atp.aggregatorIndex, 0)"
+            "source_fragment" : "counts.write((bit<32>) hdr.data.aggregatorIndex, 0)"
           }
         }
       ]
@@ -6429,8 +6436,18 @@
                 "value" : {
                   "op" : "&",
                   "left" : {
-                    "type" : "field",
-                    "value" : ["atp", "aggregatorIndex"]
+                    "type" : "expression",
+                    "value" : {
+                      "op" : "&",
+                      "left" : {
+                        "type" : "field",
+                        "value" : ["data", "aggregatorIndex"]
+                      },
+                      "right" : {
+                        "type" : "hexstr",
+                        "value" : "0xffff"
+                      }
+                    }
                   },
                   "right" : {
                     "type" : "hexstr",
@@ -6550,8 +6567,18 @@
                 "value" : {
                   "op" : "&",
                   "left" : {
-                    "type" : "field",
-                    "value" : ["atp", "aggregatorIndex"]
+                    "type" : "expression",
+                    "value" : {
+                      "op" : "&",
+                      "left" : {
+                        "type" : "field",
+                        "value" : ["data", "aggregatorIndex"]
+                      },
+                      "right" : {
+                        "type" : "hexstr",
+                        "value" : "0xffff"
+                      }
+                    }
                   },
                   "right" : {
                     "type" : "hexstr",
@@ -6618,6 +6645,28 @@
           }
         }
       ]
+    },
+    {
+      "name" : "ATP_switch172",
+      "id" : 30,
+      "runtime_data" : [],
+      "primitives" : [
+        {
+          "op" : "recirculate",
+          "parameters" : [
+            {
+              "type" : "hexstr",
+              "value" : "0x1"
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4",
+            "line" : 172,
+            "column" : 12,
+            "source_fragment" : "recirculate_preserving_field_list(0)"
+          }
+        }
+      ]
     }
   ],
   "pipelines" : [
@@ -6673,8 +6722,8 @@
           "key" : [
             {
               "match_type" : "exact",
-              "name" : "hdr.atp.aggregatorIndex",
-              "target" : ["atp", "aggregatorIndex"],
+              "name" : "hdr.data.aggregatorIndex",
+              "target" : ["data", "aggregatorIndex"],
               "mask" : null
             }
           ],
@@ -7532,10 +7581,67 @@
         "column" : 8,
         "source_fragment" : "MyEgress"
       },
-      "init_table" : null,
-      "tables" : [],
+      "init_table" : "node_34",
+      "tables" : [
+        {
+          "name" : "tbl_ATP_switch172",
+          "id" : 28,
+          "source_info" : {
+            "filename" : "/home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4",
+            "line" : 172,
+            "column" : 12,
+            "source_fragment" : "recirculate_preserving_field_list(0)"
+          },
+          "key" : [],
+          "match_type" : "exact",
+          "type" : "simple",
+          "max_size" : 1024,
+          "with_counters" : false,
+          "support_timeout" : false,
+          "direct_meters" : null,
+          "action_ids" : [30],
+          "actions" : ["ATP_switch172"],
+          "base_default_next" : null,
+          "next_tables" : {
+            "ATP_switch172" : null
+          },
+          "default_entry" : {
+            "action_id" : 30,
+            "action_const" : true,
+            "action_data" : [],
+            "action_entry_const" : true
+          }
+        }
+      ],
       "action_profiles" : [],
-      "conditionals" : []
+      "conditionals" : [
+        {
+          "name" : "node_34",
+          "id" : 2,
+          "source_info" : {
+            "filename" : "/home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4",
+            "line" : 171,
+            "column" : 12,
+            "source_fragment" : "hdr.data.BOS == 0"
+          },
+          "expression" : {
+            "type" : "expression",
+            "value" : {
+              "op" : "==",
+              "left" : {
+                "type" : "field",
+                "value" : ["data", "BOS"]
+              },
+              "right" : {
+                "type" : "hexstr",
+                "value" : "0x00"
+              }
+            }
+          },
+          "false_next" : null,
+          "true_next" : "tbl_ATP_switch172"
+        }
+      ]
     }
   ],
   "checksums" : [],

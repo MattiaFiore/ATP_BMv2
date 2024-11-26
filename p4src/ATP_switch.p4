@@ -46,14 +46,14 @@ control MyIngress(inout headers hdr,
 
     action increase_counter(){
         bit<32> value; 
-        counts.read(value, (bit<32>) hdr.atp.aggregatorIndex);
+        counts.read(value, (bit<32>) hdr.data.aggregatorIndex);
         value = value + 1; 
-        counts.write((bit<32>) hdr.atp.aggregatorIndex, value);
+        counts.write((bit<32>) hdr.data.aggregatorIndex, value);
         meta.current_counter = value; 
     }
     
     table pool_access{
-        key = {hdr.atp.aggregatorIndex: exact;}
+        key = {hdr.data.aggregatorIndex: exact;}
         actions = {
             aggregate; 
             NoAction;
@@ -76,9 +76,9 @@ control MyIngress(inout headers hdr,
         big_pool.write((bit<32>) meta.slice_index + 8, 0);
         big_pool.write((bit<32>) meta.slice_index + 9, 0);
         // Clearing the owner
-        owner_pool.write((bit<32>) hdr.atp.aggregatorIndex, 0);
+        owner_pool.write((bit<32>) hdr.data.aggregatorIndex, 0);
         // Clearing the counter
-        counts.write((bit<32>) hdr.atp.aggregatorIndex, 0); 
+        counts.write((bit<32>) hdr.data.aggregatorIndex, 0); 
     }
 
     table workers4job {
@@ -99,7 +99,7 @@ control MyIngress(inout headers hdr,
         standard_metadata.egress_spec = 3; 
 
         // In aggregation index there is the index of the pool on which to aggregate
-        bit<16> index = hdr.atp.aggregatorIndex; 
+        bit<16> index = (bit<16>) hdr.data.aggregatorIndex; 
         
         // Checking if the pool is free
         bit<32> owner; 
@@ -168,7 +168,9 @@ control MyEgress(inout headers hdr,
                  inout standard_metadata_t standard_metadata) {
 
     apply {
-
+        if (hdr.data.BOS == 0){
+            recirculate_preserving_field_list(0); 
+        }
     }
 
 }
@@ -192,7 +194,8 @@ control MyDeparser(packet_out packet, in headers hdr) {
 
         //Only emited if valid
         packet.emit(hdr.atp);
-        packet.emit(hdr.data); 
+        //packet.emit(hdr.data);
+        
     }
 }
 

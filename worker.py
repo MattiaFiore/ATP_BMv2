@@ -45,7 +45,7 @@ class Data(Packet):
     name = 'Data'
     #As the numbers of elements that will enter in a 
     #Moved the aggregatorIndex to the data 
-    fields_desc = [BitField('aggregatorIndex', default = 0, size = 16)] + [BitField(f'd{i}', default=0, size = 32) for i in range(1,11)]
+    fields_desc = [BitField('aggregatorIndex', default = 0, size = 15), BitField('BOS', default = 0, size = 1)] + [BitField(f'd{i}', default=0, size = 32) for i in range(1,11)]
 
 def get_ip() -> str:
     hostname = socket.gethostname()
@@ -150,6 +150,8 @@ if __name__ == '__main__':
     n_stacked = 3
     for i in range(n_stacked):
         payload = build_payload(length_payload, job_id)
+        if i == n_stacked -1: 
+            payload.BOS = 1
         packet = packet / payload
         args.sequencenumber += 1
         job_id = get_job_id_sequence_number(args.id_job, args.sequencenumber)

@@ -1,967 +1,781 @@
 Warning: you requested the nanomsg event logger, but bmv2 was compiled without -DBMELOG, and the event logger cannot be activated
 Calling target program-options parser
-[11:24:55.820] [bmv2] [D] [thread 6545] Set default default entry for table 'tbl_ATP_switch99': ATP_switch99 - 
-[11:24:55.820] [bmv2] [D] [thread 6545] Set default default entry for table 'MyIngress.pool_access': NoAction - 
-[11:24:55.820] [bmv2] [D] [thread 6545] Set default default entry for table 'tbl_sum': MyIngress.sum - 
-[11:24:55.820] [bmv2] [D] [thread 6545] Set default default entry for table 'tbl_sum_0': MyIngress.sum - 
-[11:24:55.820] [bmv2] [D] [thread 6545] Set default default entry for table 'tbl_sum_1': MyIngress.sum - 
-[11:24:55.820] [bmv2] [D] [thread 6545] Set default default entry for table 'tbl_sum_2': MyIngress.sum - 
-[11:24:55.820] [bmv2] [D] [thread 6545] Set default default entry for table 'tbl_sum_3': MyIngress.sum - 
-[11:24:55.820] [bmv2] [D] [thread 6545] Set default default entry for table 'tbl_sum_4': MyIngress.sum - 
-[11:24:55.820] [bmv2] [D] [thread 6545] Set default default entry for table 'tbl_sum_5': MyIngress.sum - 
-[11:24:55.820] [bmv2] [D] [thread 6545] Set default default entry for table 'tbl_sum_6': MyIngress.sum - 
-[11:24:55.820] [bmv2] [D] [thread 6545] Set default default entry for table 'tbl_sum_7': MyIngress.sum - 
-[11:24:55.820] [bmv2] [D] [thread 6545] Set default default entry for table 'tbl_sum_8': MyIngress.sum - 
-[11:24:55.820] [bmv2] [D] [thread 6545] Set default default entry for table 'tbl_increase_counter': MyIngress.increase_counter - 
-[11:24:55.820] [bmv2] [D] [thread 6545] Set default default entry for table 'tbl_ATP_switch86': ATP_switch86 - 
-[11:24:55.820] [bmv2] [D] [thread 6545] Set default default entry for table 'MyIngress.workers4job': NoAction - 
-[11:24:55.820] [bmv2] [D] [thread 6545] Set default default entry for table 'tbl_ATP_switch133': ATP_switch133 - 
-[11:24:55.820] [bmv2] [D] [thread 6545] Set default default entry for table 'tbl_sum_9': MyIngress.sum - 
-[11:24:55.820] [bmv2] [D] [thread 6545] Set default default entry for table 'tbl_sum_10': MyIngress.sum - 
-[11:24:55.820] [bmv2] [D] [thread 6545] Set default default entry for table 'tbl_sum_11': MyIngress.sum - 
-[11:24:55.820] [bmv2] [D] [thread 6545] Set default default entry for table 'tbl_sum_12': MyIngress.sum - 
-[11:24:55.820] [bmv2] [D] [thread 6545] Set default default entry for table 'tbl_sum_13': MyIngress.sum - 
-[11:24:55.820] [bmv2] [D] [thread 6545] Set default default entry for table 'tbl_sum_14': MyIngress.sum - 
-[11:24:55.820] [bmv2] [D] [thread 6545] Set default default entry for table 'tbl_sum_15': MyIngress.sum - 
-[11:24:55.820] [bmv2] [D] [thread 6545] Set default default entry for table 'tbl_sum_16': MyIngress.sum - 
-[11:24:55.820] [bmv2] [D] [thread 6545] Set default default entry for table 'tbl_sum_17': MyIngress.sum - 
-[11:24:55.820] [bmv2] [D] [thread 6545] Set default default entry for table 'tbl_sum_18': MyIngress.sum - 
-[11:24:55.820] [bmv2] [D] [thread 6545] Set default default entry for table 'tbl_increase_counter_0': MyIngress.increase_counter - 
-[11:24:55.820] [bmv2] [D] [thread 6545] Set default default entry for table 'tbl_ATP_switch154': ATP_switch154 - 
+[10:45:35.347] [bmv2] [D] [thread 73557] Set default default entry for table 'tbl_ATP_switch99': ATP_switch99 - 
+[10:45:35.347] [bmv2] [D] [thread 73557] Set default default entry for table 'MyIngress.pool_access': NoAction - 
+[10:45:35.347] [bmv2] [D] [thread 73557] Set default default entry for table 'tbl_sum': MyIngress.sum - 
+[10:45:35.347] [bmv2] [D] [thread 73557] Set default default entry for table 'tbl_sum_0': MyIngress.sum - 
+[10:45:35.347] [bmv2] [D] [thread 73557] Set default default entry for table 'tbl_sum_1': MyIngress.sum - 
+[10:45:35.347] [bmv2] [D] [thread 73557] Set default default entry for table 'tbl_sum_2': MyIngress.sum - 
+[10:45:35.347] [bmv2] [D] [thread 73557] Set default default entry for table 'tbl_sum_3': MyIngress.sum - 
+[10:45:35.347] [bmv2] [D] [thread 73557] Set default default entry for table 'tbl_sum_4': MyIngress.sum - 
+[10:45:35.347] [bmv2] [D] [thread 73557] Set default default entry for table 'tbl_sum_5': MyIngress.sum - 
+[10:45:35.347] [bmv2] [D] [thread 73557] Set default default entry for table 'tbl_sum_6': MyIngress.sum - 
+[10:45:35.347] [bmv2] [D] [thread 73557] Set default default entry for table 'tbl_sum_7': MyIngress.sum - 
+[10:45:35.347] [bmv2] [D] [thread 73557] Set default default entry for table 'tbl_sum_8': MyIngress.sum - 
+[10:45:35.347] [bmv2] [D] [thread 73557] Set default default entry for table 'tbl_increase_counter': MyIngress.increase_counter - 
+[10:45:35.347] [bmv2] [D] [thread 73557] Set default default entry for table 'tbl_ATP_switch86': ATP_switch86 - 
+[10:45:35.347] [bmv2] [D] [thread 73557] Set default default entry for table 'MyIngress.workers4job': NoAction - 
+[10:45:35.347] [bmv2] [D] [thread 73557] Set default default entry for table 'tbl_ATP_switch133': ATP_switch133 - 
+[10:45:35.347] [bmv2] [D] [thread 73557] Set default default entry for table 'tbl_sum_9': MyIngress.sum - 
+[10:45:35.347] [bmv2] [D] [thread 73557] Set default default entry for table 'tbl_sum_10': MyIngress.sum - 
+[10:45:35.347] [bmv2] [D] [thread 73557] Set default default entry for table 'tbl_sum_11': MyIngress.sum - 
+[10:45:35.347] [bmv2] [D] [thread 73557] Set default default entry for table 'tbl_sum_12': MyIngress.sum - 
+[10:45:35.347] [bmv2] [D] [thread 73557] Set default default entry for table 'tbl_sum_13': MyIngress.sum - 
+[10:45:35.347] [bmv2] [D] [thread 73557] Set default default entry for table 'tbl_sum_14': MyIngress.sum - 
+[10:45:35.347] [bmv2] [D] [thread 73557] Set default default entry for table 'tbl_sum_15': MyIngress.sum - 
+[10:45:35.347] [bmv2] [D] [thread 73557] Set default default entry for table 'tbl_sum_16': MyIngress.sum - 
+[10:45:35.347] [bmv2] [D] [thread 73557] Set default default entry for table 'tbl_sum_17': MyIngress.sum - 
+[10:45:35.347] [bmv2] [D] [thread 73557] Set default default entry for table 'tbl_sum_18': MyIngress.sum - 
+[10:45:35.347] [bmv2] [D] [thread 73557] Set default default entry for table 'tbl_increase_counter_0': MyIngress.increase_counter - 
+[10:45:35.347] [bmv2] [D] [thread 73557] Set default default entry for table 'tbl_ATP_switch154': ATP_switch154 - 
+[10:45:35.348] [bmv2] [D] [thread 73557] Set default default entry for table 'tbl_ATP_switch172': ATP_switch172 - 
 Adding interface s1-eth1 as port 1
-[11:24:55.830] [bmv2] [D] [thread 6545] Adding interface s1-eth1 as port 1
+[10:45:35.357] [bmv2] [D] [thread 73557] Adding interface s1-eth1 as port 1
 Adding interface s1-eth2 as port 2
-[11:24:55.940] [bmv2] [D] [thread 6545] Adding interface s1-eth2 as port 2
+[10:45:35.430] [bmv2] [D] [thread 73557] Adding interface s1-eth2 as port 2
 Server listening on 0.0.0.0:9559
-[11:24:56.008] [bmv2] [I] [thread 6545] Starting Thrift server on port 9090
-[11:24:56.009] [bmv2] [I] [thread 6545] Thrift server was started
-[11:24:56.094] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Processing packet received on port 2
-[11:24:56.094] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Parser 'parser': start
-[11:24:56.094] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Parser 'parser' entering state 'start'
-[11:24:56.094] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Extracting header 'eth'
-[11:24:56.094] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Parser state 'start': key is 86dd
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Bytes parsed: 14
-[11:24:56.094] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Parser 'parser': end
-[11:24:56.094] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Pipeline 'ingress': start
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Applying table 'tbl_ATP_switch99'
-[11:24:56.094] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Looking up key:
-
-[11:24:56.094] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Table 'tbl_ATP_switch99': miss
-[11:24:56.094] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Action entry is ATP_switch99 - 
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Action ATP_switch99
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(99) Primitive standard_metadata.egress_spec = 3
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(106) Primitive (bit<32>)index
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(106) Primitive owner_pool.read(owner, (bit<32>)index)
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Read register 'owner_pool' at index 0 read value 0
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Applying table 'MyIngress.pool_access'
-[11:24:56.094] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Looking up key:
-* hdr.atp.aggregatorIndex: 0000
-
-[11:24:56.094] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Table 'MyIngress.pool_access': miss
-[11:24:56.094] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Action entry is NoAction - 
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Action NoAction
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(109) Condition "owner == hdr.atp.JobIdAndSequenceNumber" (node_4) is true
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Applying table 'tbl_sum'
-[11:24:56.094] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Looking up key:
-
-[11:24:56.094] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Table 'tbl_sum': miss
-[11:24:56.094] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Action entry is MyIngress.sum - 
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Action MyIngress.sum
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Read register 'big_pool' at index 0 read value 0
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Wrote register 'big_pool' at index 0 with value 0
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Applying table 'tbl_sum_0'
-[11:24:56.094] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Looking up key:
-
-[11:24:56.094] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Table 'tbl_sum_0': miss
-[11:24:56.094] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Action entry is MyIngress.sum - 
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Action MyIngress.sum
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Read register 'big_pool' at index 1 read value 0
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Wrote register 'big_pool' at index 1 with value 0
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Applying table 'tbl_sum_1'
-[11:24:56.094] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Looking up key:
-
-[11:24:56.094] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Table 'tbl_sum_1': miss
-[11:24:56.094] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Action entry is MyIngress.sum - 
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Action MyIngress.sum
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Read register 'big_pool' at index 2 read value 0
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Wrote register 'big_pool' at index 2 with value 0
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Applying table 'tbl_sum_2'
-[11:24:56.094] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Looking up key:
-
-[11:24:56.094] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Table 'tbl_sum_2': miss
-[11:24:56.094] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Action entry is MyIngress.sum - 
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Action MyIngress.sum
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Read register 'big_pool' at index 3 read value 0
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Wrote register 'big_pool' at index 3 with value 0
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Applying table 'tbl_sum_3'
-[11:24:56.094] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Looking up key:
-
-[11:24:56.094] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Table 'tbl_sum_3': miss
-[11:24:56.094] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Action entry is MyIngress.sum - 
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Action MyIngress.sum
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Read register 'big_pool' at index 4 read value 0
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Wrote register 'big_pool' at index 4 with value 0
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Applying table 'tbl_sum_4'
-[11:24:56.094] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Looking up key:
-
-[11:24:56.094] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Table 'tbl_sum_4': miss
-[11:24:56.094] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Action entry is MyIngress.sum - 
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Action MyIngress.sum
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Read register 'big_pool' at index 5 read value 0
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Wrote register 'big_pool' at index 5 with value 0
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Applying table 'tbl_sum_5'
-[11:24:56.094] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Looking up key:
-
-[11:24:56.094] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Table 'tbl_sum_5': miss
-[11:24:56.094] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Action entry is MyIngress.sum - 
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Action MyIngress.sum
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Read register 'big_pool' at index 6 read value 0
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Wrote register 'big_pool' at index 6 with value 0
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Applying table 'tbl_sum_6'
-[11:24:56.094] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Looking up key:
-
-[11:24:56.094] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Table 'tbl_sum_6': miss
-[11:24:56.094] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Action entry is MyIngress.sum - 
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Action MyIngress.sum
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Read register 'big_pool' at index 7 read value 0
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Wrote register 'big_pool' at index 7 with value 0
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
-[11:24:56.094] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Applying table 'tbl_sum_7'
-[11:24:56.094] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Looking up key:
-
-[11:24:56.094] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Table 'tbl_sum_7': miss
-[11:24:56.094] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Action entry is MyIngress.sum - 
-[11:24:56.095] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Action MyIngress.sum
-[11:24:56.095] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
-[11:24:56.095] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
-[11:24:56.095] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Read register 'big_pool' at index 8 read value 0
-[11:24:56.095] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
-[11:24:56.095] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
-[11:24:56.095] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
-[11:24:56.095] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Wrote register 'big_pool' at index 8 with value 0
-[11:24:56.095] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
-[11:24:56.095] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Applying table 'tbl_sum_8'
-[11:24:56.095] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Looking up key:
-
-[11:24:56.095] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Table 'tbl_sum_8': miss
-[11:24:56.095] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Action entry is MyIngress.sum - 
-[11:24:56.095] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Action MyIngress.sum
-[11:24:56.095] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
-[11:24:56.095] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
-[11:24:56.095] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Read register 'big_pool' at index 9 read value 0
-[11:24:56.095] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
-[11:24:56.095] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
-[11:24:56.095] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
-[11:24:56.095] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Wrote register 'big_pool' at index 9 with value 0
-[11:24:56.095] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
-[11:24:56.095] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Applying table 'tbl_increase_counter'
-[11:24:56.095] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Looking up key:
-
-[11:24:56.095] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Table 'tbl_increase_counter': miss
-[11:24:56.095] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Action entry is MyIngress.increase_counter - 
-[11:24:56.095] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Action MyIngress.increase_counter
-[11:24:56.095] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(49) Primitive (bit<32>) hdr.atp.aggregatorIndex
-[11:24:56.095] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(49) Primitive counts.read(value, (bit<32>) hdr.atp.aggregatorIndex)
-[11:24:56.095] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Read register 'counts' at index 0 read value 0
-[11:24:56.095] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(50) Primitive value = value + 1
-[11:24:56.095] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(51) Primitive (bit<32>) hdr.atp.aggregatorIndex
-[11:24:56.095] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(51) Primitive counts.write((bit<32>) hdr.atp.aggregatorIndex, value)
-[11:24:56.095] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Wrote register 'counts' at index 0 with value 1
-[11:24:56.095] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(52) Primitive meta.current_counter = value
-[11:24:56.095] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Applying table 'tbl_ATP_switch86'
-[11:24:56.095] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Looking up key:
-
-[11:24:56.095] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Table 'tbl_ATP_switch86': miss
-[11:24:56.095] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Action entry is ATP_switch86 - 
-[11:24:56.095] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Action ATP_switch86
-[11:24:56.095] [bmv2] [T] [thread 6562] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(86) Primitive hdr.atp.JobIdAndSequenceNumber[31:24]
-[11:24:56.095] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Applying table 'MyIngress.workers4job'
-[11:24:56.095] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Looking up key:
-* hdr.atp.JobIdAndSequenceNumber[31:24]: 00
-* meta.current_counter                 : 00000001
-
-[11:24:56.095] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Table 'MyIngress.workers4job': miss
-[11:24:56.095] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Action entry is NoAction - 
-[11:24:56.095] [bmv2] [T] [thread 6562] [0.0] [cxt 0] Action NoAction
-[11:24:56.095] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Pipeline 'ingress': end
-[11:24:56.095] [bmv2] [D] [thread 6562] [0.0] [cxt 0] Egress port is 3
-[11:24:56.095] [bmv2] [D] [thread 6566] [0.0] [cxt 0] Pipeline 'egress': start
-[11:24:56.095] [bmv2] [D] [thread 6566] [0.0] [cxt 0] Pipeline 'egress': end
-[11:24:56.095] [bmv2] [D] [thread 6566] [0.0] [cxt 0] Deparser 'deparser': start
-[11:24:56.095] [bmv2] [D] [thread 6566] [0.0] [cxt 0] Deparsing header 'eth'
-[11:24:56.095] [bmv2] [D] [thread 6566] [0.0] [cxt 0] Deparser 'deparser': end
-[11:24:56.095] [bmv2] [D] [thread 6567] [0.0] [cxt 0] Transmitting packet of size 90 out of port 3
-[11:24:56.374] [bmv2] [D] [thread 6624] Set default default entry for table 'tbl_ATP_switch99': ATP_switch99 - 
-[11:24:56.374] [bmv2] [D] [thread 6624] Set default default entry for table 'MyIngress.pool_access': NoAction - 
-[11:24:56.374] [bmv2] [D] [thread 6624] Set default default entry for table 'tbl_sum': MyIngress.sum - 
-[11:24:56.374] [bmv2] [D] [thread 6624] Set default default entry for table 'tbl_sum_0': MyIngress.sum - 
-[11:24:56.374] [bmv2] [D] [thread 6624] Set default default entry for table 'tbl_sum_1': MyIngress.sum - 
-[11:24:56.374] [bmv2] [D] [thread 6624] Set default default entry for table 'tbl_sum_2': MyIngress.sum - 
-[11:24:56.374] [bmv2] [D] [thread 6624] Set default default entry for table 'tbl_sum_3': MyIngress.sum - 
-[11:24:56.374] [bmv2] [D] [thread 6624] Set default default entry for table 'tbl_sum_4': MyIngress.sum - 
-[11:24:56.374] [bmv2] [D] [thread 6624] Set default default entry for table 'tbl_sum_5': MyIngress.sum - 
-[11:24:56.374] [bmv2] [D] [thread 6624] Set default default entry for table 'tbl_sum_6': MyIngress.sum - 
-[11:24:56.374] [bmv2] [D] [thread 6624] Set default default entry for table 'tbl_sum_7': MyIngress.sum - 
-[11:24:56.374] [bmv2] [D] [thread 6624] Set default default entry for table 'tbl_sum_8': MyIngress.sum - 
-[11:24:56.374] [bmv2] [D] [thread 6624] Set default default entry for table 'tbl_increase_counter': MyIngress.increase_counter - 
-[11:24:56.374] [bmv2] [D] [thread 6624] Set default default entry for table 'tbl_ATP_switch86': ATP_switch86 - 
-[11:24:56.374] [bmv2] [D] [thread 6624] Set default default entry for table 'MyIngress.workers4job': NoAction - 
-[11:24:56.374] [bmv2] [D] [thread 6624] Set default default entry for table 'tbl_ATP_switch133': ATP_switch133 - 
-[11:24:56.374] [bmv2] [D] [thread 6624] Set default default entry for table 'tbl_sum_9': MyIngress.sum - 
-[11:24:56.374] [bmv2] [D] [thread 6624] Set default default entry for table 'tbl_sum_10': MyIngress.sum - 
-[11:24:56.374] [bmv2] [D] [thread 6624] Set default default entry for table 'tbl_sum_11': MyIngress.sum - 
-[11:24:56.374] [bmv2] [D] [thread 6624] Set default default entry for table 'tbl_sum_12': MyIngress.sum - 
-[11:24:56.374] [bmv2] [D] [thread 6624] Set default default entry for table 'tbl_sum_13': MyIngress.sum - 
-[11:24:56.374] [bmv2] [D] [thread 6624] Set default default entry for table 'tbl_sum_14': MyIngress.sum - 
-[11:24:56.374] [bmv2] [D] [thread 6624] Set default default entry for table 'tbl_sum_15': MyIngress.sum - 
-[11:24:56.374] [bmv2] [D] [thread 6624] Set default default entry for table 'tbl_sum_16': MyIngress.sum - 
-[11:24:56.374] [bmv2] [D] [thread 6624] Set default default entry for table 'tbl_sum_17': MyIngress.sum - 
-[11:24:56.374] [bmv2] [D] [thread 6624] Set default default entry for table 'tbl_sum_18': MyIngress.sum - 
-[11:24:56.374] [bmv2] [D] [thread 6624] Set default default entry for table 'tbl_increase_counter_0': MyIngress.increase_counter - 
-[11:24:56.374] [bmv2] [D] [thread 6624] Set default default entry for table 'tbl_ATP_switch154': ATP_switch154 - 
-[11:24:56.378] [bmv2] [D] [thread 6624] simple_switch target has been notified of a config swap
-[11:24:56.409] [bmv2] [D] [thread 6624] Entry 0 added to table 'MyIngress.pool_access'
-[11:24:56.409] [bmv2] [D] [thread 6624] Dumping entry 0
+[10:45:35.470] [bmv2] [I] [thread 73557] Starting Thrift server on port 9090
+[10:45:35.471] [bmv2] [I] [thread 73557] Thrift server was started
+[10:45:35.778] [bmv2] [D] [thread 73628] Set default default entry for table 'tbl_ATP_switch99': ATP_switch99 - 
+[10:45:35.778] [bmv2] [D] [thread 73628] Set default default entry for table 'MyIngress.pool_access': NoAction - 
+[10:45:35.778] [bmv2] [D] [thread 73628] Set default default entry for table 'tbl_sum': MyIngress.sum - 
+[10:45:35.778] [bmv2] [D] [thread 73628] Set default default entry for table 'tbl_sum_0': MyIngress.sum - 
+[10:45:35.778] [bmv2] [D] [thread 73628] Set default default entry for table 'tbl_sum_1': MyIngress.sum - 
+[10:45:35.778] [bmv2] [D] [thread 73628] Set default default entry for table 'tbl_sum_2': MyIngress.sum - 
+[10:45:35.778] [bmv2] [D] [thread 73628] Set default default entry for table 'tbl_sum_3': MyIngress.sum - 
+[10:45:35.778] [bmv2] [D] [thread 73628] Set default default entry for table 'tbl_sum_4': MyIngress.sum - 
+[10:45:35.778] [bmv2] [D] [thread 73628] Set default default entry for table 'tbl_sum_5': MyIngress.sum - 
+[10:45:35.778] [bmv2] [D] [thread 73628] Set default default entry for table 'tbl_sum_6': MyIngress.sum - 
+[10:45:35.778] [bmv2] [D] [thread 73628] Set default default entry for table 'tbl_sum_7': MyIngress.sum - 
+[10:45:35.778] [bmv2] [D] [thread 73628] Set default default entry for table 'tbl_sum_8': MyIngress.sum - 
+[10:45:35.778] [bmv2] [D] [thread 73628] Set default default entry for table 'tbl_increase_counter': MyIngress.increase_counter - 
+[10:45:35.778] [bmv2] [D] [thread 73628] Set default default entry for table 'tbl_ATP_switch86': ATP_switch86 - 
+[10:45:35.778] [bmv2] [D] [thread 73628] Set default default entry for table 'MyIngress.workers4job': NoAction - 
+[10:45:35.778] [bmv2] [D] [thread 73628] Set default default entry for table 'tbl_ATP_switch133': ATP_switch133 - 
+[10:45:35.778] [bmv2] [D] [thread 73628] Set default default entry for table 'tbl_sum_9': MyIngress.sum - 
+[10:45:35.778] [bmv2] [D] [thread 73628] Set default default entry for table 'tbl_sum_10': MyIngress.sum - 
+[10:45:35.778] [bmv2] [D] [thread 73628] Set default default entry for table 'tbl_sum_11': MyIngress.sum - 
+[10:45:35.778] [bmv2] [D] [thread 73628] Set default default entry for table 'tbl_sum_12': MyIngress.sum - 
+[10:45:35.778] [bmv2] [D] [thread 73628] Set default default entry for table 'tbl_sum_13': MyIngress.sum - 
+[10:45:35.778] [bmv2] [D] [thread 73628] Set default default entry for table 'tbl_sum_14': MyIngress.sum - 
+[10:45:35.778] [bmv2] [D] [thread 73628] Set default default entry for table 'tbl_sum_15': MyIngress.sum - 
+[10:45:35.778] [bmv2] [D] [thread 73628] Set default default entry for table 'tbl_sum_16': MyIngress.sum - 
+[10:45:35.779] [bmv2] [D] [thread 73628] Set default default entry for table 'tbl_sum_17': MyIngress.sum - 
+[10:45:35.779] [bmv2] [D] [thread 73628] Set default default entry for table 'tbl_sum_18': MyIngress.sum - 
+[10:45:35.779] [bmv2] [D] [thread 73628] Set default default entry for table 'tbl_increase_counter_0': MyIngress.increase_counter - 
+[10:45:35.779] [bmv2] [D] [thread 73628] Set default default entry for table 'tbl_ATP_switch154': ATP_switch154 - 
+[10:45:35.779] [bmv2] [D] [thread 73628] Set default default entry for table 'tbl_ATP_switch172': ATP_switch172 - 
+[10:45:35.783] [bmv2] [D] [thread 73628] simple_switch target has been notified of a config swap
+[10:45:35.821] [bmv2] [D] [thread 73628] Entry 0 added to table 'MyIngress.pool_access'
+[10:45:35.822] [bmv2] [D] [thread 73628] Dumping entry 0
 Match key:
-* hdr.atp.aggregatorIndex: EXACT     0000
+* hdr.data.aggregatorIndex: EXACT     0000
 Action entry: MyIngress.aggregate - 0,
 
-[11:24:56.410] [bmv2] [D] [thread 6632] Entry 1 added to table 'MyIngress.pool_access'
-[11:24:56.410] [bmv2] [D] [thread 6632] Dumping entry 1
+[10:45:35.823] [bmv2] [D] [thread 73636] Entry 1 added to table 'MyIngress.pool_access'
+[10:45:35.823] [bmv2] [D] [thread 73636] Dumping entry 1
 Match key:
-* hdr.atp.aggregatorIndex: EXACT     0001
+* hdr.data.aggregatorIndex: EXACT     0001
 Action entry: MyIngress.aggregate - a,
 
-[11:24:56.411] [bmv2] [D] [thread 6624] Entry 2 added to table 'MyIngress.pool_access'
-[11:24:56.411] [bmv2] [D] [thread 6624] Dumping entry 2
+[10:45:35.824] [bmv2] [D] [thread 73628] Entry 2 added to table 'MyIngress.pool_access'
+[10:45:35.824] [bmv2] [D] [thread 73628] Dumping entry 2
 Match key:
-* hdr.atp.aggregatorIndex: EXACT     0002
+* hdr.data.aggregatorIndex: EXACT     0002
 Action entry: MyIngress.aggregate - 14,
 
-[11:24:56.412] [bmv2] [D] [thread 6632] Entry 3 added to table 'MyIngress.pool_access'
-[11:24:56.412] [bmv2] [D] [thread 6632] Dumping entry 3
+[10:45:35.824] [bmv2] [D] [thread 73636] Entry 3 added to table 'MyIngress.pool_access'
+[10:45:35.824] [bmv2] [D] [thread 73636] Dumping entry 3
 Match key:
-* hdr.atp.aggregatorIndex: EXACT     0003
+* hdr.data.aggregatorIndex: EXACT     0003
 Action entry: MyIngress.aggregate - 1e,
 
-[11:24:56.412] [bmv2] [D] [thread 6624] Entry 4 added to table 'MyIngress.pool_access'
-[11:24:56.412] [bmv2] [D] [thread 6624] Dumping entry 4
+[10:45:35.825] [bmv2] [D] [thread 73628] Entry 4 added to table 'MyIngress.pool_access'
+[10:45:35.825] [bmv2] [D] [thread 73628] Dumping entry 4
 Match key:
-* hdr.atp.aggregatorIndex: EXACT     0004
+* hdr.data.aggregatorIndex: EXACT     0004
 Action entry: MyIngress.aggregate - 28,
 
-[11:24:56.413] [bmv2] [D] [thread 6632] Entry 0 added to table 'MyIngress.workers4job'
-[11:24:56.413] [bmv2] [D] [thread 6632] Dumping entry 0
+[10:45:35.826] [bmv2] [D] [thread 73636] Entry 0 added to table 'MyIngress.workers4job'
+[10:45:35.826] [bmv2] [D] [thread 73636] Dumping entry 0
 Match key:
 * hdr.atp.JobIdAndSequenceNumber[31:24]: EXACT     01
 * meta.current_counter                 : EXACT     00000004
 Action entry: MyIngress.clear_memory - 
 
-[11:24:56.414] [bmv2] [D] [thread 6624] Entry 1 added to table 'MyIngress.workers4job'
-[11:24:56.414] [bmv2] [D] [thread 6624] Dumping entry 1
+[10:45:35.828] [bmv2] [D] [thread 73628] Entry 1 added to table 'MyIngress.workers4job'
+[10:45:35.828] [bmv2] [D] [thread 73628] Dumping entry 1
 Match key:
 * hdr.atp.JobIdAndSequenceNumber[31:24]: EXACT     02
 * meta.current_counter                 : EXACT     00000007
 Action entry: MyIngress.clear_memory - 
 
-[11:24:56.415] [bmv2] [D] [thread 6632] Entry 2 added to table 'MyIngress.workers4job'
-[11:24:56.415] [bmv2] [D] [thread 6632] Dumping entry 2
+[10:45:35.829] [bmv2] [D] [thread 73636] Entry 2 added to table 'MyIngress.workers4job'
+[10:45:35.829] [bmv2] [D] [thread 73636] Dumping entry 2
 Match key:
 * hdr.atp.JobIdAndSequenceNumber[31:24]: EXACT     05
 * meta.current_counter                 : EXACT     0000000a
 Action entry: MyIngress.clear_memory - 
 
-[11:25:12.441] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Processing packet received on port 1
-[11:25:12.441] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Parser 'parser': start
-[11:25:12.441] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Parser 'parser' entering state 'start'
-[11:25:12.441] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Extracting header 'eth'
-[11:25:12.441] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Parser state 'start': key is 0800
-[11:25:12.441] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Bytes parsed: 14
-[11:25:12.441] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
-[11:25:12.441] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Extracting header 'ipv4'
-[11:25:12.441] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Parser state 'parse_ipv4': key is 99
-[11:25:12.441] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Bytes parsed: 34
-[11:25:12.441] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Parser 'parser' entering state 'parse_atp'
-[11:25:12.441] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Extracting header 'atp'
-[11:25:12.441] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Extracting header 'data'
-[11:25:12.441] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Parser state 'parse_atp' has no switch, going to default next state
-[11:25:12.441] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Bytes parsed: 90
-[11:25:12.441] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Parser 'parser': end
-[11:25:12.441] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Pipeline 'ingress': start
-[11:25:12.441] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Applying table 'tbl_ATP_switch99'
-[11:25:12.442] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Looking up key:
+[10:45:40.844] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Processing packet received on port 1
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Parser 'parser': start
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Parser 'parser' entering state 'start'
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Extracting header 'eth'
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Parser state 'start': key is 0800
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Bytes parsed: 14
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Extracting header 'ipv4'
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Parser state 'parse_ipv4': key is 99
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Bytes parsed: 34
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Parser 'parser' entering state 'parse_atp'
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Extracting header 'atp'
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Extracting header 'data'
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Parser state 'parse_atp' has no switch, going to default next state
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Bytes parsed: 90
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Parser 'parser': end
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Pipeline 'ingress': start
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Applying table 'tbl_ATP_switch99'
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Looking up key:
 
-[11:25:12.442] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Table 'tbl_ATP_switch99': miss
-[11:25:12.442] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Action entry is ATP_switch99 - 
-[11:25:12.442] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Action ATP_switch99
-[11:25:12.442] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(99) Primitive standard_metadata.egress_spec = 3
-[11:25:12.442] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(106) Primitive (bit<32>)index
-[11:25:12.442] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(106) Primitive owner_pool.read(owner, (bit<32>)index)
-[11:25:12.442] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Read register 'owner_pool' at index 2 read value 0
-[11:25:12.442] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Applying table 'MyIngress.pool_access'
-[11:25:12.442] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Looking up key:
-* hdr.atp.aggregatorIndex: 0002
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Table 'tbl_ATP_switch99': miss
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Action entry is ATP_switch99 - 
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Action ATP_switch99
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(99) Primitive standard_metadata.egress_spec = 3
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(106) Primitive (bit<32>)index
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(106) Primitive owner_pool.read(owner, (bit<32>)index)
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Read register 'owner_pool' at index 2 read value 0
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Applying table 'MyIngress.pool_access'
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Looking up key:
+* hdr.data.aggregatorIndex: 0002
 
-[11:25:12.442] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Table 'MyIngress.pool_access': hit with handle 2
-[11:25:12.442] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Dumping entry 2
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Table 'MyIngress.pool_access': hit with handle 2
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Dumping entry 2
 Match key:
-* hdr.atp.aggregatorIndex: EXACT     0002
+* hdr.data.aggregatorIndex: EXACT     0002
 Action entry: MyIngress.aggregate - 14,
 
-[11:25:12.442] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Action entry is MyIngress.aggregate - 14,
-[11:25:12.442] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Action MyIngress.aggregate
-[11:25:12.442] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(43) Primitive meta.slice_index = slice_index
-[11:25:12.442] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(109) Condition "owner == hdr.atp.JobIdAndSequenceNumber" (node_4) is false
-[11:25:12.442] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(129) Condition "owner == 0" (node_18) is true
-[11:25:12.442] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Applying table 'tbl_ATP_switch133'
-[11:25:12.442] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Looking up key:
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Action entry is MyIngress.aggregate - 14,
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Action MyIngress.aggregate
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(43) Primitive meta.slice_index = slice_index
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(109) Condition "owner == hdr.atp.JobIdAndSequenceNumber" (node_4) is false
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(129) Condition "owner == 0" (node_18) is true
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Applying table 'tbl_ATP_switch133'
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Looking up key:
 
-[11:25:12.442] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Table 'tbl_ATP_switch133': miss
-[11:25:12.442] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Action entry is ATP_switch133 - 
-[11:25:12.442] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Action ATP_switch133
-[11:25:12.442] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(133) Primitive (bit<32>) index
-[11:25:12.442] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(133) Primitive owner_pool.write((bit<32>) index, hdr.atp.JobIdAndSequenceNumber)
-[11:25:12.442] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Wrote register 'owner_pool' at index 2 with value 16777217
-[11:25:12.442] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Applying table 'tbl_sum_9'
-[11:25:12.442] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Looking up key:
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Table 'tbl_ATP_switch133': miss
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Action entry is ATP_switch133 - 
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Action ATP_switch133
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(133) Primitive (bit<32>) index
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(133) Primitive owner_pool.write((bit<32>) index, hdr.atp.JobIdAndSequenceNumber)
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Wrote register 'owner_pool' at index 2 with value 16777217
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Applying table 'tbl_sum_9'
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Looking up key:
 
-[11:25:12.442] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Table 'tbl_sum_9': miss
-[11:25:12.442] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Action entry is MyIngress.sum - 
-[11:25:12.442] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Action MyIngress.sum
-[11:25:12.442] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
-[11:25:12.442] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
-[11:25:12.442] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Read register 'big_pool' at index 20 read value 0
-[11:25:12.442] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
-[11:25:12.442] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
-[11:25:12.442] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
-[11:25:12.442] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Wrote register 'big_pool' at index 20 with value 1
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Applying table 'tbl_sum_10'
-[11:25:12.443] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Looking up key:
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Table 'tbl_sum_9': miss
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Action entry is MyIngress.sum - 
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Action MyIngress.sum
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Read register 'big_pool' at index 20 read value 0
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Wrote register 'big_pool' at index 20 with value 1
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Applying table 'tbl_sum_10'
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Looking up key:
 
-[11:25:12.443] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Table 'tbl_sum_10': miss
-[11:25:12.443] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Action entry is MyIngress.sum - 
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Action MyIngress.sum
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Read register 'big_pool' at index 21 read value 0
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Wrote register 'big_pool' at index 21 with value 1
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Applying table 'tbl_sum_11'
-[11:25:12.443] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Looking up key:
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Table 'tbl_sum_10': miss
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Action entry is MyIngress.sum - 
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Action MyIngress.sum
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Read register 'big_pool' at index 21 read value 0
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Wrote register 'big_pool' at index 21 with value 1
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Applying table 'tbl_sum_11'
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Looking up key:
 
-[11:25:12.443] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Table 'tbl_sum_11': miss
-[11:25:12.443] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Action entry is MyIngress.sum - 
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Action MyIngress.sum
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Read register 'big_pool' at index 22 read value 0
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Wrote register 'big_pool' at index 22 with value 1
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Applying table 'tbl_sum_12'
-[11:25:12.443] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Looking up key:
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Table 'tbl_sum_11': miss
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Action entry is MyIngress.sum - 
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Action MyIngress.sum
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Read register 'big_pool' at index 22 read value 0
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Wrote register 'big_pool' at index 22 with value 1
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Applying table 'tbl_sum_12'
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Looking up key:
 
-[11:25:12.443] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Table 'tbl_sum_12': miss
-[11:25:12.443] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Action entry is MyIngress.sum - 
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Action MyIngress.sum
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Read register 'big_pool' at index 23 read value 0
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Wrote register 'big_pool' at index 23 with value 1
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Applying table 'tbl_sum_13'
-[11:25:12.443] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Looking up key:
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Table 'tbl_sum_12': miss
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Action entry is MyIngress.sum - 
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Action MyIngress.sum
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Read register 'big_pool' at index 23 read value 0
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Wrote register 'big_pool' at index 23 with value 1
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Applying table 'tbl_sum_13'
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Looking up key:
 
-[11:25:12.443] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Table 'tbl_sum_13': miss
-[11:25:12.443] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Action entry is MyIngress.sum - 
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Action MyIngress.sum
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Read register 'big_pool' at index 24 read value 0
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Wrote register 'big_pool' at index 24 with value 1
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Applying table 'tbl_sum_14'
-[11:25:12.443] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Looking up key:
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Table 'tbl_sum_13': miss
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Action entry is MyIngress.sum - 
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Action MyIngress.sum
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Read register 'big_pool' at index 24 read value 0
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Wrote register 'big_pool' at index 24 with value 1
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Applying table 'tbl_sum_14'
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Looking up key:
 
-[11:25:12.443] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Table 'tbl_sum_14': miss
-[11:25:12.443] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Action entry is MyIngress.sum - 
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Action MyIngress.sum
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Read register 'big_pool' at index 25 read value 0
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Wrote register 'big_pool' at index 25 with value 1
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Applying table 'tbl_sum_15'
-[11:25:12.443] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Looking up key:
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Table 'tbl_sum_14': miss
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Action entry is MyIngress.sum - 
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Action MyIngress.sum
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Read register 'big_pool' at index 25 read value 0
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Wrote register 'big_pool' at index 25 with value 1
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Applying table 'tbl_sum_15'
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Looking up key:
 
-[11:25:12.443] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Table 'tbl_sum_15': miss
-[11:25:12.443] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Action entry is MyIngress.sum - 
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Action MyIngress.sum
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Read register 'big_pool' at index 26 read value 0
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Wrote register 'big_pool' at index 26 with value 1
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Applying table 'tbl_sum_16'
-[11:25:12.443] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Looking up key:
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Table 'tbl_sum_15': miss
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Action entry is MyIngress.sum - 
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Action MyIngress.sum
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Read register 'big_pool' at index 26 read value 0
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Wrote register 'big_pool' at index 26 with value 1
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Applying table 'tbl_sum_16'
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Looking up key:
 
-[11:25:12.443] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Table 'tbl_sum_16': miss
-[11:25:12.443] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Action entry is MyIngress.sum - 
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Action MyIngress.sum
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Read register 'big_pool' at index 27 read value 0
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Wrote register 'big_pool' at index 27 with value 1
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Applying table 'tbl_sum_17'
-[11:25:12.443] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Looking up key:
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Table 'tbl_sum_16': miss
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Action entry is MyIngress.sum - 
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Action MyIngress.sum
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Read register 'big_pool' at index 27 read value 0
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Wrote register 'big_pool' at index 27 with value 1
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Applying table 'tbl_sum_17'
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Looking up key:
 
-[11:25:12.443] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Table 'tbl_sum_17': miss
-[11:25:12.443] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Action entry is MyIngress.sum - 
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Action MyIngress.sum
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Read register 'big_pool' at index 28 read value 0
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Wrote register 'big_pool' at index 28 with value 1
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Applying table 'tbl_sum_18'
-[11:25:12.443] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Looking up key:
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Table 'tbl_sum_17': miss
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Action entry is MyIngress.sum - 
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Action MyIngress.sum
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Read register 'big_pool' at index 28 read value 0
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Wrote register 'big_pool' at index 28 with value 1
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Applying table 'tbl_sum_18'
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Looking up key:
 
-[11:25:12.443] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Table 'tbl_sum_18': miss
-[11:25:12.443] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Action entry is MyIngress.sum - 
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Action MyIngress.sum
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Read register 'big_pool' at index 29 read value 0
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Wrote register 'big_pool' at index 29 with value 1
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Applying table 'tbl_increase_counter_0'
-[11:25:12.443] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Looking up key:
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Table 'tbl_sum_18': miss
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Action entry is MyIngress.sum - 
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Action MyIngress.sum
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Read register 'big_pool' at index 29 read value 0
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Wrote register 'big_pool' at index 29 with value 1
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Applying table 'tbl_increase_counter_0'
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Looking up key:
 
-[11:25:12.443] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Table 'tbl_increase_counter_0': miss
-[11:25:12.443] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Action entry is MyIngress.increase_counter - 
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Action MyIngress.increase_counter
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(49) Primitive (bit<32>) hdr.atp.aggregatorIndex
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(49) Primitive counts.read(value, (bit<32>) hdr.atp.aggregatorIndex)
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Read register 'counts' at index 2 read value 0
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(50) Primitive value = value + 1
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(51) Primitive (bit<32>) hdr.atp.aggregatorIndex
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(51) Primitive counts.write((bit<32>) hdr.atp.aggregatorIndex, value)
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] Wrote register 'counts' at index 2 with value 1
-[11:25:12.443] [bmv2] [T] [thread 6562] [1.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(52) Primitive meta.current_counter = value
-[11:25:12.443] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Pipeline 'ingress': end
-[11:25:12.443] [bmv2] [D] [thread 6562] [1.0] [cxt 0] Egress port is 3
-[11:25:12.444] [bmv2] [D] [thread 6566] [1.0] [cxt 0] Pipeline 'egress': start
-[11:25:12.444] [bmv2] [D] [thread 6566] [1.0] [cxt 0] Pipeline 'egress': end
-[11:25:12.444] [bmv2] [D] [thread 6566] [1.0] [cxt 0] Deparser 'deparser': start
-[11:25:12.444] [bmv2] [D] [thread 6566] [1.0] [cxt 0] Deparsing header 'eth'
-[11:25:12.444] [bmv2] [D] [thread 6566] [1.0] [cxt 0] Deparsing header 'ipv4'
-[11:25:12.444] [bmv2] [D] [thread 6566] [1.0] [cxt 0] Deparsing header 'atp'
-[11:25:12.444] [bmv2] [D] [thread 6566] [1.0] [cxt 0] Deparsing header 'data'
-[11:25:12.444] [bmv2] [D] [thread 6566] [1.0] [cxt 0] Deparser 'deparser': end
-[11:25:12.444] [bmv2] [D] [thread 6567] [1.0] [cxt 0] Transmitting packet of size 90 out of port 3
-[11:25:14.379] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Processing packet received on port 1
-[11:25:14.379] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Parser 'parser': start
-[11:25:14.379] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Parser 'parser' entering state 'start'
-[11:25:14.379] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Extracting header 'eth'
-[11:25:14.379] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Parser state 'start': key is 0800
-[11:25:14.379] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Bytes parsed: 14
-[11:25:14.379] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
-[11:25:14.379] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Extracting header 'ipv4'
-[11:25:14.379] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Parser state 'parse_ipv4': key is 99
-[11:25:14.379] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Bytes parsed: 34
-[11:25:14.379] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Parser 'parser' entering state 'parse_atp'
-[11:25:14.379] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Extracting header 'atp'
-[11:25:14.379] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Extracting header 'data'
-[11:25:14.379] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Parser state 'parse_atp' has no switch, going to default next state
-[11:25:14.379] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Bytes parsed: 90
-[11:25:14.379] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Parser 'parser': end
-[11:25:14.379] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Pipeline 'ingress': start
-[11:25:14.379] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Applying table 'tbl_ATP_switch99'
-[11:25:14.379] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Looking up key:
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Table 'tbl_increase_counter_0': miss
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Action entry is MyIngress.increase_counter - 
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Action MyIngress.increase_counter
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(49) Primitive (bit<32>) hdr.data.aggregatorIndex
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(49) Primitive counts.read(value, (bit<32>) hdr.data.aggregatorIndex)
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Read register 'counts' at index 2 read value 0
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(50) Primitive value = value + 1
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(51) Primitive (bit<32>) hdr.data.aggregatorIndex
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(51) Primitive counts.write((bit<32>) hdr.data.aggregatorIndex, value)
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] Wrote register 'counts' at index 2 with value 1
+[10:45:40.845] [bmv2] [T] [thread 73566] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(52) Primitive meta.current_counter = value
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Pipeline 'ingress': end
+[10:45:40.845] [bmv2] [D] [thread 73566] [0.0] [cxt 0] Egress port is 3
+[10:45:40.846] [bmv2] [D] [thread 73570] [0.0] [cxt 0] Pipeline 'egress': start
+[10:45:40.846] [bmv2] [T] [thread 73570] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(171) Condition "hdr.data.BOS == 0" (node_34) is true
+[10:45:40.846] [bmv2] [T] [thread 73570] [0.0] [cxt 0] Applying table 'tbl_ATP_switch172'
+[10:45:40.846] [bmv2] [D] [thread 73570] [0.0] [cxt 0] Looking up key:
 
-[11:25:14.379] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Table 'tbl_ATP_switch99': miss
-[11:25:14.379] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Action entry is ATP_switch99 - 
-[11:25:14.379] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Action ATP_switch99
-[11:25:14.379] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(99) Primitive standard_metadata.egress_spec = 3
-[11:25:14.379] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(106) Primitive (bit<32>)index
-[11:25:14.379] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(106) Primitive owner_pool.read(owner, (bit<32>)index)
-[11:25:14.379] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Read register 'owner_pool' at index 2 read value 16777217
-[11:25:14.379] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Applying table 'MyIngress.pool_access'
-[11:25:14.379] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Looking up key:
-* hdr.atp.aggregatorIndex: 0002
+[10:45:40.846] [bmv2] [D] [thread 73570] [0.0] [cxt 0] Table 'tbl_ATP_switch172': miss
+[10:45:40.846] [bmv2] [D] [thread 73570] [0.0] [cxt 0] Action entry is ATP_switch172 - 
+[10:45:40.846] [bmv2] [T] [thread 73570] [0.0] [cxt 0] Action ATP_switch172
+[10:45:40.846] [bmv2] [T] [thread 73570] [0.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(172) Primitive recirculate_preserving_field_list(0)
+[10:45:40.846] [bmv2] [D] [thread 73570] [0.0] [cxt 0] Pipeline 'egress': end
+[10:45:40.846] [bmv2] [D] [thread 73570] [0.0] [cxt 0] Deparser 'deparser': start
+[10:45:40.846] [bmv2] [D] [thread 73570] [0.0] [cxt 0] Deparsing header 'eth'
+[10:45:40.846] [bmv2] [D] [thread 73570] [0.0] [cxt 0] Deparsing header 'ipv4'
+[10:45:40.846] [bmv2] [D] [thread 73570] [0.0] [cxt 0] Deparsing header 'atp'
+[10:45:40.846] [bmv2] [D] [thread 73570] [0.0] [cxt 0] Deparser 'deparser': end
+[10:45:40.846] [bmv2] [D] [thread 73570] [0.0] [cxt 0] Recirculating packet
+[10:45:40.846] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Processing packet received on port 1
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Parser 'parser': start
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Parser 'parser' entering state 'start'
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Extracting header 'eth'
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Parser state 'start': key is 0800
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Bytes parsed: 14
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Extracting header 'ipv4'
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Parser state 'parse_ipv4': key is 99
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Bytes parsed: 34
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Parser 'parser' entering state 'parse_atp'
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Extracting header 'atp'
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Extracting header 'data'
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Parser state 'parse_atp' has no switch, going to default next state
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Bytes parsed: 90
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Parser 'parser': end
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Pipeline 'ingress': start
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Applying table 'tbl_ATP_switch99'
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Looking up key:
 
-[11:25:14.379] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Table 'MyIngress.pool_access': hit with handle 2
-[11:25:14.379] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Dumping entry 2
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Table 'tbl_ATP_switch99': miss
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Action entry is ATP_switch99 - 
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Action ATP_switch99
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(99) Primitive standard_metadata.egress_spec = 3
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(106) Primitive (bit<32>)index
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(106) Primitive owner_pool.read(owner, (bit<32>)index)
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Read register 'owner_pool' at index 3 read value 0
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Applying table 'MyIngress.pool_access'
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Looking up key:
+* hdr.data.aggregatorIndex: 0003
+
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Table 'MyIngress.pool_access': hit with handle 3
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Dumping entry 3
 Match key:
-* hdr.atp.aggregatorIndex: EXACT     0002
-Action entry: MyIngress.aggregate - 14,
+* hdr.data.aggregatorIndex: EXACT     0003
+Action entry: MyIngress.aggregate - 1e,
 
-[11:25:14.379] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Action entry is MyIngress.aggregate - 14,
-[11:25:14.379] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Action MyIngress.aggregate
-[11:25:14.379] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(43) Primitive meta.slice_index = slice_index
-[11:25:14.379] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(109) Condition "owner == hdr.atp.JobIdAndSequenceNumber" (node_4) is true
-[11:25:14.379] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Applying table 'tbl_sum'
-[11:25:14.379] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Looking up key:
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Action entry is MyIngress.aggregate - 1e,
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Action MyIngress.aggregate
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(43) Primitive meta.slice_index = slice_index
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(109) Condition "owner == hdr.atp.JobIdAndSequenceNumber" (node_4) is false
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(129) Condition "owner == 0" (node_18) is true
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Applying table 'tbl_ATP_switch133'
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Looking up key:
 
-[11:25:14.379] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Table 'tbl_sum': miss
-[11:25:14.379] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Action entry is MyIngress.sum - 
-[11:25:14.379] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Action MyIngress.sum
-[11:25:14.379] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
-[11:25:14.380] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
-[11:25:14.380] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Read register 'big_pool' at index 20 read value 1
-[11:25:14.380] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
-[11:25:14.380] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
-[11:25:14.380] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
-[11:25:14.380] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Wrote register 'big_pool' at index 20 with value 2
-[11:25:14.380] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
-[11:25:14.380] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Applying table 'tbl_sum_0'
-[11:25:14.380] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Looking up key:
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Table 'tbl_ATP_switch133': miss
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Action entry is ATP_switch133 - 
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Action ATP_switch133
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(133) Primitive (bit<32>) index
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(133) Primitive owner_pool.write((bit<32>) index, hdr.atp.JobIdAndSequenceNumber)
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Wrote register 'owner_pool' at index 3 with value 16777217
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Applying table 'tbl_sum_9'
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Looking up key:
 
-[11:25:14.380] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Table 'tbl_sum_0': miss
-[11:25:14.380] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Action entry is MyIngress.sum - 
-[11:25:14.380] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Action MyIngress.sum
-[11:25:14.380] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
-[11:25:14.380] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
-[11:25:14.380] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Read register 'big_pool' at index 21 read value 1
-[11:25:14.380] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
-[11:25:14.380] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
-[11:25:14.380] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
-[11:25:14.380] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Wrote register 'big_pool' at index 21 with value 2
-[11:25:14.380] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
-[11:25:14.380] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Applying table 'tbl_sum_1'
-[11:25:14.380] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Looking up key:
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Table 'tbl_sum_9': miss
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Action entry is MyIngress.sum - 
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Action MyIngress.sum
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Read register 'big_pool' at index 30 read value 0
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Wrote register 'big_pool' at index 30 with value 1
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Applying table 'tbl_sum_10'
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Looking up key:
 
-[11:25:14.380] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Table 'tbl_sum_1': miss
-[11:25:14.380] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Action entry is MyIngress.sum - 
-[11:25:14.380] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Action MyIngress.sum
-[11:25:14.380] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
-[11:25:14.380] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
-[11:25:14.380] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Read register 'big_pool' at index 22 read value 1
-[11:25:14.380] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
-[11:25:14.380] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
-[11:25:14.380] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
-[11:25:14.380] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Wrote register 'big_pool' at index 22 with value 2
-[11:25:14.380] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
-[11:25:14.380] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Applying table 'tbl_sum_2'
-[11:25:14.380] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Looking up key:
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Table 'tbl_sum_10': miss
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Action entry is MyIngress.sum - 
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Action MyIngress.sum
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Read register 'big_pool' at index 31 read value 0
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Wrote register 'big_pool' at index 31 with value 1
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Applying table 'tbl_sum_11'
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Looking up key:
 
-[11:25:14.380] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Table 'tbl_sum_2': miss
-[11:25:14.380] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Action entry is MyIngress.sum - 
-[11:25:14.380] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Action MyIngress.sum
-[11:25:14.380] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
-[11:25:14.380] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
-[11:25:14.380] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Read register 'big_pool' at index 23 read value 1
-[11:25:14.380] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
-[11:25:14.380] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
-[11:25:14.380] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
-[11:25:14.380] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Wrote register 'big_pool' at index 23 with value 2
-[11:25:14.380] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
-[11:25:14.380] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Applying table 'tbl_sum_3'
-[11:25:14.380] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Looking up key:
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Table 'tbl_sum_11': miss
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Action entry is MyIngress.sum - 
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Action MyIngress.sum
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Read register 'big_pool' at index 32 read value 0
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Wrote register 'big_pool' at index 32 with value 1
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Applying table 'tbl_sum_12'
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Looking up key:
 
-[11:25:14.380] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Table 'tbl_sum_3': miss
-[11:25:14.380] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Action entry is MyIngress.sum - 
-[11:25:14.380] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Action MyIngress.sum
-[11:25:14.380] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
-[11:25:14.380] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
-[11:25:14.380] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Read register 'big_pool' at index 24 read value 1
-[11:25:14.380] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
-[11:25:14.380] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
-[11:25:14.380] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
-[11:25:14.380] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Wrote register 'big_pool' at index 24 with value 2
-[11:25:14.380] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
-[11:25:14.380] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Applying table 'tbl_sum_4'
-[11:25:14.380] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Looking up key:
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Table 'tbl_sum_12': miss
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Action entry is MyIngress.sum - 
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Action MyIngress.sum
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Read register 'big_pool' at index 33 read value 0
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Wrote register 'big_pool' at index 33 with value 1
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Applying table 'tbl_sum_13'
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Looking up key:
 
-[11:25:14.380] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Table 'tbl_sum_4': miss
-[11:25:14.380] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Action entry is MyIngress.sum - 
-[11:25:14.380] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Action MyIngress.sum
-[11:25:14.380] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
-[11:25:14.380] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
-[11:25:14.380] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Read register 'big_pool' at index 25 read value 1
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Wrote register 'big_pool' at index 25 with value 2
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Applying table 'tbl_sum_5'
-[11:25:14.381] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Looking up key:
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Table 'tbl_sum_13': miss
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Action entry is MyIngress.sum - 
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Action MyIngress.sum
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Read register 'big_pool' at index 34 read value 0
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Wrote register 'big_pool' at index 34 with value 1
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Applying table 'tbl_sum_14'
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Looking up key:
 
-[11:25:14.381] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Table 'tbl_sum_5': miss
-[11:25:14.381] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Action entry is MyIngress.sum - 
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Action MyIngress.sum
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Read register 'big_pool' at index 26 read value 1
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Wrote register 'big_pool' at index 26 with value 2
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Applying table 'tbl_sum_6'
-[11:25:14.381] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Looking up key:
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Table 'tbl_sum_14': miss
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Action entry is MyIngress.sum - 
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Action MyIngress.sum
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Read register 'big_pool' at index 35 read value 0
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Wrote register 'big_pool' at index 35 with value 1
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Applying table 'tbl_sum_15'
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Looking up key:
 
-[11:25:14.381] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Table 'tbl_sum_6': miss
-[11:25:14.381] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Action entry is MyIngress.sum - 
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Action MyIngress.sum
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Read register 'big_pool' at index 27 read value 1
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Wrote register 'big_pool' at index 27 with value 2
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Applying table 'tbl_sum_7'
-[11:25:14.381] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Looking up key:
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Table 'tbl_sum_15': miss
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Action entry is MyIngress.sum - 
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Action MyIngress.sum
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Read register 'big_pool' at index 36 read value 0
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Wrote register 'big_pool' at index 36 with value 1
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Applying table 'tbl_sum_16'
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Looking up key:
 
-[11:25:14.381] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Table 'tbl_sum_7': miss
-[11:25:14.381] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Action entry is MyIngress.sum - 
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Action MyIngress.sum
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Read register 'big_pool' at index 28 read value 1
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Wrote register 'big_pool' at index 28 with value 2
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Applying table 'tbl_sum_8'
-[11:25:14.381] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Looking up key:
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Table 'tbl_sum_16': miss
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Action entry is MyIngress.sum - 
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Action MyIngress.sum
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Read register 'big_pool' at index 37 read value 0
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Wrote register 'big_pool' at index 37 with value 1
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Applying table 'tbl_sum_17'
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Looking up key:
 
-[11:25:14.381] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Table 'tbl_sum_8': miss
-[11:25:14.381] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Action entry is MyIngress.sum - 
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Action MyIngress.sum
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Read register 'big_pool' at index 29 read value 1
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Wrote register 'big_pool' at index 29 with value 2
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Applying table 'tbl_increase_counter'
-[11:25:14.381] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Looking up key:
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Table 'tbl_sum_17': miss
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Action entry is MyIngress.sum - 
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Action MyIngress.sum
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Read register 'big_pool' at index 38 read value 0
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Wrote register 'big_pool' at index 38 with value 1
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Applying table 'tbl_sum_18'
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Looking up key:
 
-[11:25:14.381] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Table 'tbl_increase_counter': miss
-[11:25:14.381] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Action entry is MyIngress.increase_counter - 
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Action MyIngress.increase_counter
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(49) Primitive (bit<32>) hdr.atp.aggregatorIndex
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(49) Primitive counts.read(value, (bit<32>) hdr.atp.aggregatorIndex)
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Read register 'counts' at index 2 read value 1
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(50) Primitive value = value + 1
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(51) Primitive (bit<32>) hdr.atp.aggregatorIndex
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(51) Primitive counts.write((bit<32>) hdr.atp.aggregatorIndex, value)
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Wrote register 'counts' at index 2 with value 2
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(52) Primitive meta.current_counter = value
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Applying table 'tbl_ATP_switch86'
-[11:25:14.381] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Looking up key:
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Table 'tbl_sum_18': miss
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Action entry is MyIngress.sum - 
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Action MyIngress.sum
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Read register 'big_pool' at index 39 read value 0
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Wrote register 'big_pool' at index 39 with value 1
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Applying table 'tbl_increase_counter_0'
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Looking up key:
 
-[11:25:14.381] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Table 'tbl_ATP_switch86': miss
-[11:25:14.381] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Action entry is ATP_switch86 - 
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Action ATP_switch86
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(86) Primitive hdr.atp.JobIdAndSequenceNumber[31:24]
-[11:25:14.381] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Applying table 'MyIngress.workers4job'
-[11:25:14.381] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Looking up key:
-* hdr.atp.JobIdAndSequenceNumber[31:24]: 01
-* meta.current_counter                 : 00000002
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Table 'tbl_increase_counter_0': miss
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Action entry is MyIngress.increase_counter - 
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Action MyIngress.increase_counter
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(49) Primitive (bit<32>) hdr.data.aggregatorIndex
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(49) Primitive counts.read(value, (bit<32>) hdr.data.aggregatorIndex)
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Read register 'counts' at index 3 read value 0
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(50) Primitive value = value + 1
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(51) Primitive (bit<32>) hdr.data.aggregatorIndex
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(51) Primitive counts.write((bit<32>) hdr.data.aggregatorIndex, value)
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] Wrote register 'counts' at index 3 with value 1
+[10:45:40.847] [bmv2] [T] [thread 73566] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(52) Primitive meta.current_counter = value
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Pipeline 'ingress': end
+[10:45:40.847] [bmv2] [D] [thread 73566] [0.1] [cxt 0] Egress port is 3
+[10:45:40.848] [bmv2] [D] [thread 73570] [0.1] [cxt 0] Pipeline 'egress': start
+[10:45:40.848] [bmv2] [T] [thread 73570] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(171) Condition "hdr.data.BOS == 0" (node_34) is true
+[10:45:40.848] [bmv2] [T] [thread 73570] [0.1] [cxt 0] Applying table 'tbl_ATP_switch172'
+[10:45:40.848] [bmv2] [D] [thread 73570] [0.1] [cxt 0] Looking up key:
 
-[11:25:14.382] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Table 'MyIngress.workers4job': miss
-[11:25:14.382] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Action entry is NoAction - 
-[11:25:14.382] [bmv2] [T] [thread 6562] [2.0] [cxt 0] Action NoAction
-[11:25:14.382] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Pipeline 'ingress': end
-[11:25:14.382] [bmv2] [D] [thread 6562] [2.0] [cxt 0] Egress port is 3
-[11:25:14.382] [bmv2] [D] [thread 6566] [2.0] [cxt 0] Pipeline 'egress': start
-[11:25:14.382] [bmv2] [D] [thread 6566] [2.0] [cxt 0] Pipeline 'egress': end
-[11:25:14.382] [bmv2] [D] [thread 6566] [2.0] [cxt 0] Deparser 'deparser': start
-[11:25:14.382] [bmv2] [D] [thread 6566] [2.0] [cxt 0] Deparsing header 'eth'
-[11:25:14.382] [bmv2] [D] [thread 6566] [2.0] [cxt 0] Deparsing header 'ipv4'
-[11:25:14.382] [bmv2] [D] [thread 6566] [2.0] [cxt 0] Deparsing header 'atp'
-[11:25:14.382] [bmv2] [D] [thread 6566] [2.0] [cxt 0] Deparsing header 'data'
-[11:25:14.382] [bmv2] [D] [thread 6566] [2.0] [cxt 0] Deparser 'deparser': end
-[11:25:14.382] [bmv2] [D] [thread 6567] [2.0] [cxt 0] Transmitting packet of size 90 out of port 3
-[11:25:54.751] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Processing packet received on port 1
-[11:25:54.751] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Parser 'parser': start
-[11:25:54.751] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Parser 'parser' entering state 'start'
-[11:25:54.751] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Extracting header 'eth'
-[11:25:54.751] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Parser state 'start': key is 0800
-[11:25:54.751] [bmv2] [T] [thread 6562] [3.0] [cxt 0] Bytes parsed: 14
-[11:25:54.751] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
-[11:25:54.751] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Extracting header 'ipv4'
-[11:25:54.751] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Parser state 'parse_ipv4': key is 99
-[11:25:54.751] [bmv2] [T] [thread 6562] [3.0] [cxt 0] Bytes parsed: 34
-[11:25:54.751] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Parser 'parser' entering state 'parse_atp'
-[11:25:54.751] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Extracting header 'atp'
-[11:25:54.751] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Extracting header 'data'
-[11:25:54.751] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Parser state 'parse_atp' has no switch, going to default next state
-[11:25:54.751] [bmv2] [T] [thread 6562] [3.0] [cxt 0] Bytes parsed: 90
-[11:25:54.751] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Parser 'parser': end
-[11:25:54.751] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Pipeline 'ingress': start
-[11:25:54.751] [bmv2] [T] [thread 6562] [3.0] [cxt 0] Applying table 'tbl_ATP_switch99'
-[11:25:54.751] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Looking up key:
+[10:45:40.848] [bmv2] [D] [thread 73570] [0.1] [cxt 0] Table 'tbl_ATP_switch172': miss
+[10:45:40.848] [bmv2] [D] [thread 73570] [0.1] [cxt 0] Action entry is ATP_switch172 - 
+[10:45:40.848] [bmv2] [T] [thread 73570] [0.1] [cxt 0] Action ATP_switch172
+[10:45:40.848] [bmv2] [T] [thread 73570] [0.1] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(172) Primitive recirculate_preserving_field_list(0)
+[10:45:40.848] [bmv2] [D] [thread 73570] [0.1] [cxt 0] Pipeline 'egress': end
+[10:45:40.848] [bmv2] [D] [thread 73570] [0.1] [cxt 0] Deparser 'deparser': start
+[10:45:40.848] [bmv2] [D] [thread 73570] [0.1] [cxt 0] Deparsing header 'eth'
+[10:45:40.848] [bmv2] [D] [thread 73570] [0.1] [cxt 0] Deparsing header 'ipv4'
+[10:45:40.848] [bmv2] [D] [thread 73570] [0.1] [cxt 0] Deparsing header 'atp'
+[10:45:40.848] [bmv2] [D] [thread 73570] [0.1] [cxt 0] Deparser 'deparser': end
+[10:45:40.848] [bmv2] [D] [thread 73570] [0.1] [cxt 0] Recirculating packet
+[10:45:40.848] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Processing packet received on port 1
+[10:45:40.848] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Parser 'parser': start
+[10:45:40.848] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Parser 'parser' entering state 'start'
+[10:45:40.848] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Extracting header 'eth'
+[10:45:40.848] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Parser state 'start': key is 0800
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Bytes parsed: 14
+[10:45:40.848] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[10:45:40.848] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Extracting header 'ipv4'
+[10:45:40.848] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Parser state 'parse_ipv4': key is 99
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Bytes parsed: 34
+[10:45:40.848] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Parser 'parser' entering state 'parse_atp'
+[10:45:40.848] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Extracting header 'atp'
+[10:45:40.848] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Extracting header 'data'
+[10:45:40.848] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Parser state 'parse_atp' has no switch, going to default next state
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Bytes parsed: 90
+[10:45:40.848] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Parser 'parser': end
+[10:45:40.848] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Pipeline 'ingress': start
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Applying table 'tbl_ATP_switch99'
+[10:45:40.848] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Looking up key:
 
-[11:25:54.751] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Table 'tbl_ATP_switch99': miss
-[11:25:54.751] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Action entry is ATP_switch99 - 
-[11:25:54.751] [bmv2] [T] [thread 6562] [3.0] [cxt 0] Action ATP_switch99
-[11:25:54.751] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(99) Primitive standard_metadata.egress_spec = 3
-[11:25:54.751] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(106) Primitive (bit<32>)index
-[11:25:54.751] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(106) Primitive owner_pool.read(owner, (bit<32>)index)
-[11:25:54.751] [bmv2] [E] [thread 6562] [3.0] [cxt 0] Attempted to read register 'owner_pool' with size 5 at out-of-bounds index 256.  Dest field was not updated.
-[11:25:54.751] [bmv2] [T] [thread 6562] [3.0] [cxt 0] Applying table 'MyIngress.pool_access'
-[11:25:54.751] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Looking up key:
-* hdr.atp.aggregatorIndex: 0100
+[10:45:40.848] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Table 'tbl_ATP_switch99': miss
+[10:45:40.848] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Action entry is ATP_switch99 - 
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Action ATP_switch99
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(99) Primitive standard_metadata.egress_spec = 3
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(106) Primitive (bit<32>)index
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(106) Primitive owner_pool.read(owner, (bit<32>)index)
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Read register 'owner_pool' at index 4 read value 0
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Applying table 'MyIngress.pool_access'
+[10:45:40.848] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Looking up key:
+* hdr.data.aggregatorIndex: 0004
 
-[11:25:54.751] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Table 'MyIngress.pool_access': miss
-[11:25:54.751] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Action entry is NoAction - 
-[11:25:54.751] [bmv2] [T] [thread 6562] [3.0] [cxt 0] Action NoAction
-[11:25:54.751] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(109) Condition "owner == hdr.atp.JobIdAndSequenceNumber" (node_4) is false
-[11:25:54.751] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(129) Condition "owner == 0" (node_18) is true
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] Applying table 'tbl_ATP_switch133'
-[11:25:54.752] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Looking up key:
+[10:45:40.848] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Table 'MyIngress.pool_access': hit with handle 4
+[10:45:40.848] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Dumping entry 4
+Match key:
+* hdr.data.aggregatorIndex: EXACT     0004
+Action entry: MyIngress.aggregate - 28,
 
-[11:25:54.752] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Table 'tbl_ATP_switch133': miss
-[11:25:54.752] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Action entry is ATP_switch133 - 
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] Action ATP_switch133
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(133) Primitive (bit<32>) index
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(133) Primitive owner_pool.write((bit<32>) index, hdr.atp.JobIdAndSequenceNumber)
-[11:25:54.752] [bmv2] [E] [thread 6562] [3.0] [cxt 0] Attempted to write register 'owner_pool' with size 5 at out-of-bounds index 256.  No register array elements were updated.
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] Applying table 'tbl_sum_9'
-[11:25:54.752] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Looking up key:
+[10:45:40.848] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Action entry is MyIngress.aggregate - 28,
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Action MyIngress.aggregate
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(43) Primitive meta.slice_index = slice_index
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(109) Condition "owner == hdr.atp.JobIdAndSequenceNumber" (node_4) is false
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(129) Condition "owner == 0" (node_18) is true
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Applying table 'tbl_ATP_switch133'
+[10:45:40.848] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Looking up key:
 
-[11:25:54.752] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Table 'tbl_sum_9': miss
-[11:25:54.752] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Action entry is MyIngress.sum - 
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] Action MyIngress.sum
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] Read register 'big_pool' at index 0 read value 0
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] Wrote register 'big_pool' at index 0 with value 1
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] Applying table 'tbl_sum_10'
-[11:25:54.752] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Looking up key:
+[10:45:40.848] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Table 'tbl_ATP_switch133': miss
+[10:45:40.848] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Action entry is ATP_switch133 - 
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Action ATP_switch133
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(133) Primitive (bit<32>) index
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(133) Primitive owner_pool.write((bit<32>) index, hdr.atp.JobIdAndSequenceNumber)
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Wrote register 'owner_pool' at index 4 with value 16777217
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Applying table 'tbl_sum_9'
+[10:45:40.848] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Looking up key:
 
-[11:25:54.752] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Table 'tbl_sum_10': miss
-[11:25:54.752] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Action entry is MyIngress.sum - 
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] Action MyIngress.sum
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] Read register 'big_pool' at index 1 read value 0
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] Wrote register 'big_pool' at index 1 with value 1
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] Applying table 'tbl_sum_11'
-[11:25:54.752] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Looking up key:
+[10:45:40.848] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Table 'tbl_sum_9': miss
+[10:45:40.848] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Action entry is MyIngress.sum - 
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Action MyIngress.sum
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Read register 'big_pool' at index 40 read value 0
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Wrote register 'big_pool' at index 40 with value 1
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Applying table 'tbl_sum_10'
+[10:45:40.848] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Looking up key:
 
-[11:25:54.752] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Table 'tbl_sum_11': miss
-[11:25:54.752] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Action entry is MyIngress.sum - 
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] Action MyIngress.sum
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] Read register 'big_pool' at index 2 read value 0
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] Wrote register 'big_pool' at index 2 with value 1
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] Applying table 'tbl_sum_12'
-[11:25:54.752] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Looking up key:
+[10:45:40.848] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Table 'tbl_sum_10': miss
+[10:45:40.848] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Action entry is MyIngress.sum - 
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Action MyIngress.sum
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Read register 'big_pool' at index 41 read value 0
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Wrote register 'big_pool' at index 41 with value 1
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Applying table 'tbl_sum_11'
+[10:45:40.848] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Looking up key:
 
-[11:25:54.752] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Table 'tbl_sum_12': miss
-[11:25:54.752] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Action entry is MyIngress.sum - 
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] Action MyIngress.sum
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] Read register 'big_pool' at index 3 read value 0
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] Wrote register 'big_pool' at index 3 with value 1
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] Applying table 'tbl_sum_13'
-[11:25:54.752] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Looking up key:
+[10:45:40.848] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Table 'tbl_sum_11': miss
+[10:45:40.848] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Action entry is MyIngress.sum - 
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Action MyIngress.sum
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Read register 'big_pool' at index 42 read value 0
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Wrote register 'big_pool' at index 42 with value 1
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Applying table 'tbl_sum_12'
+[10:45:40.848] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Looking up key:
 
-[11:25:54.752] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Table 'tbl_sum_13': miss
-[11:25:54.752] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Action entry is MyIngress.sum - 
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] Action MyIngress.sum
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] Read register 'big_pool' at index 4 read value 0
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] Wrote register 'big_pool' at index 4 with value 1
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] Applying table 'tbl_sum_14'
-[11:25:54.752] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Looking up key:
+[10:45:40.848] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Table 'tbl_sum_12': miss
+[10:45:40.848] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Action entry is MyIngress.sum - 
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Action MyIngress.sum
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[10:45:40.848] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Read register 'big_pool' at index 43 read value 0
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Wrote register 'big_pool' at index 43 with value 1
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Applying table 'tbl_sum_13'
+[10:45:40.849] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Looking up key:
 
-[11:25:54.752] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Table 'tbl_sum_14': miss
-[11:25:54.752] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Action entry is MyIngress.sum - 
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] Action MyIngress.sum
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] Read register 'big_pool' at index 5 read value 0
-[11:25:54.752] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
-[11:25:54.753] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
-[11:25:54.753] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
-[11:25:54.753] [bmv2] [T] [thread 6562] [3.0] [cxt 0] Wrote register 'big_pool' at index 5 with value 1
-[11:25:54.753] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
-[11:25:54.753] [bmv2] [T] [thread 6562] [3.0] [cxt 0] Applying table 'tbl_sum_15'
-[11:25:54.753] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Looking up key:
+[10:45:40.849] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Table 'tbl_sum_13': miss
+[10:45:40.849] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Action entry is MyIngress.sum - 
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Action MyIngress.sum
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Read register 'big_pool' at index 44 read value 0
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Wrote register 'big_pool' at index 44 with value 1
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Applying table 'tbl_sum_14'
+[10:45:40.849] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Looking up key:
 
-[11:25:54.753] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Table 'tbl_sum_15': miss
-[11:25:54.753] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Action entry is MyIngress.sum - 
-[11:25:54.753] [bmv2] [T] [thread 6562] [3.0] [cxt 0] Action MyIngress.sum
-[11:25:54.753] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
-[11:25:54.753] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
-[11:25:54.753] [bmv2] [T] [thread 6562] [3.0] [cxt 0] Read register 'big_pool' at index 6 read value 0
-[11:25:54.753] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
-[11:25:54.753] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
-[11:25:54.753] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
-[11:25:54.753] [bmv2] [T] [thread 6562] [3.0] [cxt 0] Wrote register 'big_pool' at index 6 with value 1
-[11:25:54.753] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
-[11:25:54.753] [bmv2] [T] [thread 6562] [3.0] [cxt 0] Applying table 'tbl_sum_16'
-[11:25:54.753] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Looking up key:
+[10:45:40.849] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Table 'tbl_sum_14': miss
+[10:45:40.849] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Action entry is MyIngress.sum - 
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Action MyIngress.sum
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Read register 'big_pool' at index 45 read value 0
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Wrote register 'big_pool' at index 45 with value 1
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Applying table 'tbl_sum_15'
+[10:45:40.849] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Looking up key:
 
-[11:25:54.753] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Table 'tbl_sum_16': miss
-[11:25:54.753] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Action entry is MyIngress.sum - 
-[11:25:54.753] [bmv2] [T] [thread 6562] [3.0] [cxt 0] Action MyIngress.sum
-[11:25:54.753] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
-[11:25:54.753] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
-[11:25:54.753] [bmv2] [T] [thread 6562] [3.0] [cxt 0] Read register 'big_pool' at index 7 read value 0
-[11:25:54.753] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
-[11:25:54.753] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
-[11:25:54.753] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
-[11:25:54.753] [bmv2] [T] [thread 6562] [3.0] [cxt 0] Wrote register 'big_pool' at index 7 with value 1
-[11:25:54.753] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
-[11:25:54.753] [bmv2] [T] [thread 6562] [3.0] [cxt 0] Applying table 'tbl_sum_17'
-[11:25:54.753] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Looking up key:
+[10:45:40.849] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Table 'tbl_sum_15': miss
+[10:45:40.849] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Action entry is MyIngress.sum - 
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Action MyIngress.sum
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Read register 'big_pool' at index 46 read value 0
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Wrote register 'big_pool' at index 46 with value 1
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Applying table 'tbl_sum_16'
+[10:45:40.849] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Looking up key:
 
-[11:25:54.753] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Table 'tbl_sum_17': miss
-[11:25:54.753] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Action entry is MyIngress.sum - 
-[11:25:54.753] [bmv2] [T] [thread 6562] [3.0] [cxt 0] Action MyIngress.sum
-[11:25:54.753] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
-[11:25:54.753] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
-[11:25:54.753] [bmv2] [T] [thread 6562] [3.0] [cxt 0] Read register 'big_pool' at index 8 read value 0
-[11:25:54.753] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
-[11:25:54.753] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
-[11:25:54.753] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
-[11:25:54.753] [bmv2] [T] [thread 6562] [3.0] [cxt 0] Wrote register 'big_pool' at index 8 with value 1
-[11:25:54.753] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
-[11:25:54.753] [bmv2] [T] [thread 6562] [3.0] [cxt 0] Applying table 'tbl_sum_18'
-[11:25:54.753] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Looking up key:
+[10:45:40.849] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Table 'tbl_sum_16': miss
+[10:45:40.849] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Action entry is MyIngress.sum - 
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Action MyIngress.sum
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Read register 'big_pool' at index 47 read value 0
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Wrote register 'big_pool' at index 47 with value 1
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Applying table 'tbl_sum_17'
+[10:45:40.849] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Looking up key:
 
-[11:25:54.753] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Table 'tbl_sum_18': miss
-[11:25:54.753] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Action entry is MyIngress.sum - 
-[11:25:54.753] [bmv2] [T] [thread 6562] [3.0] [cxt 0] Action MyIngress.sum
-[11:25:54.753] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
-[11:25:54.753] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
-[11:25:54.753] [bmv2] [T] [thread 6562] [3.0] [cxt 0] Read register 'big_pool' at index 9 read value 0
-[11:25:54.753] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
-[11:25:54.753] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
-[11:25:54.753] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
-[11:25:54.753] [bmv2] [T] [thread 6562] [3.0] [cxt 0] Wrote register 'big_pool' at index 9 with value 1
-[11:25:54.753] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
-[11:25:54.753] [bmv2] [T] [thread 6562] [3.0] [cxt 0] Applying table 'tbl_increase_counter_0'
-[11:25:54.753] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Looking up key:
+[10:45:40.849] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Table 'tbl_sum_17': miss
+[10:45:40.849] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Action entry is MyIngress.sum - 
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Action MyIngress.sum
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Read register 'big_pool' at index 48 read value 0
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Wrote register 'big_pool' at index 48 with value 1
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Applying table 'tbl_sum_18'
+[10:45:40.849] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Looking up key:
 
-[11:25:54.753] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Table 'tbl_increase_counter_0': miss
-[11:25:54.753] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Action entry is MyIngress.increase_counter - 
-[11:25:54.753] [bmv2] [T] [thread 6562] [3.0] [cxt 0] Action MyIngress.increase_counter
-[11:25:54.753] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(49) Primitive (bit<32>) hdr.atp.aggregatorIndex
-[11:25:54.753] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(49) Primitive counts.read(value, (bit<32>) hdr.atp.aggregatorIndex)
-[11:25:54.753] [bmv2] [E] [thread 6562] [3.0] [cxt 0] Attempted to read register 'counts' with size 5 at out-of-bounds index 256.  Dest field was not updated.
-[11:25:54.753] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(50) Primitive value = value + 1
-[11:25:54.753] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(51) Primitive (bit<32>) hdr.atp.aggregatorIndex
-[11:25:54.753] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(51) Primitive counts.write((bit<32>) hdr.atp.aggregatorIndex, value)
-[11:25:54.753] [bmv2] [E] [thread 6562] [3.0] [cxt 0] Attempted to write register 'counts' with size 5 at out-of-bounds index 256.  No register array elements were updated.
-[11:25:54.753] [bmv2] [T] [thread 6562] [3.0] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(52) Primitive meta.current_counter = value
-[11:25:54.753] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Pipeline 'ingress': end
-[11:25:54.753] [bmv2] [D] [thread 6562] [3.0] [cxt 0] Egress port is 3
-[11:25:54.754] [bmv2] [D] [thread 6566] [3.0] [cxt 0] Pipeline 'egress': start
-[11:25:54.754] [bmv2] [D] [thread 6566] [3.0] [cxt 0] Pipeline 'egress': end
-[11:25:54.754] [bmv2] [D] [thread 6566] [3.0] [cxt 0] Deparser 'deparser': start
-[11:25:54.754] [bmv2] [D] [thread 6566] [3.0] [cxt 0] Deparsing header 'eth'
-[11:25:54.754] [bmv2] [D] [thread 6566] [3.0] [cxt 0] Deparsing header 'ipv4'
-[11:25:54.754] [bmv2] [D] [thread 6566] [3.0] [cxt 0] Deparsing header 'atp'
-[11:25:54.754] [bmv2] [D] [thread 6566] [3.0] [cxt 0] Deparsing header 'data'
-[11:25:54.754] [bmv2] [D] [thread 6566] [3.0] [cxt 0] Deparser 'deparser': end
-[11:25:54.754] [bmv2] [D] [thread 6567] [3.0] [cxt 0] Transmitting packet of size 174 out of port 3
+[10:45:40.849] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Table 'tbl_sum_18': miss
+[10:45:40.849] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Action entry is MyIngress.sum - 
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Action MyIngress.sum
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Read register 'big_pool' at index 49 read value 0
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive n0
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Wrote register 'big_pool' at index 49 with value 1
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(27) Primitive n0, ...
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Applying table 'tbl_increase_counter_0'
+[10:45:40.849] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Looking up key:
+
+[10:45:40.849] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Table 'tbl_increase_counter_0': miss
+[10:45:40.849] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Action entry is MyIngress.increase_counter - 
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Action MyIngress.increase_counter
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(49) Primitive (bit<32>) hdr.data.aggregatorIndex
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(49) Primitive counts.read(value, (bit<32>) hdr.data.aggregatorIndex)
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Read register 'counts' at index 4 read value 0
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(50) Primitive value = value + 1
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(51) Primitive (bit<32>) hdr.data.aggregatorIndex
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(51) Primitive counts.write((bit<32>) hdr.data.aggregatorIndex, value)
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] Wrote register 'counts' at index 4 with value 1
+[10:45:40.849] [bmv2] [T] [thread 73566] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(52) Primitive meta.current_counter = value
+[10:45:40.849] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Pipeline 'ingress': end
+[10:45:40.849] [bmv2] [D] [thread 73566] [0.2] [cxt 0] Egress port is 3
+[10:45:40.849] [bmv2] [D] [thread 73570] [0.2] [cxt 0] Pipeline 'egress': start
+[10:45:40.849] [bmv2] [T] [thread 73570] [0.2] [cxt 0] /home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4(171) Condition "hdr.data.BOS == 0" (node_34) is false
+[10:45:40.849] [bmv2] [D] [thread 73570] [0.2] [cxt 0] Pipeline 'egress': end
+[10:45:40.849] [bmv2] [D] [thread 73570] [0.2] [cxt 0] Deparser 'deparser': start
+[10:45:40.849] [bmv2] [D] [thread 73570] [0.2] [cxt 0] Deparsing header 'eth'
+[10:45:40.849] [bmv2] [D] [thread 73570] [0.2] [cxt 0] Deparsing header 'ipv4'
+[10:45:40.849] [bmv2] [D] [thread 73570] [0.2] [cxt 0] Deparsing header 'atp'
+[10:45:40.849] [bmv2] [D] [thread 73570] [0.2] [cxt 0] Deparser 'deparser': end
+[10:45:40.849] [bmv2] [D] [thread 73571] [0.2] [cxt 0] Transmitting packet of size 48 out of port 3

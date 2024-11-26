@@ -13,7 +13,9 @@ PROTOCOL_ATP = 0x99
 class Data(Packet): 
     name = 'Data'
     #As the numbers of elements that will enter in a 
-    fields_desc = [BitField(f'd{i}', default=0, size = 32) for i in range(1,11)]
+    #Moved the aggregatorIndex to the data 
+    fields_desc = [BitField('aggregatorIndex', default = 0, size = 15), BitField('BOS', default = 0, size = 1)] + [BitField(f'd{i}', default=0, size = 32) for i in range(1,11)]
+
 
 class ATP(Packet):
 
@@ -37,7 +39,6 @@ class ATP(Packet):
         BitField('bitmap0', default = 0, size = 32),
         BitField('bitmap1', default = 0, size = 32),
         BitField('row_3', default = 0, size = 16),
-        BitField('aggregatorIndex', default = 0, size = 16),
         BitField('JobIdAndSequenceNumber', default = 0, size = 32)
         ]
     
@@ -90,6 +91,14 @@ def handle_pkt(packet) -> None:
     ip = packet.getlayer(IP)
     atp = packet.getlayer(ATP)
     payload = packet.getlayer(Data)
+    payload_2 = packet.getlayer(Data)
+    payload_3 = packet.getlayer(Data)
+
+
+    payload.show()
+    payload_2.show()
+    payload_3.show()
+    
     #the job/sequence is an integer
     job_id, sequence_number = read_bits(atp.JobIdAndSequenceNumber, 32,[8, 24])
     print(f"INFORMATION ABOUT job_id: {job_id} sequence_number: {sequence_number}")

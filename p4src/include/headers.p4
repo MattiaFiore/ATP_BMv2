@@ -47,11 +47,12 @@ header atp_t{
     bit<1> ecn;
     bit<1> edgeSwitchIdentifier;
     bit<1> isAck;
-    bit<16> aggregatorIndex;
     bit<32> JobIdAndSequenceNumber;
 }
 
 header data_h{
+    bit<15> aggregatorIndex;
+    bit<1> BOS; 
     value_t n01;
     value_t n02;
     value_t n03; 

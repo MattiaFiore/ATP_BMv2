@@ -9,8 +9,8 @@ tables {
   }
   match_fields {
     id: 1
-    name: "hdr.atp.aggregatorIndex"
-    bitwidth: 16
+    name: "hdr.data.aggregatorIndex"
+    bitwidth: 15
     match_type: EXACT
   }
   action_refs {
