@@ -75,8 +75,9 @@ header data_h{
 }
 
 struct metadata{
-    bit<16> slice_index; //This will be 0, 10, 20,  ...
+    bit<16> slice_index; //This will be 0, 20, 40,  ...
     bit<32> current_counter; 
+    bit<1> already_aggregated; 
 }
 
 struct headers {

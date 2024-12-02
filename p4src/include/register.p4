@@ -11,3 +11,6 @@ register<bit<32>>(10) owner_pool;
 
 // Counter for packets 
 register<bit<32>>(10) counts;
+
+//Bitmap values 
+register<bit<32>>(10) bitmap_register; 

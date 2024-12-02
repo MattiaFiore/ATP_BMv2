@@ -973,8 +973,9 @@ header data_h{
 }
 
 struct metadata{
-    bit<16> slice_index; //This will be 0, 10, 20,  ...
+    bit<16> slice_index; //This will be 0, 20, 40,  ...
     bit<32> current_counter;
+    bit<1> already_aggregated;
 }
 
 struct headers {
@@ -1037,6 +1038,9 @@ register<bit<32>>(10) owner_pool;
 
 // Counter for packets 
 register<bit<32>>(10) counts;
+
+//Bitmap values 
+register<bit<32>>(10) bitmap_register;
 # 8 "/home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4" 2
 
 
@@ -1160,8 +1164,28 @@ control MyIngress(inout headers hdr,
         default_action = NoAction;
     }
 
+    action or_bitmap(bit<32> bitmap){
+
+        bit<32> value;
+        bit<32> value2;
+        bitmap_register.read(value, (bit<32>) hdr.atp.aggregatorIndex);
+        value2 = value;
+        value = value | bitmap;
+
+        bitmap_register.write((bit<32>) hdr.atp.aggregatorIndex, value);
+
+        if (value == value2){
+            // there is no need to aggregate
+            meta.already_aggregated = (bit<1>) 1;
+        } else {
+            meta.already_aggregated = (bit<1>) 0;
+        }
+
+    }
+
     apply {
         // In order to see the packet somewhere
+        // [FIX]: implement 
         standard_metadata.egress_spec = 3;
 
         // In aggregation index there is the index of the pool on which to aggregate
@@ -1174,11 +1198,15 @@ control MyIngress(inout headers hdr,
 
         if (owner == hdr.atp.JobIdAndSequenceNumber){
 
-            // The owner as alreay bin set 
-            aggregate_values();
+            or_bitmap(hdr.atp.bitmap0);
+            if ( meta.already_aggregated == 0) {
+                // The owner as alreay bin set 
+                aggregate_values();
 
-            increase_counter();
-            workers4job.apply();
+                increase_counter();
+                workers4job.apply();
+            }
+
 
         } else {
             if (owner == 0){
@@ -1188,10 +1216,9 @@ control MyIngress(inout headers hdr,
                 owner_pool.write((bit<32>) index, hdr.atp.JobIdAndSequenceNumber);
 
                 //Add values inside the register
+                or_bitmap(hdr.atp.bitmap0);
                 aggregate_values();
-
                 increase_counter();
-
 
             } else {
                 // The pool selected is NOT FREE

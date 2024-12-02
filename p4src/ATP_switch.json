@@ -152,12 +152,20 @@
         ["tmp_144", 32, false],
         ["tmp_145", 32, false],
         ["tmp_146", 32, false],
+        ["tmp_147", 32, false],
+        ["tmp_148", 32, false],
+        ["tmp_149", 32, false],
+        ["tmp_150", 32, false],
         ["value_0", 32, false],
         ["value_1", 32, false],
+        ["value_2", 32, false],
+        ["value2_0", 32, false],
         ["owner_0", 32, false],
         ["key_0", 8, false],
         ["metadata.slice_index", 16, false],
-        ["metadata.current_counter", 32, false]
+        ["metadata.current_counter", 32, false],
+        ["metadata.already_aggregated", 1, false],
+        ["_padding_0", 7, false]
       ]
     },
     {
@@ -434,7 +442,7 @@
       "id" : 0,
       "source_info" : {
         "filename" : "/home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4",
-        "line" : 199,
+        "line" : 222,
         "column" : 8,
         "source_fragment" : "MyDeparser"
       },
@@ -477,6 +485,18 @@
         "line" : 13,
         "column" : 22,
         "source_fragment" : "counts"
+      },
+      "size" : 10,
+      "bitwidth" : 32
+    },
+    {
+      "name" : "bitmap_register",
+      "id" : 3,
+      "source_info" : {
+        "filename" : "/home/mattiafiore/Desktop/ATP_BMv2/p4src/include/register.p4",
+        "line" : 16,
+        "column" : 22,
+        "source_fragment" : "bitmap_register"
       },
       "size" : 10,
       "bitwidth" : 32
@@ -11296,29 +11316,10 @@
       ]
     },
     {
-      "name" : "ATP_switch132",
+      "name" : "MyIngress.or_bitmap",
       "id" : 8,
       "runtime_data" : [],
       "primitives" : [
-        {
-          "op" : "assign",
-          "parameters" : [
-            {
-              "type" : "field",
-              "value" : ["standard_metadata", "egress_spec"]
-            },
-            {
-              "type" : "hexstr",
-              "value" : "0x0003"
-            }
-          ],
-          "source_info" : {
-            "filename" : "/home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4",
-            "line" : 132,
-            "column" : 8,
-            "source_fragment" : "standard_metadata.egress_spec = 3"
-          }
-        },
         {
           "op" : "assign",
           "parameters" : [
@@ -11346,7 +11347,442 @@
           ],
           "source_info" : {
             "filename" : "/home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4",
-            "line" : 139,
+            "line" : 134,
+            "column" : 36,
+            "source_fragment" : "(bit<32>) hdr.atp.aggregatorIndex"
+          }
+        },
+        {
+          "op" : "register_read",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "value_2"]
+            },
+            {
+              "type" : "register_array",
+              "value" : "bitmap_register"
+            },
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_145"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4",
+            "line" : 134,
+            "column" : 8,
+            "source_fragment" : "bitmap_register.read(value, (bit<32>) hdr.atp.aggregatorIndex)"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "value2_0"]
+            },
+            {
+              "type" : "field",
+              "value" : ["scalars", "value_2"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4",
+            "line" : 135,
+            "column" : 8,
+            "source_fragment" : "value2 = value"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "value_2"]
+            },
+            {
+              "type" : "expression",
+              "value" : {
+                "type" : "expression",
+                "value" : {
+                  "op" : "|",
+                  "left" : {
+                    "type" : "field",
+                    "value" : ["scalars", "value_2"]
+                  },
+                  "right" : {
+                    "type" : "field",
+                    "value" : ["atp", "bitmap0"]
+                  }
+                }
+              }
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4",
+            "line" : 136,
+            "column" : 8,
+            "source_fragment" : "value = value | bitmap"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_146"]
+            },
+            {
+              "type" : "expression",
+              "value" : {
+                "type" : "expression",
+                "value" : {
+                  "op" : "&",
+                  "left" : {
+                    "type" : "field",
+                    "value" : ["atp", "aggregatorIndex"]
+                  },
+                  "right" : {
+                    "type" : "hexstr",
+                    "value" : "0xffffffff"
+                  }
+                }
+              }
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4",
+            "line" : 138,
+            "column" : 30,
+            "source_fragment" : "(bit<32>) hdr.atp.aggregatorIndex"
+          }
+        },
+        {
+          "op" : "register_write",
+          "parameters" : [
+            {
+              "type" : "register_array",
+              "value" : "bitmap_register"
+            },
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_146"]
+            },
+            {
+              "type" : "field",
+              "value" : ["scalars", "value_2"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4",
+            "line" : 138,
+            "column" : 8,
+            "source_fragment" : "bitmap_register.write((bit<32>) hdr.atp.aggregatorIndex, value)"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "metadata.already_aggregated"]
+            },
+            {
+              "type" : "expression",
+              "value" : {
+                "type" : "expression",
+                "value" : {
+                  "op" : "?",
+                  "left" : {
+                    "type" : "hexstr",
+                    "value" : "0x01"
+                  },
+                  "right" : {
+                    "type" : "hexstr",
+                    "value" : "0x00"
+                  },
+                  "cond" : {
+                    "type" : "expression",
+                    "value" : {
+                      "op" : "==",
+                      "left" : {
+                        "type" : "field",
+                        "value" : ["scalars", "value_2"]
+                      },
+                      "right" : {
+                        "type" : "field",
+                        "value" : ["scalars", "value2_0"]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name" : "MyIngress.or_bitmap",
+      "id" : 9,
+      "runtime_data" : [],
+      "primitives" : [
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_147"]
+            },
+            {
+              "type" : "expression",
+              "value" : {
+                "type" : "expression",
+                "value" : {
+                  "op" : "&",
+                  "left" : {
+                    "type" : "field",
+                    "value" : ["atp", "aggregatorIndex"]
+                  },
+                  "right" : {
+                    "type" : "hexstr",
+                    "value" : "0xffffffff"
+                  }
+                }
+              }
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4",
+            "line" : 134,
+            "column" : 36,
+            "source_fragment" : "(bit<32>) hdr.atp.aggregatorIndex"
+          }
+        },
+        {
+          "op" : "register_read",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "value_2"]
+            },
+            {
+              "type" : "register_array",
+              "value" : "bitmap_register"
+            },
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_147"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4",
+            "line" : 134,
+            "column" : 8,
+            "source_fragment" : "bitmap_register.read(value, (bit<32>) hdr.atp.aggregatorIndex)"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "value2_0"]
+            },
+            {
+              "type" : "field",
+              "value" : ["scalars", "value_2"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4",
+            "line" : 135,
+            "column" : 8,
+            "source_fragment" : "value2 = value"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "value_2"]
+            },
+            {
+              "type" : "expression",
+              "value" : {
+                "type" : "expression",
+                "value" : {
+                  "op" : "|",
+                  "left" : {
+                    "type" : "field",
+                    "value" : ["scalars", "value_2"]
+                  },
+                  "right" : {
+                    "type" : "field",
+                    "value" : ["atp", "bitmap0"]
+                  }
+                }
+              }
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4",
+            "line" : 136,
+            "column" : 8,
+            "source_fragment" : "value = value | bitmap"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_148"]
+            },
+            {
+              "type" : "expression",
+              "value" : {
+                "type" : "expression",
+                "value" : {
+                  "op" : "&",
+                  "left" : {
+                    "type" : "field",
+                    "value" : ["atp", "aggregatorIndex"]
+                  },
+                  "right" : {
+                    "type" : "hexstr",
+                    "value" : "0xffffffff"
+                  }
+                }
+              }
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4",
+            "line" : 138,
+            "column" : 30,
+            "source_fragment" : "(bit<32>) hdr.atp.aggregatorIndex"
+          }
+        },
+        {
+          "op" : "register_write",
+          "parameters" : [
+            {
+              "type" : "register_array",
+              "value" : "bitmap_register"
+            },
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_148"]
+            },
+            {
+              "type" : "field",
+              "value" : ["scalars", "value_2"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4",
+            "line" : 138,
+            "column" : 8,
+            "source_fragment" : "bitmap_register.write((bit<32>) hdr.atp.aggregatorIndex, value)"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "metadata.already_aggregated"]
+            },
+            {
+              "type" : "expression",
+              "value" : {
+                "type" : "expression",
+                "value" : {
+                  "op" : "?",
+                  "left" : {
+                    "type" : "hexstr",
+                    "value" : "0x01"
+                  },
+                  "right" : {
+                    "type" : "hexstr",
+                    "value" : "0x00"
+                  },
+                  "cond" : {
+                    "type" : "expression",
+                    "value" : {
+                      "op" : "==",
+                      "left" : {
+                        "type" : "field",
+                        "value" : ["scalars", "value_2"]
+                      },
+                      "right" : {
+                        "type" : "field",
+                        "value" : ["scalars", "value2_0"]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name" : "ATP_switch152",
+      "id" : 10,
+      "runtime_data" : [],
+      "primitives" : [
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["standard_metadata", "egress_spec"]
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x0003"
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4",
+            "line" : 152,
+            "column" : 8,
+            "source_fragment" : "standard_metadata.egress_spec = 3"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "tmp_149"]
+            },
+            {
+              "type" : "expression",
+              "value" : {
+                "type" : "expression",
+                "value" : {
+                  "op" : "&",
+                  "left" : {
+                    "type" : "field",
+                    "value" : ["atp", "aggregatorIndex"]
+                  },
+                  "right" : {
+                    "type" : "hexstr",
+                    "value" : "0xffffffff"
+                  }
+                }
+              }
+            }
+          ],
+          "source_info" : {
+            "filename" : "/home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4",
+            "line" : 159,
             "column" : 31,
             "source_fragment" : "(bit<32>)index"
           }
@@ -11364,12 +11800,12 @@
             },
             {
               "type" : "field",
-              "value" : ["scalars", "tmp_145"]
+              "value" : ["scalars", "tmp_149"]
             }
           ],
           "source_info" : {
             "filename" : "/home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4",
-            "line" : 139,
+            "line" : 159,
             "column" : 8,
             "source_fragment" : "owner_pool.read(owner, (bit<32>)index)"
           }
@@ -11378,7 +11814,7 @@
     },
     {
       "name" : "ATP_switch119",
-      "id" : 9,
+      "id" : 11,
       "runtime_data" : [],
       "primitives" : [
         {
@@ -11436,8 +11872,8 @@
       ]
     },
     {
-      "name" : "ATP_switch155",
-      "id" : 10,
+      "name" : "ATP_switch179",
+      "id" : 12,
       "runtime_data" : [],
       "primitives" : [
         {
@@ -11445,7 +11881,7 @@
           "parameters" : [
             {
               "type" : "field",
-              "value" : ["scalars", "tmp_146"]
+              "value" : ["scalars", "tmp_150"]
             },
             {
               "type" : "expression",
@@ -11467,7 +11903,7 @@
           ],
           "source_info" : {
             "filename" : "/home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4",
-            "line" : 155,
+            "line" : 179,
             "column" : 33,
             "source_fragment" : "(bit<32>) index"
           }
@@ -11481,7 +11917,7 @@
             },
             {
               "type" : "field",
-              "value" : ["scalars", "tmp_146"]
+              "value" : ["scalars", "tmp_150"]
             },
             {
               "type" : "field",
@@ -11490,7 +11926,7 @@
           ],
           "source_info" : {
             "filename" : "/home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4",
-            "line" : 155,
+            "line" : 179,
             "column" : 16,
             "source_fragment" : "owner_pool.write((bit<32>) index, hdr.atp.JobIdAndSequenceNumber)"
           }
@@ -11498,8 +11934,8 @@
       ]
     },
     {
-      "name" : "ATP_switch167",
-      "id" : 11,
+      "name" : "ATP_switch190",
+      "id" : 13,
       "runtime_data" : [],
       "primitives" : [
         {
@@ -11516,7 +11952,7 @@
           ],
           "source_info" : {
             "filename" : "/home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4",
-            "line" : 167,
+            "line" : 190,
             "column" : 16,
             "source_fragment" : "hdr.atp.collision = (bit<1>) 1"
           }
@@ -11534,14 +11970,14 @@
         "column" : 8,
         "source_fragment" : "MyIngress"
       },
-      "init_table" : "tbl_ATP_switch132",
+      "init_table" : "tbl_ATP_switch152",
       "tables" : [
         {
-          "name" : "tbl_ATP_switch132",
+          "name" : "tbl_ATP_switch152",
           "id" : 0,
           "source_info" : {
             "filename" : "/home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4",
-            "line" : 132,
+            "line" : 152,
             "column" : 38,
             "source_fragment" : "= 3; ..."
           },
@@ -11552,14 +11988,14 @@
           "with_counters" : false,
           "support_timeout" : false,
           "direct_meters" : null,
-          "action_ids" : [8],
-          "actions" : ["ATP_switch132"],
+          "action_ids" : [10],
+          "actions" : ["ATP_switch152"],
           "base_default_next" : "MyIngress.pool_access",
           "next_tables" : {
-            "ATP_switch132" : "MyIngress.pool_access"
+            "ATP_switch152" : "MyIngress.pool_access"
           },
           "default_entry" : {
-            "action_id" : 8,
+            "action_id" : 10,
             "action_const" : true,
             "action_data" : [],
             "action_entry_const" : true
@@ -11603,12 +12039,41 @@
           }
         },
         {
-          "name" : "tbl_aggregate_values",
+          "name" : "tbl_or_bitmap",
           "id" : 2,
           "source_info" : {
             "filename" : "/home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4",
-            "line" : 145,
+            "line" : 164,
             "column" : 12,
+            "source_fragment" : "or_bitmap(hdr.atp.bitmap0)"
+          },
+          "key" : [],
+          "match_type" : "exact",
+          "type" : "simple",
+          "max_size" : 1024,
+          "with_counters" : false,
+          "support_timeout" : false,
+          "direct_meters" : null,
+          "action_ids" : [8],
+          "actions" : ["MyIngress.or_bitmap"],
+          "base_default_next" : "node_6",
+          "next_tables" : {
+            "MyIngress.or_bitmap" : "node_6"
+          },
+          "default_entry" : {
+            "action_id" : 8,
+            "action_const" : true,
+            "action_data" : [],
+            "action_entry_const" : true
+          }
+        },
+        {
+          "name" : "tbl_aggregate_values",
+          "id" : 3,
+          "source_info" : {
+            "filename" : "/home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4",
+            "line" : 167,
+            "column" : 16,
             "source_fragment" : "aggregate_values()"
           },
           "key" : [],
@@ -11633,11 +12098,11 @@
         },
         {
           "name" : "tbl_increase_counter",
-          "id" : 3,
+          "id" : 4,
           "source_info" : {
             "filename" : "/home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4",
-            "line" : 147,
-            "column" : 12,
+            "line" : 169,
+            "column" : 16,
             "source_fragment" : "increase_counter()"
           },
           "key" : [],
@@ -11662,7 +12127,7 @@
         },
         {
           "name" : "tbl_ATP_switch119",
-          "id" : 4,
+          "id" : 5,
           "source_info" : {
             "filename" : "/home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4",
             "line" : 119,
@@ -11676,14 +12141,14 @@
           "with_counters" : false,
           "support_timeout" : false,
           "direct_meters" : null,
-          "action_ids" : [9],
+          "action_ids" : [11],
           "actions" : ["ATP_switch119"],
           "base_default_next" : "MyIngress.workers4job",
           "next_tables" : {
             "ATP_switch119" : "MyIngress.workers4job"
           },
           "default_entry" : {
-            "action_id" : 9,
+            "action_id" : 11,
             "action_const" : true,
             "action_data" : [],
             "action_entry_const" : true
@@ -11691,7 +12156,7 @@
         },
         {
           "name" : "MyIngress.workers4job",
-          "id" : 5,
+          "id" : 6,
           "source_info" : {
             "filename" : "/home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4",
             "line" : 117,
@@ -11733,11 +12198,11 @@
           }
         },
         {
-          "name" : "tbl_ATP_switch155",
-          "id" : 6,
+          "name" : "tbl_ATP_switch179",
+          "id" : 7,
           "source_info" : {
             "filename" : "/home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4",
-            "line" : 155,
+            "line" : 179,
             "column" : 16,
             "source_fragment" : "owner_pool.write((bit<32>) index, hdr.atp.JobIdAndSequenceNumber)"
           },
@@ -11748,14 +12213,43 @@
           "with_counters" : false,
           "support_timeout" : false,
           "direct_meters" : null,
-          "action_ids" : [10],
-          "actions" : ["ATP_switch155"],
-          "base_default_next" : "tbl_aggregate_values_0",
+          "action_ids" : [12],
+          "actions" : ["ATP_switch179"],
+          "base_default_next" : "tbl_or_bitmap_0",
           "next_tables" : {
-            "ATP_switch155" : "tbl_aggregate_values_0"
+            "ATP_switch179" : "tbl_or_bitmap_0"
           },
           "default_entry" : {
-            "action_id" : 10,
+            "action_id" : 12,
+            "action_const" : true,
+            "action_data" : [],
+            "action_entry_const" : true
+          }
+        },
+        {
+          "name" : "tbl_or_bitmap_0",
+          "id" : 8,
+          "source_info" : {
+            "filename" : "/home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4",
+            "line" : 182,
+            "column" : 16,
+            "source_fragment" : "or_bitmap(hdr.atp.bitmap0)"
+          },
+          "key" : [],
+          "match_type" : "exact",
+          "type" : "simple",
+          "max_size" : 1024,
+          "with_counters" : false,
+          "support_timeout" : false,
+          "direct_meters" : null,
+          "action_ids" : [9],
+          "actions" : ["MyIngress.or_bitmap"],
+          "base_default_next" : "tbl_aggregate_values_0",
+          "next_tables" : {
+            "MyIngress.or_bitmap" : "tbl_aggregate_values_0"
+          },
+          "default_entry" : {
+            "action_id" : 9,
             "action_const" : true,
             "action_data" : [],
             "action_entry_const" : true
@@ -11763,10 +12257,10 @@
         },
         {
           "name" : "tbl_aggregate_values_0",
-          "id" : 7,
+          "id" : 9,
           "source_info" : {
             "filename" : "/home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4",
-            "line" : 158,
+            "line" : 183,
             "column" : 16,
             "source_fragment" : "aggregate_values()"
           },
@@ -11792,10 +12286,10 @@
         },
         {
           "name" : "tbl_increase_counter_0",
-          "id" : 8,
+          "id" : 10,
           "source_info" : {
             "filename" : "/home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4",
-            "line" : 160,
+            "line" : 184,
             "column" : 16,
             "source_fragment" : "increase_counter()"
           },
@@ -11820,11 +12314,11 @@
           }
         },
         {
-          "name" : "tbl_ATP_switch167",
-          "id" : 9,
+          "name" : "tbl_ATP_switch190",
+          "id" : 11,
           "source_info" : {
             "filename" : "/home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4",
-            "line" : 167,
+            "line" : 190,
             "column" : 34,
             "source_fragment" : "="
           },
@@ -11835,14 +12329,14 @@
           "with_counters" : false,
           "support_timeout" : false,
           "direct_meters" : null,
-          "action_ids" : [11],
-          "actions" : ["ATP_switch167"],
+          "action_ids" : [13],
+          "actions" : ["ATP_switch190"],
           "base_default_next" : null,
           "next_tables" : {
-            "ATP_switch167" : null
+            "ATP_switch190" : null
           },
           "default_entry" : {
-            "action_id" : 11,
+            "action_id" : 13,
             "action_const" : true,
             "action_data" : [],
             "action_entry_const" : true
@@ -11856,7 +12350,7 @@
           "id" : 0,
           "source_info" : {
             "filename" : "/home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4",
-            "line" : 142,
+            "line" : 162,
             "column" : 12,
             "source_fragment" : "owner == hdr.atp.JobIdAndSequenceNumber"
           },
@@ -11874,15 +12368,41 @@
               }
             }
           },
-          "true_next" : "tbl_aggregate_values",
-          "false_next" : "node_9"
+          "true_next" : "tbl_or_bitmap",
+          "false_next" : "node_11"
         },
         {
-          "name" : "node_9",
+          "name" : "node_6",
           "id" : 1,
           "source_info" : {
             "filename" : "/home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4",
-            "line" : 151,
+            "line" : 165,
+            "column" : 17,
+            "source_fragment" : "meta.already_aggregated == 0"
+          },
+          "expression" : {
+            "type" : "expression",
+            "value" : {
+              "op" : "==",
+              "left" : {
+                "type" : "field",
+                "value" : ["scalars", "metadata.already_aggregated"]
+              },
+              "right" : {
+                "type" : "hexstr",
+                "value" : "0x00"
+              }
+            }
+          },
+          "false_next" : null,
+          "true_next" : "tbl_aggregate_values"
+        },
+        {
+          "name" : "node_11",
+          "id" : 2,
+          "source_info" : {
+            "filename" : "/home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4",
+            "line" : 175,
             "column" : 16,
             "source_fragment" : "owner == 0"
           },
@@ -11900,8 +12420,8 @@
               }
             }
           },
-          "true_next" : "tbl_ATP_switch155",
-          "false_next" : "tbl_ATP_switch167"
+          "true_next" : "tbl_ATP_switch179",
+          "false_next" : "tbl_ATP_switch190"
         }
       ]
     },
@@ -11910,7 +12430,7 @@
       "id" : 1,
       "source_info" : {
         "filename" : "/home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4",
-        "line" : 179,
+        "line" : 202,
         "column" : 8,
         "source_fragment" : "MyEgress"
       },

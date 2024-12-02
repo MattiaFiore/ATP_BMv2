@@ -127,8 +127,28 @@ control MyIngress(inout headers hdr,
         default_action = NoAction; 
     }
 
+    action or_bitmap(bit<32> bitmap){
+
+        bit<32> value; 
+        bit<32> value2; 
+        bitmap_register.read(value, (bit<32>) hdr.atp.aggregatorIndex);
+        value2 = value; 
+        value = value | bitmap;
+
+        bitmap_register.write((bit<32>) hdr.atp.aggregatorIndex, value);
+
+        if (value == value2){
+            // there is no need to aggregate
+            meta.already_aggregated = (bit<1>) 1; 
+        } else {
+            meta.already_aggregated = (bit<1>) 0; 
+        }
+
+    }
+
     apply {
         // In order to see the packet somewhere
+        // [FIX]: implement 
         standard_metadata.egress_spec = 3; 
 
         // In aggregation index there is the index of the pool on which to aggregate
@@ -141,11 +161,15 @@ control MyIngress(inout headers hdr,
 
         if (owner == hdr.atp.JobIdAndSequenceNumber){
             
-            // The owner as alreay bin set 
-            aggregate_values(); 
+            or_bitmap(hdr.atp.bitmap0); 
+            if ( meta.already_aggregated == 0) {
+                // The owner as alreay bin set 
+                aggregate_values(); 
 
-            increase_counter(); 
-            workers4job.apply();
+                increase_counter(); 
+                workers4job.apply();
+            }
+            
 
         } else {
             if (owner == 0){
@@ -155,10 +179,9 @@ control MyIngress(inout headers hdr,
                 owner_pool.write((bit<32>) index, hdr.atp.JobIdAndSequenceNumber); 
 
                 //Add values inside the register
+                or_bitmap(hdr.atp.bitmap0);
                 aggregate_values(); 
-
                 increase_counter(); 
-                
 
             } else {
                 // The pool selected is NOT FREE
