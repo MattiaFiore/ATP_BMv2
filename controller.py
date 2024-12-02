@@ -6,6 +6,7 @@ import grpc
 from p4.v1 import p4runtime_pb2
 from p4.v1 import p4runtime_pb2_grpc
 from p4.config.v1 import p4info_pb2
+import argparse
 
 topo = load_topo('topology.json')
 controllers = {}
@@ -23,6 +24,11 @@ client = ThriftAPI(thrift_port, thrift_ip, pre_type = None)
 counter = 0
 
 register_size = 20 
+
+parser = argparse.ArgumentParser()
+parser.add_argument('-t', '--time_update', type = int, help='[CONTROLLER]: Time of update', required=False, default = 5)
+args = parser.parse_args()
+
 while True: 
 
     print(f'Iterazione: {counter}', end = " ")
@@ -35,4 +41,4 @@ while True:
 
     counter+=1
     print('Waiting ...')
-    time.sleep(5)
+    time.sleep(args.time_update)
