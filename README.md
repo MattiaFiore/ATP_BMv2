@@ -23,14 +23,26 @@ Then you can send the packet with the following command. At the moment the packe
 ```
 sudo python3 worker.py -id <id> -sn <sn> -agg <agg>
 ```
-## Visualizing aggregation results
-First run in the mininet terminal 
-```
-xterm ps0 
-```
+## Visualizing aggregation results through the controller 
+
 Then you can inizialize the script that receive the packet from the switch
 ```
-sudo python3 ps.py
+sudo python3 controller.py -t <x>
+```
+The controller will print every x seconds all the values inside the register in the following way: 
+```
+Iterazione: 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+Waiting ...
 ```
 ## Visualizing the topology
 The script will also allow you to visualize the topology. In the folder /pictures there will be a simple sketch of the topology. 
