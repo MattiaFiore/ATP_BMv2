@@ -5,7 +5,9 @@ from random import randint
 from typing import Tuple, List
 from scapy.all import Ether, Packet, BitField, IP
 from scapy.all import sendp, get_if_list, get_if_hwaddr, load_layer
-
+import json
+import subprocess
+import re 
 '''
 Packet 
 Eth 
@@ -16,6 +18,8 @@ Group_header:
 '''
 ETHERTYPE_IPV4 = 0x0800
 PROTOCOL_ATP = 0x99
+bitmap_config = "bitmap_config.json"
+
 
 class ATP(Packet):
     '''
@@ -48,9 +52,14 @@ class Data(Packet):
     fields_desc = [BitField(f'd{i}', default=0, size = 32) for i in range(1,21)]
 
 def get_ip() -> str:
-    hostname = socket.gethostname()
-    local_ip = socket.gethostbyname(hostname)
-    return local_ip
+
+    """
+    Trying to extract the real IP address
+    """
+    result = subprocess.run(['ifconfig'], capture_output=True, text= True)
+    ip_address = re.search(r"(\d+\.\d+\.\d+\.\d+)", result.stdout).group(0)
+
+    return ip_address
 
 def get_if() -> str:
     iface = None
@@ -90,7 +99,6 @@ def convert_bitstring(fields: List[Tuple[int, int]]) -> int:
 
     return int(bit_string, 2)
 
-
 def parse()-> Tuple[int, int]:
     '''
     The program will ask for ID, Sequence number and will compute the hash function 
@@ -116,7 +124,12 @@ def build_payload(length: int) -> Data:
     #print()
     return  Data(d1=1, d2=1, d3=1, d4=1, d5=1, d6=1, d7=1, d8=1, d9=1, d10=1, 
                 d11=1, d12=1, d13=1, d14=1, d15=1, d16=1, d17=1, d18=1, d19=1, d20=1)
+
+def get_bitmap_id(address):
+    with open(bitmap_config, 'r') as file: 
+        data = json.load(file)
     
+    return data[address]
 
 if __name__ == '__main__': 
 
@@ -125,19 +138,20 @@ if __name__ == '__main__':
 
     # Verifica tutta la lista di interfacce
     iface = get_if()
-    
+    ip_address = get_ip()
+    bit_map_id = get_bitmap_id(ip_address)
     #Creazione del pacchetto
     # destinazione broadcast, tanto per il momento lo deve elaborare lo switch
     eth_header = Ether(src= get_if_hwaddr(iface), dst = 'FF:FF:FF:FF:FF:FF', type = ETHERTYPE_IPV4)
-    ip_header = IP(src = get_ip(), proto=PROTOCOL_ATP)
-    atp_header = ATP(aggregatorIndex = agg_index, JobIdAndSequenceNumber= job_id)
+    ip_header = IP(src = ip_address, proto=PROTOCOL_ATP)
+    atp_header = ATP(bitmap0 = int(bit_map_id,2), aggregatorIndex = agg_index, JobIdAndSequenceNumber= job_id)
     pkt = eth_header / ip_header / atp_header
 
     #[FIX]: payload is actually a header, change name of variable
     length_payload = 10
     payload = build_payload(length_payload)
     pkt = pkt / payload
-
+    pkt.show()
     print(f"Chosen aggregator: {pkt[ATP].aggregatorIndex}")
     print('[', end = ' ')
     for i in pkt[Data].fields_desc:
