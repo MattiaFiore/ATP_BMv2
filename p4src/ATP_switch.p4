@@ -81,6 +81,19 @@ control MyIngress(inout headers hdr,
         counts.write((bit<32>) hdr.atp.aggregatorIndex, 0); 
     }
 
+    action aggregate_values(){
+        sum(hdr.data.n01, meta.slice_index, 0);
+        sum(hdr.data.n02, meta.slice_index, 1);
+        sum(hdr.data.n03, meta.slice_index, 2);
+        sum(hdr.data.n04, meta.slice_index, 3);
+        sum(hdr.data.n05, meta.slice_index, 4);
+        sum(hdr.data.n06, meta.slice_index, 5);
+        sum(hdr.data.n07, meta.slice_index, 6);
+        sum(hdr.data.n08, meta.slice_index, 7);
+        sum(hdr.data.n09, meta.slice_index, 8);
+        sum(hdr.data.n10, meta.slice_index, 9);
+    }
+
     table workers4job {
         key = {
             hdr.atp.JobIdAndSequenceNumber[31:24]: exact; 
@@ -109,18 +122,7 @@ control MyIngress(inout headers hdr,
         if (owner == hdr.atp.JobIdAndSequenceNumber){
             
             // The owner as alreay bin set 
-            
-
-            sum(hdr.data.n01, meta.slice_index, 0);
-            sum(hdr.data.n02, meta.slice_index, 1);
-            sum(hdr.data.n03, meta.slice_index, 2);
-            sum(hdr.data.n04, meta.slice_index, 3);
-            sum(hdr.data.n05, meta.slice_index, 4);
-            sum(hdr.data.n06, meta.slice_index, 5);
-            sum(hdr.data.n07, meta.slice_index, 6);
-            sum(hdr.data.n08, meta.slice_index, 7);
-            sum(hdr.data.n09, meta.slice_index, 8);
-            sum(hdr.data.n10, meta.slice_index, 9);
+            aggregate_values(); 
 
             increase_counter(); 
             workers4job.apply();
@@ -132,17 +134,8 @@ control MyIngress(inout headers hdr,
                 
                 owner_pool.write((bit<32>) index, hdr.atp.JobIdAndSequenceNumber); 
 
-                // [Fix]: change in order to not repeat the code
-                sum(hdr.data.n01, meta.slice_index, 0);
-                sum(hdr.data.n02, meta.slice_index, 1);
-                sum(hdr.data.n03, meta.slice_index, 2);
-                sum(hdr.data.n04, meta.slice_index, 3);
-                sum(hdr.data.n05, meta.slice_index, 4);
-                sum(hdr.data.n06, meta.slice_index, 5);
-                sum(hdr.data.n07, meta.slice_index, 6);
-                sum(hdr.data.n08, meta.slice_index, 7);
-                sum(hdr.data.n09, meta.slice_index, 8);
-                sum(hdr.data.n10, meta.slice_index, 9);
+                //Add values inside the register
+                aggregate_values(); 
 
                 increase_counter(); 
                 

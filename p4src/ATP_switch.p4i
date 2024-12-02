@@ -1,7 +1,7 @@
-# 1 "/home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4"
+# 1 "/home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "/home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4"
+# 1 "/home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4"
 # 1 "/usr/local/share/p4c/p4include/core.p4" 1
 /*
 Copyright 2013-present Barefoot Networks, Inc.
@@ -96,7 +96,7 @@ extern bool static_assert(bool check, string message);
 
 /// Like the above but using a default message.
 extern bool static_assert(bool check);
-# 2 "/home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4" 2
+# 2 "/home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4" 2
 # 1 "/usr/local/share/p4c/p4include/v1model.p4" 1
 /*
 Copyright 2013-present Barefoot Networks, Inc.
@@ -882,9 +882,9 @@ package V1Switch<H, M>(Parser<H, M> p,
                        ComputeChecksum<H, M> ck,
                        Deparser<H> dep
                        );
-# 3 "/home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4" 2
+# 3 "/home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4" 2
 
-# 1 "/home/vboxuser/Desktop/ATP_BMv2/p4src/include/types.p4" 1
+# 1 "/home/mattiafiore/Desktop/ATP_BMv2/p4src/include/types.p4" 1
 
 const bit<16> TYPE_IPV4 = 0x0800;
 const bit<8> PROTOCOL_ATP = 0x99; //FREE https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml
@@ -894,8 +894,8 @@ typedef bit<48> ethAddr_t;
 typedef bit<32> ipAddr_t;
 typedef bit<16> udpPort_t;
 typedef bit<32> value_t;
-# 5 "/home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4" 2
-# 1 "/home/vboxuser/Desktop/ATP_BMv2/p4src/include/headers.p4" 1
+# 5 "/home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4" 2
+# 1 "/home/mattiafiore/Desktop/ATP_BMv2/p4src/include/headers.p4" 1
 /*
 
 */
@@ -973,8 +973,8 @@ struct headers {
     atp_t atp;
     data_h data;
 }
-# 6 "/home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4" 2
-# 1 "/home/vboxuser/Desktop/ATP_BMv2/p4src/include/parser.p4" 1
+# 6 "/home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4" 2
+# 1 "/home/mattiafiore/Desktop/ATP_BMv2/p4src/include/parser.p4" 1
 parser MyParser(packet_in packet,
                 out headers hdr,
                 inout metadata meta,
@@ -1012,8 +1012,8 @@ parser MyParser(packet_in packet,
         transition accept;
     }
 }
-# 7 "/home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4" 2
-# 1 "/home/vboxuser/Desktop/ATP_BMv2/p4src/include/register.p4" 1
+# 7 "/home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4" 2
+# 1 "/home/mattiafiore/Desktop/ATP_BMv2/p4src/include/register.p4" 1
 
 // Trying to implement the register access usign 
 // a register as big as (register_size X n_pools) 
@@ -1024,7 +1024,7 @@ register<bit<32>>(5) owner_pool;
 
 // Counter for packets 
 register<bit<32>>(5) counts;
-# 8 "/home/vboxuser/Desktop/ATP_BMv2/p4src/ATP_switch.p4" 2
+# 8 "/home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4" 2
 
 
 /*************************************************************************
@@ -1101,6 +1101,19 @@ control MyIngress(inout headers hdr,
         counts.write((bit<32>) hdr.atp.aggregatorIndex, 0);
     }
 
+    action aggregate_values(){
+        sum(hdr.data.n01, meta.slice_index, 0);
+        sum(hdr.data.n02, meta.slice_index, 1);
+        sum(hdr.data.n03, meta.slice_index, 2);
+        sum(hdr.data.n04, meta.slice_index, 3);
+        sum(hdr.data.n05, meta.slice_index, 4);
+        sum(hdr.data.n06, meta.slice_index, 5);
+        sum(hdr.data.n07, meta.slice_index, 6);
+        sum(hdr.data.n08, meta.slice_index, 7);
+        sum(hdr.data.n09, meta.slice_index, 8);
+        sum(hdr.data.n10, meta.slice_index, 9);
+    }
+
     table workers4job {
         key = {
             hdr.atp.JobIdAndSequenceNumber[31:24]: exact;
@@ -1129,18 +1142,7 @@ control MyIngress(inout headers hdr,
         if (owner == hdr.atp.JobIdAndSequenceNumber){
 
             // The owner as alreay bin set 
-
-
-            sum(hdr.data.n01, meta.slice_index, 0);
-            sum(hdr.data.n02, meta.slice_index, 1);
-            sum(hdr.data.n03, meta.slice_index, 2);
-            sum(hdr.data.n04, meta.slice_index, 3);
-            sum(hdr.data.n05, meta.slice_index, 4);
-            sum(hdr.data.n06, meta.slice_index, 5);
-            sum(hdr.data.n07, meta.slice_index, 6);
-            sum(hdr.data.n08, meta.slice_index, 7);
-            sum(hdr.data.n09, meta.slice_index, 8);
-            sum(hdr.data.n10, meta.slice_index, 9);
+            aggregate_values();
 
             increase_counter();
             workers4job.apply();
@@ -1152,17 +1154,7 @@ control MyIngress(inout headers hdr,
 
                 owner_pool.write((bit<32>) index, hdr.atp.JobIdAndSequenceNumber);
 
-                // [Fix]: change in order to not repeat the code
-                sum(hdr.data.n01, meta.slice_index, 0);
-                sum(hdr.data.n02, meta.slice_index, 1);
-                sum(hdr.data.n03, meta.slice_index, 2);
-                sum(hdr.data.n04, meta.slice_index, 3);
-                sum(hdr.data.n05, meta.slice_index, 4);
-                sum(hdr.data.n06, meta.slice_index, 5);
-                sum(hdr.data.n07, meta.slice_index, 6);
-                sum(hdr.data.n08, meta.slice_index, 7);
-                sum(hdr.data.n09, meta.slice_index, 8);
-                sum(hdr.data.n10, meta.slice_index, 9);
+                aggregate_values();
 
                 increase_counter();
 
