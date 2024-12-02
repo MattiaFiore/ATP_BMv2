@@ -960,6 +960,16 @@ header data_h{
     value_t n08;
     value_t n09;
     value_t n10;
+    value_t n11;
+    value_t n12;
+    value_t n13;
+    value_t n14;
+    value_t n15;
+    value_t n16;
+    value_t n17;
+    value_t n18;
+    value_t n19;
+    value_t n20;
 }
 
 struct metadata{
@@ -1017,13 +1027,16 @@ parser MyParser(packet_in packet,
 
 // Trying to implement the register access usign 
 // a register as big as (register_size X n_pools) 
-register<value_t>(50) big_pool;
+
+// Number of registers: 10
+// Number of integers per register: 20
+register<value_t>(200) big_pool;
 
 //register is reserved based on job id and sequence number
-register<bit<32>>(5) owner_pool;
+register<bit<32>>(10) owner_pool;
 
 // Counter for packets 
-register<bit<32>>(5) counts;
+register<bit<32>>(10) counts;
 # 8 "/home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4" 2
 
 
@@ -1078,7 +1091,7 @@ control MyIngress(inout headers hdr,
             aggregate;
             NoAction;
         }
-        size = 5; // Same dimension as the number of pools, right now is 5
+        size = 10; // Same dimension as the number of pools, right now is 5
         default_action = NoAction;
 
     }
@@ -1095,6 +1108,16 @@ control MyIngress(inout headers hdr,
         big_pool.write((bit<32>) meta.slice_index + 7, 0);
         big_pool.write((bit<32>) meta.slice_index + 8, 0);
         big_pool.write((bit<32>) meta.slice_index + 9, 0);
+        big_pool.write((bit<32>) meta.slice_index + 10, 0);
+        big_pool.write((bit<32>) meta.slice_index + 11, 0);
+        big_pool.write((bit<32>) meta.slice_index + 12, 0);
+        big_pool.write((bit<32>) meta.slice_index + 13, 0);
+        big_pool.write((bit<32>) meta.slice_index + 14, 0);
+        big_pool.write((bit<32>) meta.slice_index + 15, 0);
+        big_pool.write((bit<32>) meta.slice_index + 16, 0);
+        big_pool.write((bit<32>) meta.slice_index + 17, 0);
+        big_pool.write((bit<32>) meta.slice_index + 18, 0);
+        big_pool.write((bit<32>) meta.slice_index + 19, 0);
         // Clearing the owner
         owner_pool.write((bit<32>) hdr.atp.aggregatorIndex, 0);
         // Clearing the counter
@@ -1112,6 +1135,16 @@ control MyIngress(inout headers hdr,
         sum(hdr.data.n08, meta.slice_index, 7);
         sum(hdr.data.n09, meta.slice_index, 8);
         sum(hdr.data.n10, meta.slice_index, 9);
+        sum(hdr.data.n11, meta.slice_index, 10);
+        sum(hdr.data.n12, meta.slice_index, 11);
+        sum(hdr.data.n13, meta.slice_index, 12);
+        sum(hdr.data.n14, meta.slice_index, 13);
+        sum(hdr.data.n15, meta.slice_index, 14);
+        sum(hdr.data.n16, meta.slice_index, 15);
+        sum(hdr.data.n17, meta.slice_index, 16);
+        sum(hdr.data.n18, meta.slice_index, 17);
+        sum(hdr.data.n19, meta.slice_index, 18);
+        sum(hdr.data.n20, meta.slice_index, 19);
     }
 
     table workers4job {

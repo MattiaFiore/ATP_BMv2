@@ -9,23 +9,48 @@ Entry has been added with handle 0
 RuntimeCmd: Adding entry to exact match table pool_access
 match key:           EXACT-00:01
 action:              aggregate
-runtime data:        00:0a
+runtime data:        00:14
 Entry has been added with handle 1
 RuntimeCmd: Adding entry to exact match table pool_access
 match key:           EXACT-00:02
 action:              aggregate
-runtime data:        00:14
+runtime data:        00:28
 Entry has been added with handle 2
 RuntimeCmd: Adding entry to exact match table pool_access
 match key:           EXACT-00:03
 action:              aggregate
-runtime data:        00:1e
+runtime data:        00:3c
 Entry has been added with handle 3
 RuntimeCmd: Adding entry to exact match table pool_access
 match key:           EXACT-00:04
 action:              aggregate
-runtime data:        00:28
+runtime data:        00:50
 Entry has been added with handle 4
+RuntimeCmd: Adding entry to exact match table pool_access
+match key:           EXACT-00:05
+action:              aggregate
+runtime data:        00:64
+Entry has been added with handle 5
+RuntimeCmd: Adding entry to exact match table pool_access
+match key:           EXACT-00:06
+action:              aggregate
+runtime data:        00:78
+Entry has been added with handle 6
+RuntimeCmd: Adding entry to exact match table pool_access
+match key:           EXACT-00:07
+action:              aggregate
+runtime data:        00:8c
+Entry has been added with handle 7
+RuntimeCmd: Adding entry to exact match table pool_access
+match key:           EXACT-00:08
+action:              aggregate
+runtime data:        00:a0
+Entry has been added with handle 8
+RuntimeCmd: Adding entry to exact match table pool_access
+match key:           EXACT-00:09
+action:              aggregate
+runtime data:        00:b4
+Entry has been added with handle 9
 RuntimeCmd: Adding entry to exact match table workers4job
 match key:           EXACT-01	EXACT-00:00:00:04
 action:              clear_memory

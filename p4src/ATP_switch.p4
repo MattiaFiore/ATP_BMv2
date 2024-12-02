@@ -58,7 +58,7 @@ control MyIngress(inout headers hdr,
             aggregate; 
             NoAction;
         }
-        size = 5; // Same dimension as the number of pools, right now is 5
+        size = 10; // Same dimension as the number of pools, right now is 5
         default_action = NoAction; 
 
     }
@@ -75,6 +75,16 @@ control MyIngress(inout headers hdr,
         big_pool.write((bit<32>) meta.slice_index + 7, 0);
         big_pool.write((bit<32>) meta.slice_index + 8, 0);
         big_pool.write((bit<32>) meta.slice_index + 9, 0);
+        big_pool.write((bit<32>) meta.slice_index + 10, 0);
+        big_pool.write((bit<32>) meta.slice_index + 11, 0);
+        big_pool.write((bit<32>) meta.slice_index + 12, 0);
+        big_pool.write((bit<32>) meta.slice_index + 13, 0);  
+        big_pool.write((bit<32>) meta.slice_index + 14, 0);
+        big_pool.write((bit<32>) meta.slice_index + 15, 0);
+        big_pool.write((bit<32>) meta.slice_index + 16, 0);
+        big_pool.write((bit<32>) meta.slice_index + 17, 0);
+        big_pool.write((bit<32>) meta.slice_index + 18, 0);
+        big_pool.write((bit<32>) meta.slice_index + 19, 0);
         // Clearing the owner
         owner_pool.write((bit<32>) hdr.atp.aggregatorIndex, 0);
         // Clearing the counter
@@ -92,6 +102,16 @@ control MyIngress(inout headers hdr,
         sum(hdr.data.n08, meta.slice_index, 7);
         sum(hdr.data.n09, meta.slice_index, 8);
         sum(hdr.data.n10, meta.slice_index, 9);
+        sum(hdr.data.n11, meta.slice_index, 10);
+        sum(hdr.data.n12, meta.slice_index, 11);
+        sum(hdr.data.n13, meta.slice_index, 12);
+        sum(hdr.data.n14, meta.slice_index, 13);
+        sum(hdr.data.n15, meta.slice_index, 14);
+        sum(hdr.data.n16, meta.slice_index, 15);
+        sum(hdr.data.n17, meta.slice_index, 16);
+        sum(hdr.data.n18, meta.slice_index, 17);
+        sum(hdr.data.n19, meta.slice_index, 18);
+        sum(hdr.data.n20, meta.slice_index, 19);
     }
 
     table workers4job {

@@ -62,6 +62,16 @@ header data_h{
     value_t n08;
     value_t n09;
     value_t n10;
+    value_t n11;
+    value_t n12;
+    value_t n13; 
+    value_t n14;
+    value_t n15;
+    value_t n16;
+    value_t n17;
+    value_t n18;
+    value_t n19;
+    value_t n20;
 }
 
 struct metadata{

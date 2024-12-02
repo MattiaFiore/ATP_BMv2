@@ -45,7 +45,7 @@ class ATP(Packet):
 class Data(Packet): 
     name = 'Data'
     #As the numbers of elements that will enter in a 
-    fields_desc = [BitField(f'd{i}', default=0, size = 32) for i in range(1,11)]
+    fields_desc = [BitField(f'd{i}', default=0, size = 32) for i in range(1,21)]
 
 def get_ip() -> str:
     hostname = socket.gethostname()
@@ -114,7 +114,8 @@ def build_payload(length: int) -> Data:
     #return  ''.join([bin(randint(0,255))[2:].zfill(width) for i in range(length)])
     
     #print()
-    return  Data(d1=1, d2=1, d3=1, d4=1, d5=1, d6=1, d7=1, d8=1, d9=1, d10=1)
+    return  Data(d1=1, d2=1, d3=1, d4=1, d5=1, d6=1, d7=1, d8=1, d9=1, d10=1, 
+                d11=1, d12=1, d13=1, d14=1, d15=1, d16=1, d17=1, d18=1, d19=1, d20=1)
     
 
 if __name__ == '__main__': 

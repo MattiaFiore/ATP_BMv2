@@ -1,10 +1,13 @@
 
 // Trying to implement the register access usign 
 // a register as big as (register_size X n_pools) 
-register<value_t>(50) big_pool; 
+
+// Number of registers: 10
+// Number of integers per register: 20
+register<value_t>(200) big_pool; 
 
 //register is reserved based on job id and sequence number
-register<bit<32>>(5) owner_pool;   
+register<bit<32>>(10) owner_pool;   
 
 // Counter for packets 
-register<bit<32>>(5) counts;
+register<bit<32>>(10) counts;

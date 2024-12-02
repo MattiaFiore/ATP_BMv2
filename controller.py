@@ -22,11 +22,11 @@ for switch, data in topo.get_p4switches().items():
 client = ThriftAPI(thrift_port, thrift_ip, pre_type = None)
 counter = 0
 
-register_size = 10 
+register_size = 20 
 while True: 
 
     print(f'Iterazione: {counter}', end = " ")
-    for i in range(50):
+    for i in range(200):
         if i % register_size == 0: 
             print()
         value = client.register_read('big_pool', index=i)
