@@ -1154,6 +1154,7 @@ control MyIngress(inout headers hdr,
 
                 owner_pool.write((bit<32>) index, hdr.atp.JobIdAndSequenceNumber);
 
+                //Add values inside the register
                 aggregate_values();
 
                 increase_counter();
