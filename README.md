@@ -5,6 +5,27 @@ In order to use the repository p4-utils must be installed with all its dependenc
 ```
 curl -sSL https://raw.githubusercontent.com/nsg-ethz/p4-utils/master/install-tools/install-p4-dev.sh | bash
 ```
+
+## Implemented logic of the switch 
+```mermaid
+graph TD
+    A[Packet received] --> B[Check register if jobID_sequencenumber 
+                            owns the register]
+    B --> |Yes| C{bitmap OR bitmap0 changes?}
+    B --> |No| D{Check if register is free}
+    D --> |Yes| E{set jobID_sequencenumber owner of the register}
+    D --> |No| F{set iscollision = 1}
+    F --> M{SEND TO PS}
+    E --> C
+    C --> |Yes| G{aggregate values 
+                increase counter }
+    C --> |No| H{already aggregated}
+    H --> L{DROP}
+    G --> N{Check if counter is max_value}
+    N --> |Yes| O{FREE MEMORY}
+    N --> |No| L
+```
+
 ## Running the code
 Initializing the network: 
 ```

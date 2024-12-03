@@ -12,7 +12,7 @@ net.enableCli()
 
 # Network definition
 switches = ['s1']
-n_hosts = 2
+n_hosts = 4
 hosts = [f'h{i}' for i in range(n_hosts)]
 n_pss = 1
 pss = [f'ps{i}' for i in range(n_pss)]
@@ -23,8 +23,6 @@ colors = []
 for _ in switches: 
     print(_)
     net.addP4Switch(_, cli_input='s1-commands.txt')
-    
-
     G.add_node(_, type='switch')
     colors.append('green')
 

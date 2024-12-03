@@ -147,10 +147,7 @@ control MyIngress(inout headers hdr,
     }
 
     apply {
-        // In order to see the packet somewhere
-        // [FIX]: implement 
-        standard_metadata.egress_spec = 3; 
-
+        
         // In aggregation index there is the index of the pool on which to aggregate
         bit<16> index = hdr.atp.aggregatorIndex; 
         
@@ -165,9 +162,11 @@ control MyIngress(inout headers hdr,
             if ( meta.already_aggregated == 0) {
                 // The owner as alreay bin set 
                 aggregate_values(); 
-
                 increase_counter(); 
                 workers4job.apply();
+                // Packet will be dropped since aggregation happened 
+                mark_to_drop(standard_metadata); 
+                
             }
             
 
@@ -182,12 +181,16 @@ control MyIngress(inout headers hdr,
                 or_bitmap(hdr.atp.bitmap0);
                 aggregate_values(); 
                 increase_counter(); 
+                //The packet will be dropped since aggregation happened
+                mark_to_drop(standard_metadata); 
 
             } else {
                 // The pool selected is NOT FREE
                 // So you just send the packet to the ps saying that
                 // collision is active 
                 hdr.atp.collision = (bit<1>) 1; 
+                standard_metadata.egress_spec = 5;  
+
             }
         }
         
