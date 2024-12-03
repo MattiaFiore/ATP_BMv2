@@ -1,172 +1,1331 @@
 Warning: you requested the nanomsg event logger, but bmv2 was compiled without -DBMELOG, and the event logger cannot be activated
 Calling target program-options parser
-[17:11:56.374] [bmv2] [D] [thread 263645] Set default default entry for table 'tbl_ATP_switch156': ATP_switch156 - 
-[17:11:56.374] [bmv2] [D] [thread 263645] Set default default entry for table 'MyIngress.pool_access': NoAction - 
-[17:11:56.374] [bmv2] [D] [thread 263645] Set default default entry for table 'tbl_or_bitmap': MyIngress.or_bitmap - 
-[17:11:56.375] [bmv2] [D] [thread 263645] Set default default entry for table 'tbl_aggregate_values': MyIngress.aggregate_values - 
-[17:11:56.375] [bmv2] [D] [thread 263645] Set default default entry for table 'tbl_increase_counter': MyIngress.increase_counter - 
-[17:11:56.375] [bmv2] [D] [thread 263645] Set default default entry for table 'tbl_ATP_switch119': ATP_switch119 - 
-[17:11:56.375] [bmv2] [D] [thread 263645] Set default default entry for table 'MyIngress.workers4job': NoAction - 
-[17:11:56.375] [bmv2] [D] [thread 263645] Set default default entry for table 'tbl_ATP_switch168': ATP_switch168 - 
-[17:11:56.375] [bmv2] [D] [thread 263645] Set default default entry for table 'tbl_ATP_switch178': ATP_switch178 - 
-[17:11:56.375] [bmv2] [D] [thread 263645] Set default default entry for table 'tbl_or_bitmap_0': MyIngress.or_bitmap - 
-[17:11:56.375] [bmv2] [D] [thread 263645] Set default default entry for table 'tbl_aggregate_values_0': MyIngress.aggregate_values - 
-[17:11:56.375] [bmv2] [D] [thread 263645] Set default default entry for table 'tbl_increase_counter_0': MyIngress.increase_counter - 
-[17:11:56.375] [bmv2] [D] [thread 263645] Set default default entry for table 'tbl_ATP_switch185': ATP_switch185 - 
-[17:11:56.375] [bmv2] [D] [thread 263645] Set default default entry for table 'tbl_ATP_switch191': ATP_switch191 - 
+[21:32:51.122] [bmv2] [D] [thread 276215] Set default default entry for table 'tbl_ATP_switch156': ATP_switch156 - 
+[21:32:51.122] [bmv2] [D] [thread 276215] Set default default entry for table 'MyIngress.pool_access': NoAction - 
+[21:32:51.122] [bmv2] [D] [thread 276215] Set default default entry for table 'tbl_or_bitmap': MyIngress.or_bitmap - 
+[21:32:51.122] [bmv2] [D] [thread 276215] Set default default entry for table 'tbl_aggregate_values': MyIngress.aggregate_values - 
+[21:32:51.122] [bmv2] [D] [thread 276215] Set default default entry for table 'tbl_increase_counter': MyIngress.increase_counter - 
+[21:32:51.122] [bmv2] [D] [thread 276215] Set default default entry for table 'tbl_ATP_switch119': ATP_switch119 - 
+[21:32:51.122] [bmv2] [D] [thread 276215] Set default default entry for table 'MyIngress.workers4job': NoAction - 
+[21:32:51.122] [bmv2] [D] [thread 276215] Set default default entry for table 'tbl_ATP_switch168': ATP_switch168 - 
+[21:32:51.122] [bmv2] [D] [thread 276215] Set default default entry for table 'tbl_ATP_switch178': ATP_switch178 - 
+[21:32:51.122] [bmv2] [D] [thread 276215] Set default default entry for table 'tbl_or_bitmap_0': MyIngress.or_bitmap - 
+[21:32:51.122] [bmv2] [D] [thread 276215] Set default default entry for table 'tbl_aggregate_values_0': MyIngress.aggregate_values - 
+[21:32:51.122] [bmv2] [D] [thread 276215] Set default default entry for table 'tbl_increase_counter_0': MyIngress.increase_counter - 
+[21:32:51.122] [bmv2] [D] [thread 276215] Set default default entry for table 'tbl_ATP_switch185': ATP_switch185 - 
+[21:32:51.122] [bmv2] [D] [thread 276215] Set default default entry for table 'tbl_ATP_switch191': ATP_switch191 - 
 Adding interface s1-eth1 as port 1
-[17:11:56.387] [bmv2] [D] [thread 263645] Adding interface s1-eth1 as port 1
+[21:32:51.137] [bmv2] [D] [thread 276215] Adding interface s1-eth1 as port 1
 Adding interface s1-eth2 as port 2
-[17:11:56.462] [bmv2] [D] [thread 263645] Adding interface s1-eth2 as port 2
+[21:32:51.195] [bmv2] [D] [thread 276215] Adding interface s1-eth2 as port 2
 Adding interface s1-eth3 as port 3
-[17:11:56.514] [bmv2] [D] [thread 263645] Adding interface s1-eth3 as port 3
+[21:32:51.212] [bmv2] [D] [thread 276215] Adding interface s1-eth3 as port 3
 Adding interface s1-eth4 as port 4
-[17:11:56.566] [bmv2] [D] [thread 263645] Adding interface s1-eth4 as port 4
+[21:32:51.259] [bmv2] [D] [thread 276215] Adding interface s1-eth4 as port 4
 Adding interface s1-eth5 as port 5
-[17:11:56.610] [bmv2] [D] [thread 263645] Adding interface s1-eth5 as port 5
-[17:11:56.682] [bmv2] [I] [thread 263645] Starting Thrift server on port 9090
-[17:11:56.683] [bmv2] [I] [thread 263645] Thrift server was started
-[17:11:56.683] [bmv2] [D] [thread 263652] [0.0] [cxt 0] Processing packet received on port 4
-[17:11:56.683] [bmv2] [D] [thread 263652] [0.0] [cxt 0] Parser 'parser': start
-[17:11:56.683] [bmv2] [D] [thread 263652] [0.0] [cxt 0] Parser 'parser' entering state 'start'
-[17:11:56.683] [bmv2] [D] [thread 263652] [0.0] [cxt 0] Extracting header 'eth'
-[17:11:56.683] [bmv2] [D] [thread 263652] [0.0] [cxt 0] Parser state 'start': key is 86dd
-[17:11:56.683] [bmv2] [T] [thread 263652] [0.0] [cxt 0] Bytes parsed: 14
-[17:11:56.683] [bmv2] [D] [thread 263652] [0.0] [cxt 0] Parser 'parser': end
-[17:11:56.683] [bmv2] [D] [thread 263652] [0.0] [cxt 0] Pipeline 'ingress': start
-[17:11:56.683] [bmv2] [T] [thread 263652] [0.0] [cxt 0] Applying table 'tbl_ATP_switch156'
-[17:11:56.683] [bmv2] [D] [thread 263652] [0.0] [cxt 0] Looking up key:
+[21:32:51.311] [bmv2] [D] [thread 276215] Adding interface s1-eth5 as port 5
+[21:32:51.340] [bmv2] [I] [thread 276215] Starting Thrift server on port 9090
+[21:32:51.340] [bmv2] [I] [thread 276215] Thrift server was started
+[21:32:51.341] [bmv2] [D] [thread 276221] [0.0] [cxt 0] Processing packet received on port 4
+[21:32:51.341] [bmv2] [D] [thread 276221] [0.0] [cxt 0] Parser 'parser': start
+[21:32:51.341] [bmv2] [D] [thread 276221] [0.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:32:51.341] [bmv2] [D] [thread 276221] [0.0] [cxt 0] Extracting header 'eth'
+[21:32:51.341] [bmv2] [D] [thread 276221] [0.0] [cxt 0] Parser state 'start': key is 86dd
+[21:32:51.341] [bmv2] [T] [thread 276221] [0.0] [cxt 0] Bytes parsed: 14
+[21:32:51.341] [bmv2] [D] [thread 276221] [0.0] [cxt 0] Parser 'parser': end
+[21:32:51.341] [bmv2] [D] [thread 276221] [0.0] [cxt 0] Pipeline 'ingress': start
+[21:32:51.341] [bmv2] [T] [thread 276221] [0.0] [cxt 0] Applying table 'tbl_ATP_switch156'
+[21:32:51.341] [bmv2] [D] [thread 276221] [0.0] [cxt 0] Looking up key:
 
-[17:11:56.683] [bmv2] [D] [thread 263652] [0.0] [cxt 0] Table 'tbl_ATP_switch156': miss
-[17:11:56.683] [bmv2] [D] [thread 263652] [0.0] [cxt 0] Action entry is ATP_switch156 - 
-[17:11:56.683] [bmv2] [T] [thread 263652] [0.0] [cxt 0] Action ATP_switch156
-[17:11:56.683] [bmv2] [T] [thread 263652] [0.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(156) Primitive (bit<32>)index
-[17:11:56.683] [bmv2] [T] [thread 263652] [0.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(156) Primitive owner_pool.read(owner, (bit<32>)index)
-[17:11:56.683] [bmv2] [T] [thread 263652] [0.0] [cxt 0] Read register 'owner_pool' at index 0 read value 0
-[17:11:56.683] [bmv2] [T] [thread 263652] [0.0] [cxt 0] Applying table 'MyIngress.pool_access'
-[17:11:56.683] [bmv2] [D] [thread 263652] [0.0] [cxt 0] Looking up key:
+[21:32:51.341] [bmv2] [D] [thread 276221] [0.0] [cxt 0] Table 'tbl_ATP_switch156': miss
+[21:32:51.341] [bmv2] [D] [thread 276221] [0.0] [cxt 0] Action entry is ATP_switch156 - 
+[21:32:51.341] [bmv2] [T] [thread 276221] [0.0] [cxt 0] Action ATP_switch156
+[21:32:51.341] [bmv2] [T] [thread 276221] [0.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(156) Primitive (bit<32>)index
+[21:32:51.341] [bmv2] [T] [thread 276221] [0.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(156) Primitive owner_pool.read(owner, (bit<32>)index)
+[21:32:51.341] [bmv2] [T] [thread 276221] [0.0] [cxt 0] Read register 'owner_pool' at index 0 read value 0
+[21:32:51.341] [bmv2] [T] [thread 276221] [0.0] [cxt 0] Applying table 'MyIngress.pool_access'
+[21:32:51.341] [bmv2] [D] [thread 276221] [0.0] [cxt 0] Looking up key:
 * hdr.atp.aggregatorIndex: 0000
 
-[17:11:56.683] [bmv2] [D] [thread 263652] [0.0] [cxt 0] Table 'MyIngress.pool_access': miss
-[17:11:56.683] [bmv2] [D] [thread 263652] [0.0] [cxt 0] Action entry is NoAction - 
-[17:11:56.683] [bmv2] [T] [thread 263652] [0.0] [cxt 0] Action NoAction
-[17:11:56.683] [bmv2] [T] [thread 263652] [0.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(159) Condition "owner == hdr.atp.JobIdAndSequenceNumber" (node_4) is true
-[17:11:56.683] [bmv2] [T] [thread 263652] [0.0] [cxt 0] Applying table 'tbl_or_bitmap'
-[17:11:56.683] [bmv2] [D] [thread 263652] [0.0] [cxt 0] Looking up key:
+[21:32:51.341] [bmv2] [D] [thread 276221] [0.0] [cxt 0] Table 'MyIngress.pool_access': miss
+[21:32:51.341] [bmv2] [D] [thread 276221] [0.0] [cxt 0] Action entry is NoAction - 
+[21:32:51.341] [bmv2] [T] [thread 276221] [0.0] [cxt 0] Action NoAction
+[21:32:51.341] [bmv2] [T] [thread 276221] [0.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(159) Condition "owner == hdr.atp.JobIdAndSequenceNumber" (node_4) is true
+[21:32:51.341] [bmv2] [T] [thread 276221] [0.0] [cxt 0] Applying table 'tbl_or_bitmap'
+[21:32:51.341] [bmv2] [D] [thread 276221] [0.0] [cxt 0] Looking up key:
 
-[17:11:56.683] [bmv2] [D] [thread 263652] [0.0] [cxt 0] Table 'tbl_or_bitmap': miss
-[17:11:56.683] [bmv2] [D] [thread 263652] [0.0] [cxt 0] Action entry is MyIngress.or_bitmap - 
-[17:11:56.683] [bmv2] [T] [thread 263652] [0.0] [cxt 0] Action MyIngress.or_bitmap
-[17:11:56.683] [bmv2] [T] [thread 263652] [0.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(134) Primitive (bit<32>) hdr.atp.aggregatorIndex
-[17:11:56.683] [bmv2] [T] [thread 263652] [0.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(134) Primitive bitmap_register.read(value, (bit<32>) hdr.atp.aggregatorIndex)
-[17:11:56.683] [bmv2] [T] [thread 263652] [0.0] [cxt 0] Read register 'bitmap_register' at index 0 read value 0
-[17:11:56.683] [bmv2] [T] [thread 263652] [0.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(135) Primitive value2 = value
-[17:11:56.683] [bmv2] [T] [thread 263652] [0.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(136) Primitive value = value | bitmap
-[17:11:56.683] [bmv2] [T] [thread 263652] [0.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(138) Primitive (bit<32>) hdr.atp.aggregatorIndex
-[17:11:56.683] [bmv2] [T] [thread 263652] [0.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(138) Primitive bitmap_register.write((bit<32>) hdr.atp.aggregatorIndex, value)
-[17:11:56.683] [bmv2] [T] [thread 263652] [0.0] [cxt 0] Wrote register 'bitmap_register' at index 0 with value 0
-[17:11:56.683] [bmv2] [T] [thread 263652] [0.0] [cxt 0] Primitive (no source info)
-[17:11:56.683] [bmv2] [T] [thread 263652] [0.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(162) Condition "meta.already_aggregated == 0" (node_6) is false
-[17:11:56.683] [bmv2] [D] [thread 263652] [0.0] [cxt 0] Pipeline 'ingress': end
-[17:11:56.683] [bmv2] [D] [thread 263652] [0.0] [cxt 0] Egress port is 0
-[17:11:56.684] [bmv2] [D] [thread 263653] [0.0] [cxt 0] Pipeline 'egress': start
-[17:11:56.684] [bmv2] [D] [thread 263653] [0.0] [cxt 0] Pipeline 'egress': end
-[17:11:56.684] [bmv2] [D] [thread 263653] [0.0] [cxt 0] Deparser 'deparser': start
-[17:11:56.684] [bmv2] [D] [thread 263653] [0.0] [cxt 0] Deparsing header 'eth'
-[17:11:56.684] [bmv2] [D] [thread 263653] [0.0] [cxt 0] Deparser 'deparser': end
-[17:11:56.684] [bmv2] [D] [thread 263657] [0.0] [cxt 0] Transmitting packet of size 90 out of port 0
-[17:11:56.774] [bmv2] [T] [thread 263708] bm_get_config
-[17:11:56.777] [bmv2] [T] [thread 263708] bm_table_add_entry
-[17:11:56.777] [bmv2] [D] [thread 263708] Entry 0 added to table 'MyIngress.pool_access'
-[17:11:56.777] [bmv2] [D] [thread 263708] Dumping entry 0
+[21:32:51.341] [bmv2] [D] [thread 276221] [0.0] [cxt 0] Table 'tbl_or_bitmap': miss
+[21:32:51.341] [bmv2] [D] [thread 276221] [0.0] [cxt 0] Action entry is MyIngress.or_bitmap - 
+[21:32:51.341] [bmv2] [T] [thread 276221] [0.0] [cxt 0] Action MyIngress.or_bitmap
+[21:32:51.341] [bmv2] [T] [thread 276221] [0.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(134) Primitive (bit<32>) hdr.atp.aggregatorIndex
+[21:32:51.341] [bmv2] [T] [thread 276221] [0.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(134) Primitive bitmap_register.read(value, (bit<32>) hdr.atp.aggregatorIndex)
+[21:32:51.341] [bmv2] [T] [thread 276221] [0.0] [cxt 0] Read register 'bitmap_register' at index 0 read value 0
+[21:32:51.341] [bmv2] [T] [thread 276221] [0.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(135) Primitive value2 = value
+[21:32:51.341] [bmv2] [T] [thread 276221] [0.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(136) Primitive value = value | bitmap
+[21:32:51.341] [bmv2] [T] [thread 276221] [0.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(138) Primitive (bit<32>) hdr.atp.aggregatorIndex
+[21:32:51.341] [bmv2] [T] [thread 276221] [0.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(138) Primitive bitmap_register.write((bit<32>) hdr.atp.aggregatorIndex, value)
+[21:32:51.341] [bmv2] [T] [thread 276221] [0.0] [cxt 0] Wrote register 'bitmap_register' at index 0 with value 0
+[21:32:51.341] [bmv2] [T] [thread 276221] [0.0] [cxt 0] Primitive (no source info)
+[21:32:51.341] [bmv2] [T] [thread 276221] [0.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(162) Condition "meta.already_aggregated == 0" (node_6) is false
+[21:32:51.341] [bmv2] [D] [thread 276221] [0.0] [cxt 0] Pipeline 'ingress': end
+[21:32:51.341] [bmv2] [D] [thread 276221] [0.0] [cxt 0] Egress port is 0
+[21:32:51.341] [bmv2] [D] [thread 276222] [0.0] [cxt 0] Pipeline 'egress': start
+[21:32:51.341] [bmv2] [D] [thread 276222] [0.0] [cxt 0] Pipeline 'egress': end
+[21:32:51.341] [bmv2] [D] [thread 276222] [0.0] [cxt 0] Deparser 'deparser': start
+[21:32:51.341] [bmv2] [D] [thread 276222] [0.0] [cxt 0] Deparsing header 'eth'
+[21:32:51.341] [bmv2] [D] [thread 276222] [0.0] [cxt 0] Deparser 'deparser': end
+[21:32:51.341] [bmv2] [D] [thread 276226] [0.0] [cxt 0] Transmitting packet of size 86 out of port 0
+[21:32:51.367] [bmv2] [D] [thread 276221] [1.0] [cxt 0] Processing packet received on port 5
+[21:32:51.367] [bmv2] [D] [thread 276221] [1.0] [cxt 0] Parser 'parser': start
+[21:32:51.367] [bmv2] [D] [thread 276221] [1.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:32:51.367] [bmv2] [D] [thread 276221] [1.0] [cxt 0] Extracting header 'eth'
+[21:32:51.367] [bmv2] [D] [thread 276221] [1.0] [cxt 0] Parser state 'start': key is 86dd
+[21:32:51.367] [bmv2] [T] [thread 276221] [1.0] [cxt 0] Bytes parsed: 14
+[21:32:51.367] [bmv2] [D] [thread 276221] [1.0] [cxt 0] Parser 'parser': end
+[21:32:51.367] [bmv2] [D] [thread 276221] [1.0] [cxt 0] Pipeline 'ingress': start
+[21:32:51.367] [bmv2] [T] [thread 276221] [1.0] [cxt 0] Applying table 'tbl_ATP_switch156'
+[21:32:51.367] [bmv2] [D] [thread 276221] [1.0] [cxt 0] Looking up key:
+
+[21:32:51.367] [bmv2] [D] [thread 276221] [1.0] [cxt 0] Table 'tbl_ATP_switch156': miss
+[21:32:51.367] [bmv2] [D] [thread 276221] [1.0] [cxt 0] Action entry is ATP_switch156 - 
+[21:32:51.367] [bmv2] [T] [thread 276221] [1.0] [cxt 0] Action ATP_switch156
+[21:32:51.367] [bmv2] [T] [thread 276221] [1.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(156) Primitive (bit<32>)index
+[21:32:51.367] [bmv2] [T] [thread 276221] [1.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(156) Primitive owner_pool.read(owner, (bit<32>)index)
+[21:32:51.367] [bmv2] [T] [thread 276221] [1.0] [cxt 0] Read register 'owner_pool' at index 0 read value 0
+[21:32:51.367] [bmv2] [T] [thread 276221] [1.0] [cxt 0] Applying table 'MyIngress.pool_access'
+[21:32:51.367] [bmv2] [D] [thread 276221] [1.0] [cxt 0] Looking up key:
+* hdr.atp.aggregatorIndex: 0000
+
+[21:32:51.367] [bmv2] [D] [thread 276221] [1.0] [cxt 0] Table 'MyIngress.pool_access': miss
+[21:32:51.367] [bmv2] [D] [thread 276221] [1.0] [cxt 0] Action entry is NoAction - 
+[21:32:51.367] [bmv2] [T] [thread 276221] [1.0] [cxt 0] Action NoAction
+[21:32:51.367] [bmv2] [T] [thread 276221] [1.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(159) Condition "owner == hdr.atp.JobIdAndSequenceNumber" (node_4) is true
+[21:32:51.367] [bmv2] [T] [thread 276221] [1.0] [cxt 0] Applying table 'tbl_or_bitmap'
+[21:32:51.367] [bmv2] [D] [thread 276221] [1.0] [cxt 0] Looking up key:
+
+[21:32:51.368] [bmv2] [D] [thread 276221] [1.0] [cxt 0] Table 'tbl_or_bitmap': miss
+[21:32:51.368] [bmv2] [D] [thread 276221] [1.0] [cxt 0] Action entry is MyIngress.or_bitmap - 
+[21:32:51.368] [bmv2] [T] [thread 276221] [1.0] [cxt 0] Action MyIngress.or_bitmap
+[21:32:51.368] [bmv2] [T] [thread 276221] [1.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(134) Primitive (bit<32>) hdr.atp.aggregatorIndex
+[21:32:51.368] [bmv2] [T] [thread 276221] [1.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(134) Primitive bitmap_register.read(value, (bit<32>) hdr.atp.aggregatorIndex)
+[21:32:51.368] [bmv2] [T] [thread 276221] [1.0] [cxt 0] Read register 'bitmap_register' at index 0 read value 0
+[21:32:51.368] [bmv2] [T] [thread 276221] [1.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(135) Primitive value2 = value
+[21:32:51.368] [bmv2] [T] [thread 276221] [1.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(136) Primitive value = value | bitmap
+[21:32:51.368] [bmv2] [T] [thread 276221] [1.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(138) Primitive (bit<32>) hdr.atp.aggregatorIndex
+[21:32:51.368] [bmv2] [T] [thread 276221] [1.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(138) Primitive bitmap_register.write((bit<32>) hdr.atp.aggregatorIndex, value)
+[21:32:51.368] [bmv2] [T] [thread 276221] [1.0] [cxt 0] Wrote register 'bitmap_register' at index 0 with value 0
+[21:32:51.368] [bmv2] [T] [thread 276221] [1.0] [cxt 0] Primitive (no source info)
+[21:32:51.368] [bmv2] [T] [thread 276221] [1.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(162) Condition "meta.already_aggregated == 0" (node_6) is false
+[21:32:51.368] [bmv2] [D] [thread 276221] [1.0] [cxt 0] Pipeline 'ingress': end
+[21:32:51.368] [bmv2] [D] [thread 276221] [1.0] [cxt 0] Egress port is 0
+[21:32:51.368] [bmv2] [D] [thread 276222] [1.0] [cxt 0] Pipeline 'egress': start
+[21:32:51.368] [bmv2] [D] [thread 276222] [1.0] [cxt 0] Pipeline 'egress': end
+[21:32:51.368] [bmv2] [D] [thread 276222] [1.0] [cxt 0] Deparser 'deparser': start
+[21:32:51.368] [bmv2] [D] [thread 276222] [1.0] [cxt 0] Deparsing header 'eth'
+[21:32:51.368] [bmv2] [D] [thread 276222] [1.0] [cxt 0] Deparser 'deparser': end
+[21:32:51.368] [bmv2] [D] [thread 276226] [1.0] [cxt 0] Transmitting packet of size 86 out of port 0
+[21:32:51.433] [bmv2] [T] [thread 276276] bm_get_config
+[21:32:51.436] [bmv2] [T] [thread 276276] bm_table_add_entry
+[21:32:51.436] [bmv2] [D] [thread 276276] Entry 0 added to table 'MyIngress.pool_access'
+[21:32:51.436] [bmv2] [D] [thread 276276] Dumping entry 0
 Match key:
 * hdr.atp.aggregatorIndex: EXACT     0000
 Action entry: MyIngress.aggregate - 0,
 
-[17:11:56.777] [bmv2] [T] [thread 263708] bm_table_add_entry
-[17:11:56.777] [bmv2] [D] [thread 263708] Entry 1 added to table 'MyIngress.pool_access'
-[17:11:56.777] [bmv2] [D] [thread 263708] Dumping entry 1
+[21:32:51.436] [bmv2] [T] [thread 276276] bm_table_add_entry
+[21:32:51.436] [bmv2] [D] [thread 276276] Entry 1 added to table 'MyIngress.pool_access'
+[21:32:51.436] [bmv2] [D] [thread 276276] Dumping entry 1
 Match key:
 * hdr.atp.aggregatorIndex: EXACT     0001
 Action entry: MyIngress.aggregate - 14,
 
-[17:11:56.777] [bmv2] [T] [thread 263708] bm_table_add_entry
-[17:11:56.777] [bmv2] [D] [thread 263708] Entry 2 added to table 'MyIngress.pool_access'
-[17:11:56.777] [bmv2] [D] [thread 263708] Dumping entry 2
+[21:32:51.437] [bmv2] [T] [thread 276276] bm_table_add_entry
+[21:32:51.437] [bmv2] [D] [thread 276276] Entry 2 added to table 'MyIngress.pool_access'
+[21:32:51.437] [bmv2] [D] [thread 276276] Dumping entry 2
 Match key:
 * hdr.atp.aggregatorIndex: EXACT     0002
 Action entry: MyIngress.aggregate - 28,
 
-[17:11:56.778] [bmv2] [T] [thread 263708] bm_table_add_entry
-[17:11:56.778] [bmv2] [D] [thread 263708] Entry 3 added to table 'MyIngress.pool_access'
-[17:11:56.778] [bmv2] [D] [thread 263708] Dumping entry 3
+[21:32:51.437] [bmv2] [T] [thread 276276] bm_table_add_entry
+[21:32:51.437] [bmv2] [D] [thread 276276] Entry 3 added to table 'MyIngress.pool_access'
+[21:32:51.437] [bmv2] [D] [thread 276276] Dumping entry 3
 Match key:
 * hdr.atp.aggregatorIndex: EXACT     0003
 Action entry: MyIngress.aggregate - 3c,
 
-[17:11:56.778] [bmv2] [T] [thread 263708] bm_table_add_entry
-[17:11:56.778] [bmv2] [D] [thread 263708] Entry 4 added to table 'MyIngress.pool_access'
-[17:11:56.778] [bmv2] [D] [thread 263708] Dumping entry 4
+[21:32:51.437] [bmv2] [T] [thread 276276] bm_table_add_entry
+[21:32:51.437] [bmv2] [D] [thread 276276] Entry 4 added to table 'MyIngress.pool_access'
+[21:32:51.437] [bmv2] [D] [thread 276276] Dumping entry 4
 Match key:
 * hdr.atp.aggregatorIndex: EXACT     0004
 Action entry: MyIngress.aggregate - 50,
 
-[17:11:56.778] [bmv2] [T] [thread 263708] bm_table_add_entry
-[17:11:56.778] [bmv2] [D] [thread 263708] Entry 5 added to table 'MyIngress.pool_access'
-[17:11:56.778] [bmv2] [D] [thread 263708] Dumping entry 5
+[21:32:51.437] [bmv2] [T] [thread 276276] bm_table_add_entry
+[21:32:51.437] [bmv2] [D] [thread 276276] Entry 5 added to table 'MyIngress.pool_access'
+[21:32:51.437] [bmv2] [D] [thread 276276] Dumping entry 5
 Match key:
 * hdr.atp.aggregatorIndex: EXACT     0005
 Action entry: MyIngress.aggregate - 64,
 
-[17:11:56.778] [bmv2] [T] [thread 263708] bm_table_add_entry
-[17:11:56.778] [bmv2] [D] [thread 263708] Entry 6 added to table 'MyIngress.pool_access'
-[17:11:56.778] [bmv2] [D] [thread 263708] Dumping entry 6
+[21:32:51.438] [bmv2] [T] [thread 276276] bm_table_add_entry
+[21:32:51.438] [bmv2] [D] [thread 276276] Entry 6 added to table 'MyIngress.pool_access'
+[21:32:51.438] [bmv2] [D] [thread 276276] Dumping entry 6
 Match key:
 * hdr.atp.aggregatorIndex: EXACT     0006
 Action entry: MyIngress.aggregate - 78,
 
-[17:11:56.778] [bmv2] [T] [thread 263708] bm_table_add_entry
-[17:11:56.778] [bmv2] [D] [thread 263708] Entry 7 added to table 'MyIngress.pool_access'
-[17:11:56.778] [bmv2] [D] [thread 263708] Dumping entry 7
+[21:32:51.438] [bmv2] [T] [thread 276276] bm_table_add_entry
+[21:32:51.438] [bmv2] [D] [thread 276276] Entry 7 added to table 'MyIngress.pool_access'
+[21:32:51.438] [bmv2] [D] [thread 276276] Dumping entry 7
 Match key:
 * hdr.atp.aggregatorIndex: EXACT     0007
 Action entry: MyIngress.aggregate - 8c,
 
-[17:11:56.778] [bmv2] [T] [thread 263708] bm_table_add_entry
-[17:11:56.778] [bmv2] [D] [thread 263708] Entry 8 added to table 'MyIngress.pool_access'
-[17:11:56.778] [bmv2] [D] [thread 263708] Dumping entry 8
+[21:32:51.438] [bmv2] [T] [thread 276276] bm_table_add_entry
+[21:32:51.438] [bmv2] [D] [thread 276276] Entry 8 added to table 'MyIngress.pool_access'
+[21:32:51.438] [bmv2] [D] [thread 276276] Dumping entry 8
 Match key:
 * hdr.atp.aggregatorIndex: EXACT     0008
 Action entry: MyIngress.aggregate - a0,
 
-[17:11:56.778] [bmv2] [T] [thread 263708] bm_table_add_entry
-[17:11:56.778] [bmv2] [D] [thread 263708] Entry 9 added to table 'MyIngress.pool_access'
-[17:11:56.778] [bmv2] [D] [thread 263708] Dumping entry 9
+[21:32:51.438] [bmv2] [T] [thread 276276] bm_table_add_entry
+[21:32:51.438] [bmv2] [D] [thread 276276] Entry 9 added to table 'MyIngress.pool_access'
+[21:32:51.438] [bmv2] [D] [thread 276276] Dumping entry 9
 Match key:
 * hdr.atp.aggregatorIndex: EXACT     0009
 Action entry: MyIngress.aggregate - b4,
 
-[17:11:56.778] [bmv2] [T] [thread 263708] bm_table_add_entry
-[17:11:56.778] [bmv2] [D] [thread 263708] Entry 0 added to table 'MyIngress.workers4job'
-[17:11:56.778] [bmv2] [D] [thread 263708] Dumping entry 0
+[21:32:51.438] [bmv2] [T] [thread 276276] bm_table_add_entry
+[21:32:51.438] [bmv2] [D] [thread 276276] Entry 0 added to table 'MyIngress.workers4job'
+[21:32:51.438] [bmv2] [D] [thread 276276] Dumping entry 0
 Match key:
 * hdr.atp.JobIdAndSequenceNumber[31:24]: EXACT     01
 * meta.current_counter                 : EXACT     00000004
 Action entry: MyIngress.clear_memory - 
 
-[17:11:56.778] [bmv2] [T] [thread 263708] bm_table_add_entry
-[17:11:56.778] [bmv2] [D] [thread 263708] Entry 1 added to table 'MyIngress.workers4job'
-[17:11:56.778] [bmv2] [D] [thread 263708] Dumping entry 1
+[21:32:51.438] [bmv2] [T] [thread 276276] bm_table_add_entry
+[21:32:51.438] [bmv2] [D] [thread 276276] Entry 1 added to table 'MyIngress.workers4job'
+[21:32:51.438] [bmv2] [D] [thread 276276] Dumping entry 1
 Match key:
 * hdr.atp.JobIdAndSequenceNumber[31:24]: EXACT     02
 * meta.current_counter                 : EXACT     00000007
 Action entry: MyIngress.clear_memory - 
 
-[17:11:56.778] [bmv2] [T] [thread 263708] bm_table_add_entry
-[17:11:56.778] [bmv2] [D] [thread 263708] Entry 2 added to table 'MyIngress.workers4job'
-[17:11:56.778] [bmv2] [D] [thread 263708] Dumping entry 2
+[21:32:51.438] [bmv2] [T] [thread 276276] bm_table_add_entry
+[21:32:51.438] [bmv2] [D] [thread 276276] Entry 2 added to table 'MyIngress.workers4job'
+[21:32:51.438] [bmv2] [D] [thread 276276] Dumping entry 2
 Match key:
 * hdr.atp.JobIdAndSequenceNumber[31:24]: EXACT     05
 * meta.current_counter                 : EXACT     0000000a
 Action entry: MyIngress.clear_memory - 
 
+[21:33:00.328] [bmv2] [D] [thread 276221] [2.0] [cxt 0] Processing packet received on port 1
+[21:33:00.328] [bmv2] [D] [thread 276221] [2.0] [cxt 0] Parser 'parser': start
+[21:33:00.329] [bmv2] [D] [thread 276221] [2.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:33:00.329] [bmv2] [D] [thread 276221] [2.0] [cxt 0] Extracting header 'eth'
+[21:33:00.329] [bmv2] [D] [thread 276221] [2.0] [cxt 0] Parser state 'start': key is 0800
+[21:33:00.329] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Bytes parsed: 14
+[21:33:00.329] [bmv2] [D] [thread 276221] [2.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[21:33:00.329] [bmv2] [D] [thread 276221] [2.0] [cxt 0] Extracting header 'ipv4'
+[21:33:00.329] [bmv2] [D] [thread 276221] [2.0] [cxt 0] Parser state 'parse_ipv4': key is 99
+[21:33:00.329] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Bytes parsed: 34
+[21:33:00.329] [bmv2] [D] [thread 276221] [2.0] [cxt 0] Parser 'parser' entering state 'parse_atp'
+[21:33:00.329] [bmv2] [D] [thread 276221] [2.0] [cxt 0] Extracting header 'atp'
+[21:33:00.329] [bmv2] [D] [thread 276221] [2.0] [cxt 0] Extracting header 'data'
+[21:33:00.329] [bmv2] [D] [thread 276221] [2.0] [cxt 0] Parser state 'parse_atp' has no switch, going to default next state
+[21:33:00.329] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Bytes parsed: 130
+[21:33:00.329] [bmv2] [D] [thread 276221] [2.0] [cxt 0] Parser 'parser': end
+[21:33:00.329] [bmv2] [D] [thread 276221] [2.0] [cxt 0] Pipeline 'ingress': start
+[21:33:00.329] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Applying table 'tbl_ATP_switch156'
+[21:33:00.329] [bmv2] [D] [thread 276221] [2.0] [cxt 0] Looking up key:
+
+[21:33:00.329] [bmv2] [D] [thread 276221] [2.0] [cxt 0] Table 'tbl_ATP_switch156': miss
+[21:33:00.329] [bmv2] [D] [thread 276221] [2.0] [cxt 0] Action entry is ATP_switch156 - 
+[21:33:00.329] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Action ATP_switch156
+[21:33:00.329] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(156) Primitive (bit<32>)index
+[21:33:00.329] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(156) Primitive owner_pool.read(owner, (bit<32>)index)
+[21:33:00.329] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Read register 'owner_pool' at index 7 read value 0
+[21:33:00.329] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Applying table 'MyIngress.pool_access'
+[21:33:00.329] [bmv2] [D] [thread 276221] [2.0] [cxt 0] Looking up key:
+* hdr.atp.aggregatorIndex: 0007
+
+[21:33:00.329] [bmv2] [D] [thread 276221] [2.0] [cxt 0] Table 'MyIngress.pool_access': hit with handle 7
+[21:33:00.329] [bmv2] [D] [thread 276221] [2.0] [cxt 0] Dumping entry 7
+Match key:
+* hdr.atp.aggregatorIndex: EXACT     0007
+Action entry: MyIngress.aggregate - 8c,
+
+[21:33:00.329] [bmv2] [D] [thread 276221] [2.0] [cxt 0] Action entry is MyIngress.aggregate - 8c,
+[21:33:00.329] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Action MyIngress.aggregate
+[21:33:00.329] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(43) Primitive meta.slice_index = slice_index
+[21:33:00.329] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(159) Condition "owner == hdr.atp.JobIdAndSequenceNumber" (node_4) is false
+[21:33:00.329] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(174) Condition "owner == 0" (node_12) is true
+[21:33:00.329] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Applying table 'tbl_ATP_switch178'
+[21:33:00.329] [bmv2] [D] [thread 276221] [2.0] [cxt 0] Looking up key:
+
+[21:33:00.329] [bmv2] [D] [thread 276221] [2.0] [cxt 0] Table 'tbl_ATP_switch178': miss
+[21:33:00.329] [bmv2] [D] [thread 276221] [2.0] [cxt 0] Action entry is ATP_switch178 - 
+[21:33:00.329] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Action ATP_switch178
+[21:33:00.329] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(178) Primitive (bit<32>) index
+[21:33:00.329] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(178) Primitive owner_pool.write((bit<32>) index, hdr.atp.JobIdAndSequenceNumber)
+[21:33:00.329] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Wrote register 'owner_pool' at index 7 with value 16777217
+[21:33:00.329] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Applying table 'tbl_or_bitmap_0'
+[21:33:00.329] [bmv2] [D] [thread 276221] [2.0] [cxt 0] Looking up key:
+
+[21:33:00.329] [bmv2] [D] [thread 276221] [2.0] [cxt 0] Table 'tbl_or_bitmap_0': miss
+[21:33:00.329] [bmv2] [D] [thread 276221] [2.0] [cxt 0] Action entry is MyIngress.or_bitmap - 
+[21:33:00.329] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Action MyIngress.or_bitmap
+[21:33:00.329] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(134) Primitive (bit<32>) hdr.atp.aggregatorIndex
+[21:33:00.329] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(134) Primitive bitmap_register.read(value, (bit<32>) hdr.atp.aggregatorIndex)
+[21:33:00.329] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Read register 'bitmap_register' at index 7 read value 0
+[21:33:00.329] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(135) Primitive value2 = value
+[21:33:00.329] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(136) Primitive value = value | bitmap
+[21:33:00.329] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(138) Primitive (bit<32>) hdr.atp.aggregatorIndex
+[21:33:00.329] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(138) Primitive bitmap_register.write((bit<32>) hdr.atp.aggregatorIndex, value)
+[21:33:00.329] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Wrote register 'bitmap_register' at index 7 with value 1
+[21:33:00.329] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Primitive (no source info)
+[21:33:00.329] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Applying table 'tbl_aggregate_values_0'
+[21:33:00.329] [bmv2] [D] [thread 276221] [2.0] [cxt 0] Looking up key:
+
+[21:33:00.329] [bmv2] [D] [thread 276221] [2.0] [cxt 0] Table 'tbl_aggregate_values_0': miss
+[21:33:00.329] [bmv2] [D] [thread 276221] [2.0] [cxt 0] Action entry is MyIngress.aggregate_values - 
+[21:33:00.329] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Action MyIngress.aggregate_values
+[21:33:00.329] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.329] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.329] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Read register 'big_pool' at index 140 read value 0
+[21:33:00.329] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.329] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Primitive (no source info)
+[21:33:00.329] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.329] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Wrote register 'big_pool' at index 140 with value 1
+[21:33:00.329] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Primitive (no source info)
+[21:33:00.329] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.329] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.329] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Read register 'big_pool' at index 141 read value 0
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Primitive (no source info)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Wrote register 'big_pool' at index 141 with value 1
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Primitive (no source info)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Read register 'big_pool' at index 142 read value 0
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Primitive (no source info)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Wrote register 'big_pool' at index 142 with value 1
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Primitive (no source info)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Read register 'big_pool' at index 143 read value 0
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Primitive (no source info)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Wrote register 'big_pool' at index 143 with value 1
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Primitive (no source info)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Read register 'big_pool' at index 144 read value 0
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Primitive (no source info)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Wrote register 'big_pool' at index 144 with value 1
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Primitive (no source info)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Read register 'big_pool' at index 145 read value 0
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Primitive (no source info)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Wrote register 'big_pool' at index 145 with value 1
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Primitive (no source info)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Read register 'big_pool' at index 146 read value 0
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Primitive (no source info)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Wrote register 'big_pool' at index 146 with value 1
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Primitive (no source info)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Read register 'big_pool' at index 147 read value 0
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Primitive (no source info)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Wrote register 'big_pool' at index 147 with value 1
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Primitive (no source info)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Read register 'big_pool' at index 148 read value 0
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Primitive (no source info)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Wrote register 'big_pool' at index 148 with value 1
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Primitive (no source info)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Read register 'big_pool' at index 149 read value 0
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Primitive (no source info)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Wrote register 'big_pool' at index 149 with value 1
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Primitive (no source info)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Read register 'big_pool' at index 150 read value 0
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Primitive (no source info)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Wrote register 'big_pool' at index 150 with value 1
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Primitive (no source info)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Read register 'big_pool' at index 151 read value 0
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Primitive (no source info)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Wrote register 'big_pool' at index 151 with value 1
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Primitive (no source info)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Read register 'big_pool' at index 152 read value 0
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Primitive (no source info)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Wrote register 'big_pool' at index 152 with value 1
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Primitive (no source info)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Read register 'big_pool' at index 153 read value 0
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Primitive (no source info)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Wrote register 'big_pool' at index 153 with value 1
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Primitive (no source info)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Read register 'big_pool' at index 154 read value 0
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Primitive (no source info)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Wrote register 'big_pool' at index 154 with value 1
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Primitive (no source info)
+[21:33:00.330] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.331] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.331] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Read register 'big_pool' at index 155 read value 0
+[21:33:00.331] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.331] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Primitive (no source info)
+[21:33:00.331] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.331] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Wrote register 'big_pool' at index 155 with value 1
+[21:33:00.331] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Primitive (no source info)
+[21:33:00.331] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.331] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.331] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Read register 'big_pool' at index 156 read value 0
+[21:33:00.331] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.331] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Primitive (no source info)
+[21:33:00.331] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.331] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Wrote register 'big_pool' at index 156 with value 1
+[21:33:00.331] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Primitive (no source info)
+[21:33:00.331] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.331] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.331] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Read register 'big_pool' at index 157 read value 0
+[21:33:00.331] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.331] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Primitive (no source info)
+[21:33:00.331] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.331] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Wrote register 'big_pool' at index 157 with value 1
+[21:33:00.331] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Primitive (no source info)
+[21:33:00.331] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.331] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.331] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Read register 'big_pool' at index 158 read value 0
+[21:33:00.331] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.331] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Primitive (no source info)
+[21:33:00.331] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.331] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Wrote register 'big_pool' at index 158 with value 1
+[21:33:00.331] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Primitive (no source info)
+[21:33:00.331] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.331] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.331] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Read register 'big_pool' at index 159 read value 0
+[21:33:00.331] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.331] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Primitive (no source info)
+[21:33:00.331] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.331] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Wrote register 'big_pool' at index 159 with value 1
+[21:33:00.331] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Primitive (no source info)
+[21:33:00.331] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Applying table 'tbl_increase_counter_0'
+[21:33:00.331] [bmv2] [D] [thread 276221] [2.0] [cxt 0] Looking up key:
+
+[21:33:00.331] [bmv2] [D] [thread 276221] [2.0] [cxt 0] Table 'tbl_increase_counter_0': miss
+[21:33:00.331] [bmv2] [D] [thread 276221] [2.0] [cxt 0] Action entry is MyIngress.increase_counter - 
+[21:33:00.331] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Action MyIngress.increase_counter
+[21:33:00.331] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(49) Primitive (bit<32>) hdr.atp.aggregatorIndex
+[21:33:00.331] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(49) Primitive counts.read(value, (bit<32>) hdr.atp.aggregatorIndex)
+[21:33:00.331] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Read register 'counts' at index 7 read value 0
+[21:33:00.331] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(50) Primitive value = value + 1
+[21:33:00.331] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(51) Primitive (bit<32>) hdr.atp.aggregatorIndex
+[21:33:00.331] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(51) Primitive counts.write((bit<32>) hdr.atp.aggregatorIndex, value)
+[21:33:00.331] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Wrote register 'counts' at index 7 with value 1
+[21:33:00.331] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(52) Primitive meta.current_counter = value
+[21:33:00.331] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Applying table 'tbl_ATP_switch185'
+[21:33:00.331] [bmv2] [D] [thread 276221] [2.0] [cxt 0] Looking up key:
+
+[21:33:00.331] [bmv2] [D] [thread 276221] [2.0] [cxt 0] Table 'tbl_ATP_switch185': miss
+[21:33:00.331] [bmv2] [D] [thread 276221] [2.0] [cxt 0] Action entry is ATP_switch185 - 
+[21:33:00.331] [bmv2] [T] [thread 276221] [2.0] [cxt 0] Action ATP_switch185
+[21:33:00.331] [bmv2] [T] [thread 276221] [2.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(185) Primitive mark_to_drop(standard_metadata)
+[21:33:00.331] [bmv2] [D] [thread 276221] [2.0] [cxt 0] Pipeline 'ingress': end
+[21:33:00.331] [bmv2] [D] [thread 276221] [2.0] [cxt 0] Egress port is 511
+[21:33:00.331] [bmv2] [D] [thread 276221] [2.0] [cxt 0] Dropping packet at the end of ingress
+[21:33:00.340] [bmv2] [D] [thread 276221] [3.0] [cxt 0] Processing packet received on port 2
+[21:33:00.340] [bmv2] [D] [thread 276221] [3.0] [cxt 0] Parser 'parser': start
+[21:33:00.340] [bmv2] [D] [thread 276221] [3.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:33:00.340] [bmv2] [D] [thread 276221] [3.0] [cxt 0] Extracting header 'eth'
+[21:33:00.341] [bmv2] [D] [thread 276221] [3.0] [cxt 0] Parser state 'start': key is 0800
+[21:33:00.341] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Bytes parsed: 14
+[21:33:00.341] [bmv2] [D] [thread 276221] [3.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[21:33:00.341] [bmv2] [D] [thread 276221] [3.0] [cxt 0] Extracting header 'ipv4'
+[21:33:00.341] [bmv2] [D] [thread 276221] [3.0] [cxt 0] Parser state 'parse_ipv4': key is 99
+[21:33:00.341] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Bytes parsed: 34
+[21:33:00.341] [bmv2] [D] [thread 276221] [3.0] [cxt 0] Parser 'parser' entering state 'parse_atp'
+[21:33:00.341] [bmv2] [D] [thread 276221] [3.0] [cxt 0] Extracting header 'atp'
+[21:33:00.341] [bmv2] [D] [thread 276221] [3.0] [cxt 0] Extracting header 'data'
+[21:33:00.341] [bmv2] [D] [thread 276221] [3.0] [cxt 0] Parser state 'parse_atp' has no switch, going to default next state
+[21:33:00.341] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Bytes parsed: 130
+[21:33:00.341] [bmv2] [D] [thread 276221] [3.0] [cxt 0] Parser 'parser': end
+[21:33:00.341] [bmv2] [D] [thread 276221] [3.0] [cxt 0] Pipeline 'ingress': start
+[21:33:00.341] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Applying table 'tbl_ATP_switch156'
+[21:33:00.341] [bmv2] [D] [thread 276221] [3.0] [cxt 0] Looking up key:
+
+[21:33:00.341] [bmv2] [D] [thread 276221] [3.0] [cxt 0] Table 'tbl_ATP_switch156': miss
+[21:33:00.341] [bmv2] [D] [thread 276221] [3.0] [cxt 0] Action entry is ATP_switch156 - 
+[21:33:00.341] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Action ATP_switch156
+[21:33:00.341] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(156) Primitive (bit<32>)index
+[21:33:00.341] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(156) Primitive owner_pool.read(owner, (bit<32>)index)
+[21:33:00.341] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Read register 'owner_pool' at index 7 read value 16777217
+[21:33:00.341] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Applying table 'MyIngress.pool_access'
+[21:33:00.341] [bmv2] [D] [thread 276221] [3.0] [cxt 0] Looking up key:
+* hdr.atp.aggregatorIndex: 0007
+
+[21:33:00.341] [bmv2] [D] [thread 276221] [3.0] [cxt 0] Table 'MyIngress.pool_access': hit with handle 7
+[21:33:00.341] [bmv2] [D] [thread 276221] [3.0] [cxt 0] Dumping entry 7
+Match key:
+* hdr.atp.aggregatorIndex: EXACT     0007
+Action entry: MyIngress.aggregate - 8c,
+
+[21:33:00.341] [bmv2] [D] [thread 276221] [3.0] [cxt 0] Action entry is MyIngress.aggregate - 8c,
+[21:33:00.341] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Action MyIngress.aggregate
+[21:33:00.341] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(43) Primitive meta.slice_index = slice_index
+[21:33:00.341] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(159) Condition "owner == hdr.atp.JobIdAndSequenceNumber" (node_4) is true
+[21:33:00.341] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Applying table 'tbl_or_bitmap'
+[21:33:00.341] [bmv2] [D] [thread 276221] [3.0] [cxt 0] Looking up key:
+
+[21:33:00.341] [bmv2] [D] [thread 276221] [3.0] [cxt 0] Table 'tbl_or_bitmap': miss
+[21:33:00.341] [bmv2] [D] [thread 276221] [3.0] [cxt 0] Action entry is MyIngress.or_bitmap - 
+[21:33:00.341] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Action MyIngress.or_bitmap
+[21:33:00.341] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(134) Primitive (bit<32>) hdr.atp.aggregatorIndex
+[21:33:00.341] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(134) Primitive bitmap_register.read(value, (bit<32>) hdr.atp.aggregatorIndex)
+[21:33:00.341] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Read register 'bitmap_register' at index 7 read value 1
+[21:33:00.341] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(135) Primitive value2 = value
+[21:33:00.341] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(136) Primitive value = value | bitmap
+[21:33:00.341] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(138) Primitive (bit<32>) hdr.atp.aggregatorIndex
+[21:33:00.341] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(138) Primitive bitmap_register.write((bit<32>) hdr.atp.aggregatorIndex, value)
+[21:33:00.341] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Wrote register 'bitmap_register' at index 7 with value 3
+[21:33:00.341] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Primitive (no source info)
+[21:33:00.341] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(162) Condition "meta.already_aggregated == 0" (node_6) is true
+[21:33:00.341] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Applying table 'tbl_aggregate_values'
+[21:33:00.341] [bmv2] [D] [thread 276221] [3.0] [cxt 0] Looking up key:
+
+[21:33:00.341] [bmv2] [D] [thread 276221] [3.0] [cxt 0] Table 'tbl_aggregate_values': miss
+[21:33:00.341] [bmv2] [D] [thread 276221] [3.0] [cxt 0] Action entry is MyIngress.aggregate_values - 
+[21:33:00.341] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Action MyIngress.aggregate_values
+[21:33:00.341] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.341] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.341] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Read register 'big_pool' at index 140 read value 1
+[21:33:00.341] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.341] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Primitive (no source info)
+[21:33:00.341] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.341] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Wrote register 'big_pool' at index 140 with value 2
+[21:33:00.341] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Primitive (no source info)
+[21:33:00.341] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.341] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.341] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Read register 'big_pool' at index 141 read value 1
+[21:33:00.341] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.341] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Primitive (no source info)
+[21:33:00.341] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.341] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Wrote register 'big_pool' at index 141 with value 2
+[21:33:00.341] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Primitive (no source info)
+[21:33:00.341] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.341] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Read register 'big_pool' at index 142 read value 1
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Primitive (no source info)
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Wrote register 'big_pool' at index 142 with value 2
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Primitive (no source info)
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Read register 'big_pool' at index 143 read value 1
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Primitive (no source info)
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Wrote register 'big_pool' at index 143 with value 2
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Primitive (no source info)
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Read register 'big_pool' at index 144 read value 1
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Primitive (no source info)
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Wrote register 'big_pool' at index 144 with value 2
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Primitive (no source info)
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Read register 'big_pool' at index 145 read value 1
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Primitive (no source info)
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Wrote register 'big_pool' at index 145 with value 2
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Primitive (no source info)
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Read register 'big_pool' at index 146 read value 1
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Primitive (no source info)
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Wrote register 'big_pool' at index 146 with value 2
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Primitive (no source info)
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Read register 'big_pool' at index 147 read value 1
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Primitive (no source info)
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Wrote register 'big_pool' at index 147 with value 2
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Primitive (no source info)
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Read register 'big_pool' at index 148 read value 1
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Primitive (no source info)
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Wrote register 'big_pool' at index 148 with value 2
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Primitive (no source info)
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Read register 'big_pool' at index 149 read value 1
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Primitive (no source info)
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Wrote register 'big_pool' at index 149 with value 2
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Primitive (no source info)
+[21:33:00.342] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Read register 'big_pool' at index 150 read value 1
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Primitive (no source info)
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Wrote register 'big_pool' at index 150 with value 2
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Primitive (no source info)
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Read register 'big_pool' at index 151 read value 1
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Primitive (no source info)
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Wrote register 'big_pool' at index 151 with value 2
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Primitive (no source info)
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Read register 'big_pool' at index 152 read value 1
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Primitive (no source info)
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Wrote register 'big_pool' at index 152 with value 2
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Primitive (no source info)
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Read register 'big_pool' at index 153 read value 1
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Primitive (no source info)
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Wrote register 'big_pool' at index 153 with value 2
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Primitive (no source info)
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Read register 'big_pool' at index 154 read value 1
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Primitive (no source info)
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Wrote register 'big_pool' at index 154 with value 2
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Primitive (no source info)
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Read register 'big_pool' at index 155 read value 1
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Primitive (no source info)
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Wrote register 'big_pool' at index 155 with value 2
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Primitive (no source info)
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Read register 'big_pool' at index 156 read value 1
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Primitive (no source info)
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Wrote register 'big_pool' at index 156 with value 2
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Primitive (no source info)
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Read register 'big_pool' at index 157 read value 1
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Primitive (no source info)
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Wrote register 'big_pool' at index 157 with value 2
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Primitive (no source info)
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Read register 'big_pool' at index 158 read value 1
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Primitive (no source info)
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Wrote register 'big_pool' at index 158 with value 2
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Primitive (no source info)
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Read register 'big_pool' at index 159 read value 1
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Primitive (no source info)
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Wrote register 'big_pool' at index 159 with value 2
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Primitive (no source info)
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Applying table 'tbl_increase_counter'
+[21:33:00.343] [bmv2] [D] [thread 276221] [3.0] [cxt 0] Looking up key:
+
+[21:33:00.343] [bmv2] [D] [thread 276221] [3.0] [cxt 0] Table 'tbl_increase_counter': miss
+[21:33:00.343] [bmv2] [D] [thread 276221] [3.0] [cxt 0] Action entry is MyIngress.increase_counter - 
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Action MyIngress.increase_counter
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(49) Primitive (bit<32>) hdr.atp.aggregatorIndex
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(49) Primitive counts.read(value, (bit<32>) hdr.atp.aggregatorIndex)
+[21:33:00.343] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Read register 'counts' at index 7 read value 1
+[21:33:00.344] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(50) Primitive value = value + 1
+[21:33:00.344] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(51) Primitive (bit<32>) hdr.atp.aggregatorIndex
+[21:33:00.344] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(51) Primitive counts.write((bit<32>) hdr.atp.aggregatorIndex, value)
+[21:33:00.344] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Wrote register 'counts' at index 7 with value 2
+[21:33:00.344] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(52) Primitive meta.current_counter = value
+[21:33:00.344] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Applying table 'tbl_ATP_switch119'
+[21:33:00.344] [bmv2] [D] [thread 276221] [3.0] [cxt 0] Looking up key:
+
+[21:33:00.344] [bmv2] [D] [thread 276221] [3.0] [cxt 0] Table 'tbl_ATP_switch119': miss
+[21:33:00.344] [bmv2] [D] [thread 276221] [3.0] [cxt 0] Action entry is ATP_switch119 - 
+[21:33:00.344] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Action ATP_switch119
+[21:33:00.344] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(119) Primitive hdr.atp.JobIdAndSequenceNumber[31:24]
+[21:33:00.344] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Applying table 'MyIngress.workers4job'
+[21:33:00.344] [bmv2] [D] [thread 276221] [3.0] [cxt 0] Looking up key:
+* hdr.atp.JobIdAndSequenceNumber[31:24]: 01
+* meta.current_counter                 : 00000002
+
+[21:33:00.344] [bmv2] [D] [thread 276221] [3.0] [cxt 0] Table 'MyIngress.workers4job': miss
+[21:33:00.344] [bmv2] [D] [thread 276221] [3.0] [cxt 0] Action entry is NoAction - 
+[21:33:00.344] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Action NoAction
+[21:33:00.344] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Applying table 'tbl_ATP_switch168'
+[21:33:00.344] [bmv2] [D] [thread 276221] [3.0] [cxt 0] Looking up key:
+
+[21:33:00.344] [bmv2] [D] [thread 276221] [3.0] [cxt 0] Table 'tbl_ATP_switch168': miss
+[21:33:00.344] [bmv2] [D] [thread 276221] [3.0] [cxt 0] Action entry is ATP_switch168 - 
+[21:33:00.344] [bmv2] [T] [thread 276221] [3.0] [cxt 0] Action ATP_switch168
+[21:33:00.344] [bmv2] [T] [thread 276221] [3.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(168) Primitive mark_to_drop(standard_metadata)
+[21:33:00.344] [bmv2] [D] [thread 276221] [3.0] [cxt 0] Pipeline 'ingress': end
+[21:33:00.344] [bmv2] [D] [thread 276221] [3.0] [cxt 0] Egress port is 511
+[21:33:00.344] [bmv2] [D] [thread 276221] [3.0] [cxt 0] Dropping packet at the end of ingress
+[21:33:00.344] [bmv2] [D] [thread 276221] [4.0] [cxt 0] Processing packet received on port 3
+[21:33:00.344] [bmv2] [D] [thread 276221] [4.0] [cxt 0] Parser 'parser': start
+[21:33:00.344] [bmv2] [D] [thread 276221] [4.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:33:00.344] [bmv2] [D] [thread 276221] [4.0] [cxt 0] Extracting header 'eth'
+[21:33:00.344] [bmv2] [D] [thread 276221] [4.0] [cxt 0] Parser state 'start': key is 0800
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Bytes parsed: 14
+[21:33:00.344] [bmv2] [D] [thread 276221] [4.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[21:33:00.344] [bmv2] [D] [thread 276221] [4.0] [cxt 0] Extracting header 'ipv4'
+[21:33:00.344] [bmv2] [D] [thread 276221] [4.0] [cxt 0] Parser state 'parse_ipv4': key is 99
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Bytes parsed: 34
+[21:33:00.344] [bmv2] [D] [thread 276221] [4.0] [cxt 0] Parser 'parser' entering state 'parse_atp'
+[21:33:00.344] [bmv2] [D] [thread 276221] [4.0] [cxt 0] Extracting header 'atp'
+[21:33:00.344] [bmv2] [D] [thread 276221] [4.0] [cxt 0] Extracting header 'data'
+[21:33:00.344] [bmv2] [D] [thread 276221] [4.0] [cxt 0] Parser state 'parse_atp' has no switch, going to default next state
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Bytes parsed: 130
+[21:33:00.344] [bmv2] [D] [thread 276221] [4.0] [cxt 0] Parser 'parser': end
+[21:33:00.344] [bmv2] [D] [thread 276221] [4.0] [cxt 0] Pipeline 'ingress': start
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Applying table 'tbl_ATP_switch156'
+[21:33:00.344] [bmv2] [D] [thread 276221] [4.0] [cxt 0] Looking up key:
+
+[21:33:00.344] [bmv2] [D] [thread 276221] [4.0] [cxt 0] Table 'tbl_ATP_switch156': miss
+[21:33:00.344] [bmv2] [D] [thread 276221] [4.0] [cxt 0] Action entry is ATP_switch156 - 
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Action ATP_switch156
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(156) Primitive (bit<32>)index
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(156) Primitive owner_pool.read(owner, (bit<32>)index)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Read register 'owner_pool' at index 7 read value 16777217
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Applying table 'MyIngress.pool_access'
+[21:33:00.344] [bmv2] [D] [thread 276221] [4.0] [cxt 0] Looking up key:
+* hdr.atp.aggregatorIndex: 0007
+
+[21:33:00.344] [bmv2] [D] [thread 276221] [4.0] [cxt 0] Table 'MyIngress.pool_access': hit with handle 7
+[21:33:00.344] [bmv2] [D] [thread 276221] [4.0] [cxt 0] Dumping entry 7
+Match key:
+* hdr.atp.aggregatorIndex: EXACT     0007
+Action entry: MyIngress.aggregate - 8c,
+
+[21:33:00.344] [bmv2] [D] [thread 276221] [4.0] [cxt 0] Action entry is MyIngress.aggregate - 8c,
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Action MyIngress.aggregate
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(43) Primitive meta.slice_index = slice_index
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(159) Condition "owner == hdr.atp.JobIdAndSequenceNumber" (node_4) is true
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Applying table 'tbl_or_bitmap'
+[21:33:00.344] [bmv2] [D] [thread 276221] [4.0] [cxt 0] Looking up key:
+
+[21:33:00.344] [bmv2] [D] [thread 276221] [4.0] [cxt 0] Table 'tbl_or_bitmap': miss
+[21:33:00.344] [bmv2] [D] [thread 276221] [4.0] [cxt 0] Action entry is MyIngress.or_bitmap - 
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Action MyIngress.or_bitmap
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(134) Primitive (bit<32>) hdr.atp.aggregatorIndex
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(134) Primitive bitmap_register.read(value, (bit<32>) hdr.atp.aggregatorIndex)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Read register 'bitmap_register' at index 7 read value 3
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(135) Primitive value2 = value
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(136) Primitive value = value | bitmap
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(138) Primitive (bit<32>) hdr.atp.aggregatorIndex
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(138) Primitive bitmap_register.write((bit<32>) hdr.atp.aggregatorIndex, value)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Wrote register 'bitmap_register' at index 7 with value 7
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Primitive (no source info)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(162) Condition "meta.already_aggregated == 0" (node_6) is true
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Applying table 'tbl_aggregate_values'
+[21:33:00.344] [bmv2] [D] [thread 276221] [4.0] [cxt 0] Looking up key:
+
+[21:33:00.344] [bmv2] [D] [thread 276221] [4.0] [cxt 0] Table 'tbl_aggregate_values': miss
+[21:33:00.344] [bmv2] [D] [thread 276221] [4.0] [cxt 0] Action entry is MyIngress.aggregate_values - 
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Action MyIngress.aggregate_values
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Read register 'big_pool' at index 140 read value 2
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Primitive (no source info)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Wrote register 'big_pool' at index 140 with value 3
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Primitive (no source info)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Read register 'big_pool' at index 141 read value 2
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Primitive (no source info)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Wrote register 'big_pool' at index 141 with value 3
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Primitive (no source info)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Read register 'big_pool' at index 142 read value 2
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Primitive (no source info)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Wrote register 'big_pool' at index 142 with value 3
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Primitive (no source info)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Read register 'big_pool' at index 143 read value 2
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Primitive (no source info)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Wrote register 'big_pool' at index 143 with value 3
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Primitive (no source info)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Read register 'big_pool' at index 144 read value 2
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Primitive (no source info)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Wrote register 'big_pool' at index 144 with value 3
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Primitive (no source info)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Read register 'big_pool' at index 145 read value 2
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Primitive (no source info)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Wrote register 'big_pool' at index 145 with value 3
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Primitive (no source info)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Read register 'big_pool' at index 146 read value 2
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Primitive (no source info)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Wrote register 'big_pool' at index 146 with value 3
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Primitive (no source info)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Read register 'big_pool' at index 147 read value 2
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Primitive (no source info)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Wrote register 'big_pool' at index 147 with value 3
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Primitive (no source info)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Read register 'big_pool' at index 148 read value 2
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Primitive (no source info)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Wrote register 'big_pool' at index 148 with value 3
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Primitive (no source info)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Read register 'big_pool' at index 149 read value 2
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Primitive (no source info)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Wrote register 'big_pool' at index 149 with value 3
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Primitive (no source info)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Read register 'big_pool' at index 150 read value 2
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Primitive (no source info)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Wrote register 'big_pool' at index 150 with value 3
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Primitive (no source info)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Read register 'big_pool' at index 151 read value 2
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Primitive (no source info)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Wrote register 'big_pool' at index 151 with value 3
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Primitive (no source info)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Read register 'big_pool' at index 152 read value 2
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.344] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Primitive (no source info)
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Wrote register 'big_pool' at index 152 with value 3
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Primitive (no source info)
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Read register 'big_pool' at index 153 read value 2
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Primitive (no source info)
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Wrote register 'big_pool' at index 153 with value 3
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Primitive (no source info)
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Read register 'big_pool' at index 154 read value 2
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Primitive (no source info)
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Wrote register 'big_pool' at index 154 with value 3
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Primitive (no source info)
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Read register 'big_pool' at index 155 read value 2
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Primitive (no source info)
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Wrote register 'big_pool' at index 155 with value 3
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Primitive (no source info)
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Read register 'big_pool' at index 156 read value 2
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Primitive (no source info)
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Wrote register 'big_pool' at index 156 with value 3
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Primitive (no source info)
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Read register 'big_pool' at index 157 read value 2
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Primitive (no source info)
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Wrote register 'big_pool' at index 157 with value 3
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Primitive (no source info)
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Read register 'big_pool' at index 158 read value 2
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Primitive (no source info)
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Wrote register 'big_pool' at index 158 with value 3
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Primitive (no source info)
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Read register 'big_pool' at index 159 read value 2
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Primitive (no source info)
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Wrote register 'big_pool' at index 159 with value 3
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Primitive (no source info)
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Applying table 'tbl_increase_counter'
+[21:33:00.345] [bmv2] [D] [thread 276221] [4.0] [cxt 0] Looking up key:
+
+[21:33:00.345] [bmv2] [D] [thread 276221] [4.0] [cxt 0] Table 'tbl_increase_counter': miss
+[21:33:00.345] [bmv2] [D] [thread 276221] [4.0] [cxt 0] Action entry is MyIngress.increase_counter - 
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Action MyIngress.increase_counter
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(49) Primitive (bit<32>) hdr.atp.aggregatorIndex
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(49) Primitive counts.read(value, (bit<32>) hdr.atp.aggregatorIndex)
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Read register 'counts' at index 7 read value 2
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(50) Primitive value = value + 1
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(51) Primitive (bit<32>) hdr.atp.aggregatorIndex
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(51) Primitive counts.write((bit<32>) hdr.atp.aggregatorIndex, value)
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Wrote register 'counts' at index 7 with value 3
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(52) Primitive meta.current_counter = value
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Applying table 'tbl_ATP_switch119'
+[21:33:00.345] [bmv2] [D] [thread 276221] [4.0] [cxt 0] Looking up key:
+
+[21:33:00.345] [bmv2] [D] [thread 276221] [4.0] [cxt 0] Table 'tbl_ATP_switch119': miss
+[21:33:00.345] [bmv2] [D] [thread 276221] [4.0] [cxt 0] Action entry is ATP_switch119 - 
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Action ATP_switch119
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(119) Primitive hdr.atp.JobIdAndSequenceNumber[31:24]
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Applying table 'MyIngress.workers4job'
+[21:33:00.345] [bmv2] [D] [thread 276221] [4.0] [cxt 0] Looking up key:
+* hdr.atp.JobIdAndSequenceNumber[31:24]: 01
+* meta.current_counter                 : 00000003
+
+[21:33:00.345] [bmv2] [D] [thread 276221] [4.0] [cxt 0] Table 'MyIngress.workers4job': miss
+[21:33:00.345] [bmv2] [D] [thread 276221] [4.0] [cxt 0] Action entry is NoAction - 
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Action NoAction
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Applying table 'tbl_ATP_switch168'
+[21:33:00.345] [bmv2] [D] [thread 276221] [4.0] [cxt 0] Looking up key:
+
+[21:33:00.345] [bmv2] [D] [thread 276221] [4.0] [cxt 0] Table 'tbl_ATP_switch168': miss
+[21:33:00.345] [bmv2] [D] [thread 276221] [4.0] [cxt 0] Action entry is ATP_switch168 - 
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] Action ATP_switch168
+[21:33:00.345] [bmv2] [T] [thread 276221] [4.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(168) Primitive mark_to_drop(standard_metadata)
+[21:33:00.345] [bmv2] [D] [thread 276221] [4.0] [cxt 0] Pipeline 'ingress': end
+[21:33:00.345] [bmv2] [D] [thread 276221] [4.0] [cxt 0] Egress port is 511
+[21:33:00.345] [bmv2] [D] [thread 276221] [4.0] [cxt 0] Dropping packet at the end of ingress
+[21:33:00.376] [bmv2] [D] [thread 276221] [5.0] [cxt 0] Processing packet received on port 4
+[21:33:00.376] [bmv2] [D] [thread 276221] [5.0] [cxt 0] Parser 'parser': start
+[21:33:00.376] [bmv2] [D] [thread 276221] [5.0] [cxt 0] Parser 'parser' entering state 'start'
+[21:33:00.376] [bmv2] [D] [thread 276221] [5.0] [cxt 0] Extracting header 'eth'
+[21:33:00.376] [bmv2] [D] [thread 276221] [5.0] [cxt 0] Parser state 'start': key is 0800
+[21:33:00.376] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Bytes parsed: 14
+[21:33:00.376] [bmv2] [D] [thread 276221] [5.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[21:33:00.376] [bmv2] [D] [thread 276221] [5.0] [cxt 0] Extracting header 'ipv4'
+[21:33:00.376] [bmv2] [D] [thread 276221] [5.0] [cxt 0] Parser state 'parse_ipv4': key is 99
+[21:33:00.376] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Bytes parsed: 34
+[21:33:00.376] [bmv2] [D] [thread 276221] [5.0] [cxt 0] Parser 'parser' entering state 'parse_atp'
+[21:33:00.376] [bmv2] [D] [thread 276221] [5.0] [cxt 0] Extracting header 'atp'
+[21:33:00.376] [bmv2] [D] [thread 276221] [5.0] [cxt 0] Extracting header 'data'
+[21:33:00.376] [bmv2] [D] [thread 276221] [5.0] [cxt 0] Parser state 'parse_atp' has no switch, going to default next state
+[21:33:00.376] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Bytes parsed: 130
+[21:33:00.376] [bmv2] [D] [thread 276221] [5.0] [cxt 0] Parser 'parser': end
+[21:33:00.376] [bmv2] [D] [thread 276221] [5.0] [cxt 0] Pipeline 'ingress': start
+[21:33:00.376] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Applying table 'tbl_ATP_switch156'
+[21:33:00.376] [bmv2] [D] [thread 276221] [5.0] [cxt 0] Looking up key:
+
+[21:33:00.376] [bmv2] [D] [thread 276221] [5.0] [cxt 0] Table 'tbl_ATP_switch156': miss
+[21:33:00.376] [bmv2] [D] [thread 276221] [5.0] [cxt 0] Action entry is ATP_switch156 - 
+[21:33:00.376] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Action ATP_switch156
+[21:33:00.376] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(156) Primitive (bit<32>)index
+[21:33:00.376] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(156) Primitive owner_pool.read(owner, (bit<32>)index)
+[21:33:00.376] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Read register 'owner_pool' at index 7 read value 16777217
+[21:33:00.376] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Applying table 'MyIngress.pool_access'
+[21:33:00.376] [bmv2] [D] [thread 276221] [5.0] [cxt 0] Looking up key:
+* hdr.atp.aggregatorIndex: 0007
+
+[21:33:00.376] [bmv2] [D] [thread 276221] [5.0] [cxt 0] Table 'MyIngress.pool_access': hit with handle 7
+[21:33:00.377] [bmv2] [D] [thread 276221] [5.0] [cxt 0] Dumping entry 7
+Match key:
+* hdr.atp.aggregatorIndex: EXACT     0007
+Action entry: MyIngress.aggregate - 8c,
+
+[21:33:00.377] [bmv2] [D] [thread 276221] [5.0] [cxt 0] Action entry is MyIngress.aggregate - 8c,
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Action MyIngress.aggregate
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(43) Primitive meta.slice_index = slice_index
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(159) Condition "owner == hdr.atp.JobIdAndSequenceNumber" (node_4) is true
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Applying table 'tbl_or_bitmap'
+[21:33:00.377] [bmv2] [D] [thread 276221] [5.0] [cxt 0] Looking up key:
+
+[21:33:00.377] [bmv2] [D] [thread 276221] [5.0] [cxt 0] Table 'tbl_or_bitmap': miss
+[21:33:00.377] [bmv2] [D] [thread 276221] [5.0] [cxt 0] Action entry is MyIngress.or_bitmap - 
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Action MyIngress.or_bitmap
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(134) Primitive (bit<32>) hdr.atp.aggregatorIndex
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(134) Primitive bitmap_register.read(value, (bit<32>) hdr.atp.aggregatorIndex)
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Read register 'bitmap_register' at index 7 read value 7
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(135) Primitive value2 = value
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(136) Primitive value = value | bitmap
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(138) Primitive (bit<32>) hdr.atp.aggregatorIndex
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(138) Primitive bitmap_register.write((bit<32>) hdr.atp.aggregatorIndex, value)
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Wrote register 'bitmap_register' at index 7 with value 15
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Primitive (no source info)
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(162) Condition "meta.already_aggregated == 0" (node_6) is true
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Applying table 'tbl_aggregate_values'
+[21:33:00.377] [bmv2] [D] [thread 276221] [5.0] [cxt 0] Looking up key:
+
+[21:33:00.377] [bmv2] [D] [thread 276221] [5.0] [cxt 0] Table 'tbl_aggregate_values': miss
+[21:33:00.377] [bmv2] [D] [thread 276221] [5.0] [cxt 0] Action entry is MyIngress.aggregate_values - 
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Action MyIngress.aggregate_values
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Read register 'big_pool' at index 140 read value 3
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Primitive (no source info)
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Wrote register 'big_pool' at index 140 with value 4
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Primitive (no source info)
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Read register 'big_pool' at index 141 read value 3
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Primitive (no source info)
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Wrote register 'big_pool' at index 141 with value 4
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Primitive (no source info)
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Read register 'big_pool' at index 142 read value 3
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Primitive (no source info)
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Wrote register 'big_pool' at index 142 with value 4
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Primitive (no source info)
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Read register 'big_pool' at index 143 read value 3
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Primitive (no source info)
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Wrote register 'big_pool' at index 143 with value 4
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Primitive (no source info)
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Read register 'big_pool' at index 144 read value 3
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Primitive (no source info)
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Wrote register 'big_pool' at index 144 with value 4
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Primitive (no source info)
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Read register 'big_pool' at index 145 read value 3
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Primitive (no source info)
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Wrote register 'big_pool' at index 145 with value 4
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Primitive (no source info)
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Read register 'big_pool' at index 146 read value 3
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Primitive (no source info)
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Wrote register 'big_pool' at index 146 with value 4
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Primitive (no source info)
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Read register 'big_pool' at index 147 read value 3
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Primitive (no source info)
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Wrote register 'big_pool' at index 147 with value 4
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Primitive (no source info)
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Read register 'big_pool' at index 148 read value 3
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Primitive (no source info)
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Wrote register 'big_pool' at index 148 with value 4
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Primitive (no source info)
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Read register 'big_pool' at index 149 read value 3
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Primitive (no source info)
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.377] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Wrote register 'big_pool' at index 149 with value 4
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Primitive (no source info)
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Read register 'big_pool' at index 150 read value 3
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Primitive (no source info)
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Wrote register 'big_pool' at index 150 with value 4
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Primitive (no source info)
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Read register 'big_pool' at index 151 read value 3
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Primitive (no source info)
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Wrote register 'big_pool' at index 151 with value 4
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Primitive (no source info)
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Read register 'big_pool' at index 152 read value 3
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Primitive (no source info)
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Wrote register 'big_pool' at index 152 with value 4
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Primitive (no source info)
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Read register 'big_pool' at index 153 read value 3
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Primitive (no source info)
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Wrote register 'big_pool' at index 153 with value 4
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Primitive (no source info)
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Read register 'big_pool' at index 154 read value 3
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Primitive (no source info)
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Wrote register 'big_pool' at index 154 with value 4
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Primitive (no source info)
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Read register 'big_pool' at index 155 read value 3
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Primitive (no source info)
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Wrote register 'big_pool' at index 155 with value 4
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Primitive (no source info)
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Read register 'big_pool' at index 156 read value 3
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Primitive (no source info)
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Wrote register 'big_pool' at index 156 with value 4
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Primitive (no source info)
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Read register 'big_pool' at index 157 read value 3
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Primitive (no source info)
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Wrote register 'big_pool' at index 157 with value 4
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Primitive (no source info)
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Read register 'big_pool' at index 158 read value 3
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Primitive (no source info)
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Wrote register 'big_pool' at index 158 with value 4
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Primitive (no source info)
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive register_index
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(34) Primitive big_pool.read(value, register_index)
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Read register 'big_pool' at index 159 read value 3
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive register_index
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Primitive (no source info)
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(36) Primitive big_pool.write(register_index, n0)
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Wrote register 'big_pool' at index 159 with value 4
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Primitive (no source info)
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Applying table 'tbl_increase_counter'
+[21:33:00.378] [bmv2] [D] [thread 276221] [5.0] [cxt 0] Looking up key:
+
+[21:33:00.378] [bmv2] [D] [thread 276221] [5.0] [cxt 0] Table 'tbl_increase_counter': miss
+[21:33:00.378] [bmv2] [D] [thread 276221] [5.0] [cxt 0] Action entry is MyIngress.increase_counter - 
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Action MyIngress.increase_counter
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(49) Primitive (bit<32>) hdr.atp.aggregatorIndex
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(49) Primitive counts.read(value, (bit<32>) hdr.atp.aggregatorIndex)
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Read register 'counts' at index 7 read value 3
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(50) Primitive value = value + 1
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(51) Primitive (bit<32>) hdr.atp.aggregatorIndex
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(51) Primitive counts.write((bit<32>) hdr.atp.aggregatorIndex, value)
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Wrote register 'counts' at index 7 with value 4
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(52) Primitive meta.current_counter = value
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Applying table 'tbl_ATP_switch119'
+[21:33:00.378] [bmv2] [D] [thread 276221] [5.0] [cxt 0] Looking up key:
+
+[21:33:00.378] [bmv2] [D] [thread 276221] [5.0] [cxt 0] Table 'tbl_ATP_switch119': miss
+[21:33:00.378] [bmv2] [D] [thread 276221] [5.0] [cxt 0] Action entry is ATP_switch119 - 
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Action ATP_switch119
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(119) Primitive hdr.atp.JobIdAndSequenceNumber[31:24]
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Applying table 'MyIngress.workers4job'
+[21:33:00.378] [bmv2] [D] [thread 276221] [5.0] [cxt 0] Looking up key:
+* hdr.atp.JobIdAndSequenceNumber[31:24]: 01
+* meta.current_counter                 : 00000004
+
+[21:33:00.378] [bmv2] [D] [thread 276221] [5.0] [cxt 0] Table 'MyIngress.workers4job': hit with handle 0
+[21:33:00.378] [bmv2] [D] [thread 276221] [5.0] [cxt 0] Dumping entry 0
+Match key:
+* hdr.atp.JobIdAndSequenceNumber[31:24]: EXACT     01
+* meta.current_counter                 : EXACT     00000004
+Action entry: MyIngress.clear_memory - 
+
+[21:33:00.378] [bmv2] [D] [thread 276221] [5.0] [cxt 0] Action entry is MyIngress.clear_memory - 
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Action MyIngress.clear_memory
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(68) Primitive (bit<32>) meta.slice_index
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(68) Primitive big_pool.write((bit<32>) meta.slice_index + 0, 0)
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Wrote register 'big_pool' at index 140 with value 0
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(69) Primitive (bit<32>) meta.slice_index + 1
+[21:33:00.378] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(69) Primitive big_pool.write((bit<32>) meta.slice_index + 1, 0)
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Wrote register 'big_pool' at index 141 with value 0
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(70) Primitive (bit<32>) meta.slice_index + 2
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(70) Primitive big_pool.write((bit<32>) meta.slice_index + 2, 0)
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Wrote register 'big_pool' at index 142 with value 0
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(71) Primitive (bit<32>) meta.slice_index + 3
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(71) Primitive big_pool.write((bit<32>) meta.slice_index + 3, 0)
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Wrote register 'big_pool' at index 143 with value 0
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(72) Primitive (bit<32>) meta.slice_index + 4
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(72) Primitive big_pool.write((bit<32>) meta.slice_index + 4, 0)
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Wrote register 'big_pool' at index 144 with value 0
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(73) Primitive (bit<32>) meta.slice_index + 5
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(73) Primitive big_pool.write((bit<32>) meta.slice_index + 5, 0)
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Wrote register 'big_pool' at index 145 with value 0
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(74) Primitive (bit<32>) meta.slice_index + 6
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(74) Primitive big_pool.write((bit<32>) meta.slice_index + 6, 0)
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Wrote register 'big_pool' at index 146 with value 0
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(75) Primitive (bit<32>) meta.slice_index + 7
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(75) Primitive big_pool.write((bit<32>) meta.slice_index + 7, 0)
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Wrote register 'big_pool' at index 147 with value 0
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(76) Primitive (bit<32>) meta.slice_index + 8
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(76) Primitive big_pool.write((bit<32>) meta.slice_index + 8, 0)
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Wrote register 'big_pool' at index 148 with value 0
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(77) Primitive (bit<32>) meta.slice_index + 9
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(77) Primitive big_pool.write((bit<32>) meta.slice_index + 9, 0)
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Wrote register 'big_pool' at index 149 with value 0
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(78) Primitive (bit<32>) meta.slice_index + 10
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(78) Primitive big_pool.write((bit<32>) meta.slice_index + 10, 0)
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Wrote register 'big_pool' at index 150 with value 0
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(79) Primitive (bit<32>) meta.slice_index + 11
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(79) Primitive big_pool.write((bit<32>) meta.slice_index + 11, 0)
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Wrote register 'big_pool' at index 151 with value 0
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(80) Primitive (bit<32>) meta.slice_index + 12
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(80) Primitive big_pool.write((bit<32>) meta.slice_index + 12, 0)
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Wrote register 'big_pool' at index 152 with value 0
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(81) Primitive (bit<32>) meta.slice_index + 13
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(81) Primitive big_pool.write((bit<32>) meta.slice_index + 13, 0)
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Wrote register 'big_pool' at index 153 with value 0
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(82) Primitive (bit<32>) meta.slice_index + 14
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(82) Primitive big_pool.write((bit<32>) meta.slice_index + 14, 0)
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Wrote register 'big_pool' at index 154 with value 0
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(83) Primitive (bit<32>) meta.slice_index + 15
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(83) Primitive big_pool.write((bit<32>) meta.slice_index + 15, 0)
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Wrote register 'big_pool' at index 155 with value 0
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(84) Primitive (bit<32>) meta.slice_index + 16
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(84) Primitive big_pool.write((bit<32>) meta.slice_index + 16, 0)
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Wrote register 'big_pool' at index 156 with value 0
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(85) Primitive (bit<32>) meta.slice_index + 17
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(85) Primitive big_pool.write((bit<32>) meta.slice_index + 17, 0)
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Wrote register 'big_pool' at index 157 with value 0
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(86) Primitive (bit<32>) meta.slice_index + 18
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(86) Primitive big_pool.write((bit<32>) meta.slice_index + 18, 0)
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Wrote register 'big_pool' at index 158 with value 0
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(87) Primitive (bit<32>) meta.slice_index + 19
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(87) Primitive big_pool.write((bit<32>) meta.slice_index + 19, 0)
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Wrote register 'big_pool' at index 159 with value 0
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(89) Primitive (bit<32>) hdr.atp.aggregatorIndex
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(89) Primitive owner_pool.write((bit<32>) hdr.atp.aggregatorIndex, 0)
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Wrote register 'owner_pool' at index 7 with value 0
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(91) Primitive (bit<32>) hdr.atp.aggregatorIndex
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(91) Primitive counts.write((bit<32>) hdr.atp.aggregatorIndex, 0)
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Wrote register 'counts' at index 7 with value 0
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Applying table 'tbl_ATP_switch168'
+[21:33:00.379] [bmv2] [D] [thread 276221] [5.0] [cxt 0] Looking up key:
+
+[21:33:00.379] [bmv2] [D] [thread 276221] [5.0] [cxt 0] Table 'tbl_ATP_switch168': miss
+[21:33:00.379] [bmv2] [D] [thread 276221] [5.0] [cxt 0] Action entry is ATP_switch168 - 
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] Action ATP_switch168
+[21:33:00.379] [bmv2] [T] [thread 276221] [5.0] [cxt 0] /home/mattiafiore/Desktop/ATP_BMv2/p4src/ATP_switch.p4(168) Primitive mark_to_drop(standard_metadata)
+[21:33:00.379] [bmv2] [D] [thread 276221] [5.0] [cxt 0] Pipeline 'ingress': end
+[21:33:00.379] [bmv2] [D] [thread 276221] [5.0] [cxt 0] Egress port is 511
+[21:33:00.379] [bmv2] [D] [thread 276221] [5.0] [cxt 0] Dropping packet at the end of ingress

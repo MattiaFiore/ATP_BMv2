@@ -151,8 +151,8 @@ if __name__ == '__main__':
     length_payload = 10
     payload = build_payload(length_payload)
     pkt = pkt / payload
-    pkt.show()
-    print(f"Chosen aggregator: {pkt[ATP].aggregatorIndex}")
+    #pkt.show()
+    #print(f"Chosen aggregator: {pkt[ATP].aggregatorIndex}")
     print('[', end = ' ')
     for i in pkt[Data].fields_desc:
         field_name = i.name
